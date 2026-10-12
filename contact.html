@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Deejay Distilleries - Premium Spirits Manufacturer &amp; Exporter</title>
+  <meta name="description"
+    content="Get in touch with Deejay Distilleries. Connect with us for distillery partnerships, exports, private label bottling, and distribution inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo+Black&family=Isometra&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================= FULLSCREEN PRELOADER (CLASSIC LIGHT THEME WITH DUAL FLOWING WAVES) ================= -->
+  <div class="site-preloader" id="sitePreloader" aria-hidden="true">
+    <div class="preloader-bg-glow"></div>
+
+    <!-- Center Logo & Brand Tagline -->
+    <div class="preloader-center-content">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="preloader-logo">
+      </div>
+      <span class="preloader-tagline">QUALITY SPIRITS</span>
+    </div>
+
+    <!-- Intersecting Golden Wavy Lines across Lower Screen (Flowing Left to Right) -->
+    <div class="preloader-waves-wrap">
+      <svg class="preloader-waves-svg" viewBox="0 0 1920 160" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldWaveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#caa04c" stop-opacity="0.3" />
+            <stop offset="25%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#dfb76c" stop-opacity="1" />
+            <stop offset="75%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#caa04c" stop-opacity="0.4" />
+          </linearGradient>
+          <linearGradient id="goldWaveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#b4581b" stop-opacity="0.25" />
+            <stop offset="25%" stop-color="#dfb76c" stop-opacity="0.85" />
+            <stop offset="55%" stop-color="#b4581b" stop-opacity="0.95" />
+            <stop offset="80%" stop-color="#dfb76c" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#b4581b" stop-opacity="0.3" />
+          </linearGradient>
+        </defs>
+        
+        <!-- Wavy Line 1 (Continuous smooth curve) -->
+        <path class="wave-path wave-path-1" d="M -800 65 C -600 15, -200 115, 0 65 C 200 15, 600 115, 800 65 C 1000 15, 1400 115, 1600 65 C 1800 15, 2200 115, 2400 65 C 2600 15, 3000 115, 3200 65" stroke="url(#goldWaveGrad1)" stroke-width="1.6" stroke-linecap="round"/>
+        
+        <!-- Wavy Line 2 (Intersecting smooth curve) -->
+        <path class="wave-path wave-path-2" d="M -800 90 C -550 145, -250 35, 0 90 C 250 145, 550 35, 800 90 C 1050 145, 1350 35, 1600 90 C 1850 145, 2150 35, 2400 90 C 2650 145, 2950 35, 3200 90" stroke="url(#goldWaveGrad2)" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      <!-- Logo Left Side -->
+      <div class="brand-left">
+        <a href="index.html" title="Deejay Distilleries">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Royal Crest" class="brand-crest-logo">
+        </a>
+      </div>
+
+      <!-- Navigation Right Side: Desktop Menu + Exports Button + Mobile Toggle -->
+      <div class="nav-right" aria-label="Right Navigation">
+        <nav class="nav-desktop-menu" aria-label="Main Navigation">
+          <a href="about.html" class="nav-header-link">Our Story</a>
+          <a href="products.html" class="nav-header-link">Our Brands</a>
+          <a href="index.html#global-presence" class="nav-header-link">Global Reach</a>
+          <a href="exports.html" class="btn-nav-export">Exports</a>
+        </nav>
+        <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Drawer Backdrop Overlay -->
+  <div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
+
+  <!-- Fullscreen / Drawer Navigation Menu -->
+  <div class="mobile-nav-menu" id="mobileNavDrawer">
+    <button class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation">&times;</button>
+    <div class="nav-drawer-header">
+      <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="nav-drawer-logo">
+    </div>
+    <nav class="nav-drawer-links">
+      <a href="index.html" class="nav-custom-link">Home</a>
+      <a href="about.html" class="nav-custom-link">Our Story</a>
+      <a href="products.html" class="nav-custom-link">Our Brands</a>
+      <a href="index.html#global-presence" class="nav-custom-link">Global Reach</a>
+      <a href="exports.html" class="nav-custom-link">Exports</a>
+      <a href="contact.html" class="nav-custom-link">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- ================= INNER PAGE BANNER ================= -->
+  <section class="inner-banner-section inner-banner-contact" id="inner-banner">
+    <div class="inner-banner-overlay"></div>
+    <div class="inner-banner-content" data-aos="fade-up">
+      <div class="inner-banner-breadcrumb">
+        <a href="index.html">HOME</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-active">CONTACT US</span>
+      </div>
+      <h1 class="inner-banner-title">Let's Connect &amp; Collaborate</h1>
+      <p class="inner-banner-subtitle">
+        Whether you are seeking global exports, distillery partnerships, or custom bottling, we are here to assist you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= MODERN CONTACT US SECTION ================= -->
+  <section class="contact-modern-section" id="contact">
+    <div class="contact-modern-container">
+      <div class="contact-modern-grid">
+
+        <!-- Left Column: Title with Underline, Subtitle & Info Card -->
+        <div class="contact-modern-left" data-aos="fade-up">
+          <div class="contact-modern-title-wrap">
+            <span class="contact-modern-eyebrow">CONTACT US</span>
+            <h2 class="contact-modern-title">
+              Let's Build<br>The Future Together
+            </h2>
+            <div class="contact-modern-title-line"></div>
+          </div>
+          <p class="contact-modern-subtitle">
+            We are here to create solid and courageous brands that can leave a strong mark on the world.
+          </p>
+
+          <!-- Contact Information Card -->
+          <div class="contact-modern-info-card">
+            
+            <!-- Corporate Office Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18"></path>
+                  <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                  <path d="M9 7h1"></path>
+                  <path d="M14 7h1"></path>
+                  <path d="M9 11h1"></path>
+                  <path d="M14 11h1"></path>
+                  <path d="M9 15h1"></path>
+                  <path d="M14 15h1"></path>
+                  <path d="M10 21v-3h4v3"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Corporate Office:</span>
+                <p class="contact-info-value">
+                  B-1, Daffodil, Hiranandani Garden,<br>
+                  Powai, Mumbai - 400 076, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Distillery & Plant Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+                  <path d="M17 18h1"></path>
+                  <path d="M12 18h1"></path>
+                  <path d="M7 18h1"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Distillery &amp; Plant:</span>
+                <p class="contact-info-value">
+                  Deejay Distilleries Ltd.<br>
+                  Maharashtra, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Direct Inquiries Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Direct Inquiries:</span>
+                <a href="mailto:info@deejaydistilleries.com" class="contact-info-link">info@deejaydistilleries.com</a>
+                <a href="tel:+919867360000" class="contact-info-link">+91 9867360000</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Elevated Form Card -->
+        <div class="contact-modern-right" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-modern-form-card">
+            <form id="modernContactForm" class="contact-modern-form">
+
+              <!-- Row 1: Name & Email -->
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="contactName" class="contact-form-label">Name*</label>
+                  <input type="text" id="contactName" name="name" class="contact-form-input" placeholder="Name*" required>
+                </div>
+                <div class="contact-form-group">
+                  <label for="contactEmail" class="contact-form-label">Email*</label>
+                  <input type="email" id="contactEmail" name="email" class="contact-form-input" placeholder="Email*" required>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Company -->
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="contactPhone" class="contact-form-label">Phone*</label>
+                  <input type="tel" id="contactPhone" name="phone" class="contact-form-input" placeholder="Phone*" required>
+                </div>
+                <div class="contact-form-group">
+                  <label for="contactCompany" class="contact-form-label">Company</label>
+                  <input type="text" id="contactCompany" name="company" class="contact-form-input" placeholder="Company">
+                </div>
+              </div>
+
+              <!-- Row 3: Select Inquiring Service -->
+              <div class="contact-form-group">
+                <label for="contactServices" class="contact-form-label">Select Inquiring Service</label>
+                <select id="contactServices" name="service" class="contact-form-select">
+                  <option value="" disabled selected>Select Inquiring Service</option>
+                  <option value="distillery-partnership">Distillery Partnership &amp; Manufacturing</option>
+                  <option value="export-distribution">Global Export &amp; Distribution</option>
+                  <option value="private-label">Private Label &amp; Custom Bottling</option>
+                  <option value="bulk-spirits">Bulk Spirits Supply</option>
+                  <option value="brand-collaboration">Brand Collaboration</option>
+                </select>
+              </div>
+
+              <!-- Row 4: Message -->
+              <div class="contact-form-group">
+                <label for="contactMessage" class="contact-form-label">Message*</label>
+                <textarea id="contactMessage" name="message" class="contact-form-textarea" placeholder="Message*" rows="5" required></textarea>
+              </div>
+
+              <!-- Row 5: Submit Button & Disclaimer -->
+              <div class="contact-form-actions">
+                <button type="submit" class="contact-btn-submit" id="contactSubmitBtn">
+                  Send Message
+                </button>
+                <p class="contact-terms-notice">
+                  By clicking 'Send Message' you acknowledge that you have<br class="d-none d-md-inline"> read and agree to our <a href="javascript:void(0);" class="contact-terms-link">Terms of Service</a>.
+                </p>
+              </div>
+
+              <!-- Success Alert Message -->
+              <div class="contact-alert-success" id="contactSuccessMsg" style="display: none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Thank you! Your message has been sent to Deejay Distilleries. Our team will get back to you shortly.</span>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODERN 3-CARD CONTACT INFO & DEPARTMENT DIRECTORY ================= -->
+  <section class="contact-info-cards-section d-none" id="contact-details">
+    <div class="contact-info-cards-container">
+
+      <!-- Section Header -->
+      <div class="contact-cards-header" data-aos="fade-up">
+        <div class="contact-cards-badge">
+          <span class="contact-cards-badge-dot"></span>
+          Direct Channels &amp; Offices
+        </div>
+        <h2 class="contact-cards-title">Corporate Headquarters &amp; Department Contacts</h2>
+        <p class="contact-cards-subtitle">
+          Connect directly with our specialized teams for global exports, domestic distribution, executive inquiries, and distillery operations.
+        </p>
+      </div>
+
+      <!-- 3 Luxury Contact Cards -->
+      <div class="contact-cards-grid">
+
+        <!-- Card 1: Corporate Location -->
+        <div class="contact-luxury-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="contact-card-icon-badge">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="contact-card-top-info">
+            <h3 class="contact-card-title">Corporate Office</h3>
+            <p class="contact-card-desc">Visit our executive offices in Mumbai</p>
+          </div>
+          <div class="contact-card-address">
+            <strong>Deejay Distilleries Ltd.</strong><br>
+            B-1, Daffodil, Hiranandani Garden,<br>
+            Powai, Mumbai - 400 076,<br>
+            Maharashtra, India
+          </div>
+          <div class="contact-card-map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=Hiranandani+Gardens+Powai+Mumbai+400076&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              width="100%" height="150" style="border:0; display:block;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Hiranandani+Gardens+Powai+Mumbai+400076" target="_blank" rel="noopener noreferrer" class="contact-map-btn">
+            <i class="bi bi-map"></i> View on Google Maps
+          </a>
+        </div>
+
+        <!-- Card 2: Direct Telephones -->
+        <div class="contact-luxury-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card-icon-badge">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="contact-card-top-info">
+            <h3 class="contact-card-title">Direct Phone Lines</h3>
+            <p class="contact-card-desc">Call our department specialists directly</p>
+          </div>
+          <div class="contact-dept-list">
+            <!-- Exports -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">Exports &amp; Overseas</span>
+              <a href="tel:+919967316666" class="contact-dept-link">+91 9967316666</a>
+            </div>
+            <!-- General -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">General Inquiries</span>
+              <a href="tel:+919867360000" class="contact-dept-link">+91 9867360000</a>
+              <a href="tel:+919967024444" class="contact-dept-link">+91 9967024444</a>
+            </div>
+            <!-- Domestic -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">Domestic Sales</span>
+              <a href="tel:+919819200110" class="contact-dept-link">+91 9819200110</a>
+            </div>
+          </div>
+          <div class="contact-dept-note">
+            <i class="bi bi-clock"></i> Mon – Sat: 9:30 AM – 6:30 PM (IST)
+          </div>
+        </div>
+
+        <!-- Card 3: Direct Emails -->
+        <div class="contact-luxury-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="contact-card-icon-badge">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="contact-card-top-info">
+            <h3 class="contact-card-title">Email Inquiries</h3>
+            <p class="contact-card-desc">Reach our leadership &amp; sales desks</p>
+          </div>
+          <div class="contact-dept-list">
+            <!-- Exports -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">Exports &amp; International</span>
+              <a href="mailto:agnello@deejays.in" class="contact-dept-link">agnello@deejays.in</a>
+            </div>
+            <!-- General -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">General &amp; Management</span>
+              <a href="mailto:karan@deejays.in" class="contact-dept-link">karan@deejays.in</a>
+              <a href="mailto:vijay@deejays.in" class="contact-dept-link">vijay@deejays.in</a>
+            </div>
+            <!-- Domestic -->
+            <div class="contact-dept-item">
+              <span class="contact-dept-tag">Domestic Distribution</span>
+              <a href="mailto:drout@deejays.in" class="contact-dept-link">drout@deejays.in</a>
+            </div>
+          </div>
+          <div class="contact-dept-note">
+            <i class="bi bi-shield-check"></i> Response within 24 business hours
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WORLD MAP SECTION (MODERN LUXURY GLOBAL PRESENCE) ================= -->
+  <section class="world-map-section" id="global-presence">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Content -->
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="world-map-header text-start m-0 p-0 mb-3">
+            <span class="section-tag-badge">GLOBAL PRESENCE (2014–2026)</span>
+            <h2 class="world-map-title">33 International Markets Across 5 Continents</h2>
+            <p class="world-map-subtitle">
+              Delivering mastercrafted spirits, private label bottling, and bulk neutral alcohol from Maharashtra, India to 33 partner countries spanning Africa, the Middle East, Europe, and the Americas.
+            </p>
+          </div>
+
+          <!-- Modern Stats Row -->
+          <div class="world-map-stats-row">
+            <div class="world-map-stat-pill">
+              <i class="bi bi-globe-americas"></i>
+              <span><strong>33</strong> Active Export Markets</span>
+            </div>
+            <div class="world-map-stat-pill">
+              <i class="bi bi-clock-history"></i>
+              <span><strong>12+</strong> Years (2014–2026)</span>
+            </div>
+            <div class="world-map-stat-pill">
+              <i class="bi bi-geo-alt"></i>
+              <span><strong>JNPT Mumbai</strong> Port Dispatch</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="world-map-cta-group">
+            <a href="exports.html" class="btn-world-map-primary">
+              Explore Interactive 33-Country Map <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="about.html" class="btn-story-outline m-0">Our Story</a>
+          </div>
+        </div>
+
+        <!-- Right Side: Elevated Interactive Preview Card -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="world-map-preview-card">
+            <span class="world-map-preview-badge">
+              <span></span> 33 Active Trade Destinations
+            </span>
+            <a href="exports.html" title="Explore Interactive Export Map">
+              <img src="assets/images/Map.jpg" alt="Deejay Distilleries Global Export Presence Map" class="img-fluid rounded w-100 world-map-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="siteFooter">
+    <!-- Top Amber / Whiskey Brown Section -->
+    <div class="footer-top-block">
+      <div class="footer-container">
+        <!-- Centered Crest Logo -->
+        <div class="footer-minimal-top" data-aos="fade-up">
+          <a href="index.html" class="footer-brand-logo" aria-label="Deejay Distilleries Home">
+            <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="footer-minimal-logo">
+          </a>
+        </div>
+
+        <!-- Subtle Divider Line -->
+        <div class="footer-divider"></div>
+
+        <!-- Centered Navigation Links -->
+        <div class="footer-minimal-links" data-aos="fade-up" data-aos-delay="50">
+          <a href="index.html" class="footer-minimal-link">Home</a>
+          <a href="about.html" class="footer-minimal-link">Our Story</a>
+          <a href="products.html" class="footer-minimal-link">Our Brands</a>
+          <a href="exports.html" class="footer-minimal-link">Exports</a>
+          <a href="contact.html" class="footer-minimal-link">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom White Legal Bar -->
+    <div class="footer-bottom-block">
+      <div class="footer-container footer-bottom-inner" data-aos="fade-up" data-aos-delay="100">
+        <div class="footer-bottom-left">
+          &copy; 2026 Deejay Distilleries Ltd. All Rights Reserved. | Created by <a href="https://www.10dumbs.com"
+            target="_blank">10 Dumbs Inc.</a>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="javascript:void(0);" class="footer-legal-link">Security</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Privacy &amp; Cookie Policy</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Terms of Services</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= AGE VERIFICATION POPUP (AGE GATE) ================= -->
+  <div class="age-gate-overlay" id="ageGateModal" aria-modal="true" role="dialog" aria-labelledby="ageGateHeading">
+    <div class="age-gate-container">
+      <!-- Decorative Ambient Glow -->
+      <div class="age-gate-glow age-gate-glow-top"></div>
+
+      <!-- Main Content Card -->
+      <div class="age-gate-content">
+        <!-- Brand Crest Logo & Company Name -->
+        <div class="age-gate-brand">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="age-gate-logo">
+          <span class="age-gate-brand-name">DEEJAY DISTILLERIES</span>
+        </div>
+
+        <!-- Prompt Eyebrow -->
+        <p class="age-gate-prompt">You must be 18 years old or older to enter this site.</p>
+
+        <!-- Main Heading Title -->
+        <h1 class="age-gate-title" id="ageGateHeading">I AM OVER 18</h1>
+
+        <!-- Action Choice Buttons (YES / NO) -->
+        <div class="age-gate-choice-btns">
+          <button type="button" class="age-gate-btn age-gate-btn-yes" id="ageGateYes">YES</button>
+          <button type="button" class="age-gate-btn age-gate-btn-no" id="ageGateNo">NO</button>
+        </div>
+
+        <!-- Underage Notice Message (hidden by default) -->
+        <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+        <!-- Legal Notice & Disclaimer -->
+        <p class="age-gate-disclaimer">
+          Use of this site is for personal use in countries and territories where the consumption of alcohol beverages is lawful, and for persons who are lawfully permitted to consume alcohol beverages. By entering here you agree to our <a href="javascript:void(0);">Terms and Conditions</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (Local with CDN fallback) -->
+  <script src="js/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>')</script>
+
+  <!-- Bootstrap 5 JS Bundle with Popper (Local with CDN fallback) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>window.bootstrap || document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"><\/script>')</script>
+
+  <!-- Lenis Smooth Scroll Engine (Local with CDN fallback) -->
+  <script src="js/lenis.min.js"></script>
+  <script>window.Lenis || document.write('<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"><\/script>')</script>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- GSAP 3 & ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

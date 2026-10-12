@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deejay Distilleries | Leading Manufacturer & Exporter of Premium Bottled Alcohol</title>
+  <meta name="description"
+    content="Deejay Distilleries - One of the leading manufacturer & exporters of bottled alcohol in regions like West Africa, Middle East and South-East Asia.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo+Black&family=Isometra&display=swap"
+    rel="stylesheet">
+  <!-- Local Century Gothic Font Fallbacks used via css/style.css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ================= FULLSCREEN PRELOADER (CLASSIC LIGHT THEME WITH DUAL FLOWING WAVES) ================= -->
+  <div class="site-preloader" id="sitePreloader" aria-hidden="true">
+    <div class="preloader-bg-glow"></div>
+
+    <!-- Center Logo & Brand Tagline -->
+    <div class="preloader-center-content">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="preloader-logo">
+      </div>
+      <!-- <span class="preloader-tagline">QUALITY SPIRITS</span> -->
+    </div>
+
+    <!-- Intersecting Golden Wavy Lines across Lower Screen (Flowing Left to Right) -->
+    <div class="preloader-waves-wrap">
+      <svg class="preloader-waves-svg" viewBox="0 0 1920 160" preserveAspectRatio="none" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldWaveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#caa04c" stop-opacity="0.3" />
+            <stop offset="25%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#dfb76c" stop-opacity="1" />
+            <stop offset="75%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#caa04c" stop-opacity="0.4" />
+          </linearGradient>
+          <linearGradient id="goldWaveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#b4581b" stop-opacity="0.25" />
+            <stop offset="25%" stop-color="#dfb76c" stop-opacity="0.85" />
+            <stop offset="55%" stop-color="#b4581b" stop-opacity="0.95" />
+            <stop offset="80%" stop-color="#dfb76c" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#b4581b" stop-opacity="0.3" />
+          </linearGradient>
+        </defs>
+
+        <!-- Wavy Line 1 (Continuous smooth curve) -->
+        <path class="wave-path wave-path-1"
+          d="M -800 65 C -600 15, -200 115, 0 65 C 200 15, 600 115, 800 65 C 1000 15, 1400 115, 1600 65 C 1800 15, 2200 115, 2400 65 C 2600 15, 3000 115, 3200 65"
+          stroke="url(#goldWaveGrad1)" stroke-width="1.6" stroke-linecap="round" />
+
+        <!-- Wavy Line 2 (Intersecting smooth curve) -->
+        <path class="wave-path wave-path-2"
+          d="M -800 90 C -550 145, -250 35, 0 90 C 250 145, 550 35, 800 90 C 1050 145, 1350 35, 1600 90 C 1850 145, 2150 35, 2400 90 C 2650 145, 2950 35, 3200 90"
+          stroke="url(#goldWaveGrad2)" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- ================= HERO BANNER (NORMAL HORIZONTAL SCROLLER ON SCROLL) ================= -->
+  <section class="hero-scroll-section" id="hero-banner">
+    <div class="hero-banner-sticky">
+
+      <!-- Transparent Navigation Header -->
+      <header class="site-header">
+        <div class="nav-container">
+          <!-- Logo Left Side -->
+          <div class="brand-left">
+            <a href="index.html" title="Deejay Distilleries">
+              <img src="assets/images/logo.png" alt="Deejay Distilleries Royal Crest" class="brand-crest-logo">
+            </a>
+          </div>
+
+          <!-- Navigation Right Side: Desktop Menu + Exports Button + Mobile Toggle -->
+          <div class="nav-right" aria-label="Right Navigation">
+            <nav class="nav-desktop-menu" aria-label="Main Navigation">
+              <a href="about.html" class="nav-header-link">Our Story</a>
+              <a href="products.html" class="nav-header-link">Our Brands</a>
+              <a href="index.html#global-presence" class="nav-header-link">Global Reach</a>
+              <a href="#" class="btn-nav-export">Exports</a>
+            </nav>
+            <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation Drawer Backdrop Overlay -->
+      <div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
+
+      <!-- Fullscreen / Drawer Navigation Menu -->
+      <div class="mobile-nav-menu" id="mobileNavDrawer">
+        <button class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation">&times;</button>
+        <div class="nav-drawer-header">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="nav-drawer-logo">
+        </div>
+        <nav class="nav-drawer-links">
+          <a href="index.html" class="nav-custom-link">Home</a>
+          <a href="about.html" class="nav-custom-link">Our Story</a>
+          <a href="products.html" class="nav-custom-link">Our Brands</a>
+          <a href="index.html#global-presence" class="nav-custom-link">Global Reach</a>
+          <a href="exports.html" class="nav-custom-link">Exports</a>
+          <a href="contact.html" class="nav-custom-link">Contact Us</a>
+        </nav>
+        <!-- <div class="nav-drawer-footer">
+          <a href="javascript:void(0);" class="btn-nav-contact">Get In Touch</a>
+          <div class="nav-socials" style="border-left: none; padding-left: 0; margin-top: 10px; justify-content: center;">
+            <a href="javascript:void(0);" class="nav-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="javascript:void(0);" class="nav-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="javascript:void(0);" class="nav-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="hero-video-slider-wrap" id="heroVideoSlider">
+
+
+        <div class="hero-slider-track">
+
+
+          <div class="hero-video-slide active" data-slide-index="0">
+            <div class="full-mountain-image" style="background-image: url('assets/images/bannerv001.png');"></div>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-slide-content">
+              <div class="hero-bottom-container">
+                <div class="hero-title-area">
+                  <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">DEEJAY DISTILLERIES</h1>
+                  <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">
+                    One of the leading manufacturer &amp; exporters of bottled alcohol in regions like West Africa,
+                    Middle East and South-East Asia.
+                  </p>
+                  <div class="hero-action-btns" data-aos="fade-up" data-aos-delay="300"
+                    style="margin-top: 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+                    <a href="javascript:void(0);" class="btn-hero-solid">Explore Brands</a>
+                    <a href="javascript:void(0);" class="btn-hero-outline">Our Story</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= HERO TICKER BADGE STRIP ================= -->
+  <div class="hero-ticker-strip" data-aos="fade-up" data-aos-delay="400">
+    <div class="ticker-track">
+      <!-- Set 1 -->
+      <div class="ticker-item"><span class="ticker-dot"></span> Single Malt Whisky</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Craft Vodka</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Botanical Gin</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Aged Dark Rum</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Grain Spirits</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Export Blends</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Premium Brandy</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Reserve Liquors</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Ready To Drink</div>
+      <!-- Set 2 (for seamless loop) -->
+      <div class="ticker-item"><span class="ticker-dot"></span> Single Malt Whisky</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Craft Vodka</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Botanical Gin</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Aged Dark Rum</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Grain Spirits</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Export Blends</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Premium Brandy</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Reserve Liquors</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Ready To Drink</div>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT OVERVIEW & STATS SECTION ================= -->
+  <section class="about-overview-section" id="about">
+    <!-- Floating Botanical Decorative Elements -->
+    <!-- <div class="botanical-float float-grapes" data-aos="fade-left" data-aos-delay="200">
+      <img src="assets/images/about_grapes.jpg" alt="Fresh Wine Grapes" class="float-img">
+    </div> -->
+    <!-- <div class="botanical-float float-blueberry" data-aos="fade-right" data-aos-delay="300">
+      <img src="assets/images/about_blueberry.jpg" alt="Botanical Ingredients" class="float-img">
+    </div> -->
+
+    <div class="about-overview-container">
+
+      <!-- Grid Layout: Left Content & Stats & Logos | Right Video Card -->
+      <div class="row about-overview-inner align-items-stretch gy-4">
+
+        <!-- Left Side Column - Text, CTA, Stats, Logos -->
+        <div class="col-lg-7 d-flex flex-column justify-content-center pe-lg-4" data-aos="fade-right">
+
+          <!-- Section Heading -->
+          <div class="about-overview-header-box mb-3" data-aos="fade-up">
+            <span class="section-tag-badge">ABOUT US</span>
+            <h2 class="about-main-title">
+              Crafting Excellence
+            </h2>
+          </div>
+
+          <!-- Lead Paragraph -->
+          <div class="about-overview-lead-col mb-3" data-aos="fade-up" data-aos-delay="50">
+            <p class="about-overview-lead">
+              At Deejay Distilleries, we believe mastercraft distillation isn't just about manufacturing — it's about
+              passion, purity, and heritage. We are a premier manufacturer and exporter of world-class bottled spirits,
+              serving discerning markets across West Africa, the Middle East, South-East Asia, and key Indian markets.
+
+              With a commitment to quality and craftsmanship, we combine time-honoured distillation techniques with
+              modern technology to create spirits that deliver exceptional taste and consistency.
+            </p>
+          </div>
+
+          <!-- Callout CTA Button -->
+          <div class="about-lead-cta mb-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="javascript:void(0);" class="btn-story-outline">Explore Our Story</a>
+          </div>
+
+          <!-- Stats Row with Vertical Line Dividers -->
+          <div class="about-stats-row" data-aos="fade-up" data-aos-delay="150">
+            <div class="about-stat-col">
+              <h3 class="about-stat-number">74M</h3>
+              <p class="about-stat-desc">Driving growth with strategy</p>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat-col">
+              <h3 class="about-stat-number">95%</h3>
+              <p class="about-stat-desc">Building trusted partnerships</p>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat-col">
+              <h3 class="about-stat-number">+225</h3>
+              <p class="about-stat-desc">Delivering industry success</p>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat-col">
+              <h3 class="about-stat-number">92%</h3>
+              <p class="about-stat-desc">Turning traffic into growth</p>
+            </div>
+          </div>
+
+          <!-- Top Logo Divider -->
+          <div class="about-logos-divider-top"></div>
+
+          <!-- Logo Track Row -->
+          <div class="logo-slider-wrap" data-aos="fade-up" data-aos-delay="200">
+            <div id="logo-track" class="logo-track d-flex align-items-center">
+              <img src="assets/images/Logo's/1.png" alt="Logo 1">
+              <img src="assets/images/Logo's/2.png" alt="Logo 2">
+              <img src="assets/images/Logo's/3.png" alt="Logo 3">
+              <img src="assets/images/Logo's/4.png" alt="Logo 4">
+              <img src="assets/images/Logo's/5.png" alt="Logo 5">
+              <img src="assets/images/Logo's/6.png" alt="Logo 6">
+              <img src="assets/images/Logo's/7.png" alt="Logo 7">
+              <img src="assets/images/Logo's/8.png" alt="Logo 8">
+              <img src="assets/images/Logo's/9.png" alt="Logo 9">
+              <img src="assets/images/Logo's/10.png" alt="Logo 10">
+              <img src="assets/images/Logo's/11.png" alt="Logo 11">
+              <img src="assets/images/Logo's/12.png" alt="Logo 12">
+              <img src="assets/images/Logo's/13.png" alt="Logo 13">
+              <img src="assets/images/Logo's/14.png" alt="Logo 14">
+              <img src="assets/images/Logo's/15.png" alt="Logo 15">
+              <img src="assets/images/Logo's/16.png" alt="Logo 16">
+              <img src="assets/images/Logo's/17.png" alt="Logo 17">
+              <img src="assets/images/Logo's/18.png" alt="Logo 18">
+              <img src="assets/images/Logo's/19.png" alt="Logo 19">
+              <img src="assets/images/Logo's/20.png" alt="Logo 20">
+              <img src="assets/images/Logo's/21.png" alt="Logo 21">
+              <img src="assets/images/Logo's/22.png" alt="Logo 22">
+              <img src="assets/images/Logo's/23.png" alt="Logo 23">
+              <img src="assets/images/Logo's/24.png" alt="Logo 24">
+            </div>
+          </div>
+
+          <!-- Bottom Logo Divider -->
+          <div class="about-logos-divider-bottom"></div>
+
+        </div>
+
+        <!-- Right Side Column - Video Card with Poster Image & Modal Trigger -->
+        <div class="col-lg-5 ps-lg-4" data-aos="fade-left" data-aos-delay="100">
+          <div class="about-video-box rounded-4 overflow-hidden shadow-sm h-100 position-relative" id="aboutVideoCard"
+            role="button" tabindex="0" aria-label="Play About Us Video">
+            <img src="assets/images/new.jpeg" alt="Deejay Distilleries Facility"
+              class="about-poster-img w-100 h-100 object-fit-cover">
+            <div class="about-video-overlay-tint"></div>
+            <button class="about-video-play-btn" id="aboutPlayBtn" aria-label="Play Video">
+              <i class="bi bi-play-fill"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= STYLE SHOWCASE & BRANDS SECTION ================= -->
+  <section class="style-showcase-section" id="showcase">
+    <div class="style-showcase-pin-wrapper">
+      <div class="style-showcase-container">
+
+        <!-- Header Row: Title & Filter Tabs on Left, Arrows & View All on Right -->
+        <div class="style-showcase-header">
+          <div class="style-showcase-header-left" data-aos="fade-up">
+            <span class="section-tag-badge">OUR BRANDS</span>
+            <h2 class="style-showcase-title">
+              Find your own unique style,<br>
+              and thousands of brands
+            </h2>
+            <div class="style-filter-tabs" data-aos="fade-up" data-aos-delay="100">
+              <button class="filter-pill-btn active" data-filter="all">All Products</button>
+              <button class="filter-pill-btn" data-filter="gin">Gin</button>
+              <button class="filter-pill-btn" data-filter="rum">Rum</button>
+              <button class="filter-pill-btn" data-filter="whisky">Whisky</button>
+              <button class="filter-pill-btn" data-filter="vodka">Vodka</button>
+            </div>
+          </div>
+
+          <div class="style-showcase-header-right" data-aos="fade-up" data-aos-delay="150">
+            <div class="showcase-nav-arrows">
+              <button class="showcase-arrow-btn prev-arrow" id="showcasePrev" aria-label="Previous Products">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="showcase-arrow-btn next-arrow" id="showcaseNext" aria-label="Next Products">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+            <a href="javascript:void(0);" class="btn-showcase-view-all">View All</a>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Cards Track Outer Container -->
+        <div class="style-wine-triptych-track-outer" data-aos="fade-up" data-aos-delay="150">
+          <div class="style-wine-triptych" id="styleShowcaseTrack">
+
+            <!-- Card 1: GRAND MASTER'S RED (Whisky) -->
+            <div class="wine-triptych-item" data-category="whisky" data-aos="fade-up" data-aos-delay="100">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg1.png" alt="Grand Master's Deluxe Whisky" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">GRAND MASTER'S</h3>
+                <p class="showcase-card-desc">
+                  A rich, harmonious blend crafted from fine grain spirits and premium malts.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Card 2: UNCLE 39 (Whisky) - Center Highlight -->
+            <div class="wine-triptych-item is-center" data-category="whisky" data-aos="fade-up" data-aos-delay="200">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg2.png" alt="Uncle 39 Classic Whisky" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">BLUE MARINE GIN</h3>
+                <p class="showcase-card-desc">
+                  Distilled with handpicked botanicals and bright citrus notes for an invigorating finish.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Card 3: DUET RESERVE / BULLET (Whisky) -->
+            <div class="wine-triptych-item" data-category="whisky" data-aos="fade-up" data-aos-delay="300">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg3.png" alt="Grand Master's Duet Reserve" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">ONE-UP DOCTOR <br> BRANDY</h3>
+                <p class="showcase-card-desc">
+                  Meticulously blended from selected grape spirits and aged to perfection.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Card 4: DJ CRAFT RUM (Rum) -->
+            <div class="wine-triptych-item" data-category="rum" data-aos="fade-up" data-aos-delay="400">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg4.png" alt="DJ Dark Reserve Rum" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">UNCLE 39</h3>
+                <p class="showcase-card-desc">
+                  A finely crafted premium whisky featuring a rich golden hue and delicate malt character.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Card 5: DJ TRIPLE DISTILLED (Vodka) -->
+            <div class="wine-triptych-item" data-category="vodka" data-aos="fade-up" data-aos-delay="500">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg5.png" alt="DJ Triple Distilled Vodka" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">BULLET XXX RUM</h3>
+                <p class="showcase-card-desc">
+                  Distilled from select cane spirits and matured for deep, bold flavor.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Card 6: DJ BOTANICAL GIN (Gin) -->
+            <div class="wine-triptych-item" data-category="gin" data-aos="fade-up" data-aos-delay="600">
+              <div class="showcase-card-img-wrap">
+                <img src="assets/images/proimg6.png" alt="DJ Botanical Craft Gin" class="wine-triptych-img">
+              </div>
+              <div class="showcase-card-content">
+                <h3 class="showcase-card-title">KALANOV COCONUT <br> VODKA</h3>
+                <p class="showcase-card-desc">
+                  Ultra-smooth grain vodka infused with tropical, sweet natural coconut essence.
+                </p>
+                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Progressive Scroll Indicator Track Below Cards -->
+        <div class="showcase-progress-bar-wrap" data-aos="fade-up" data-aos-delay="250">
+          <div class="showcase-progress-track">
+            <div class="showcase-progress-line" id="showcaseProgressLine"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= POPULAR OF THE MONTH / HOVER SECTION ================= -->
+  <section class="vertical-hover-section" id="hover-gallery">
+    <div class="vertical-hover-wrapper">
+
+      <!-- Section Header -->
+      <div class="popular-section-header" data-aos="fade-up">
+        <div class="popular-header-left">
+          <span class="section-tag-badge">FEATURED BRANDS</span>
+          <h2 class="popular-section-title">Our Featured Brands</h2>
+          <p class="popular-section-para">Discover a diverse portfolio of spirits created for different tastes,
+            occasions
+            and markets.</p>
+        </div>
+        <a href="products.html" class="popular-view-all has-wave-effect">VIEW ALL</a>
+      </div>
+
+      <!-- 3-Card Grid Container -->
+      <div class="vertical-hover-container">
+
+        <!-- Card 1: Doctor Brandy -->
+        <div class="vertical-hover-item" data-aos="fade-up" data-aos-delay="50">
+          <img src="assets/images/popularim1.jpg" alt="Doctor Brandy" class="vertical-hover-img">
+          <div class="vertical-hover-overlay"></div>
+          <div class="vertical-hover-content">
+            <div class="vertical-hover-text-block">
+              <h3 class="vertical-hover-title">DOCTOR BRANDY</h3>
+              <p class="vertical-hover-desc">Rich & smooth with a warm finish.</p>
+            </div>
+            <a href="contact.html" class="vertical-hover-circle-btn" aria-label="Discover Doctor Brandy">
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Captain Kock -->
+        <div class="vertical-hover-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/popularim2.jpg" alt="Captain Kock" class="vertical-hover-img">
+          <div class="vertical-hover-overlay"></div>
+          <div class="vertical-hover-content">
+            <div class="vertical-hover-text-block">
+              <h3 class="vertical-hover-title">CAPTAIN KOOK</h3>
+              <p class="vertical-hover-desc">Bold Caribbean rum. Rich & smooth.</p>
+            </div>
+            <a href="contact.html" class="vertical-hover-circle-btn" aria-label="Discover Captain Kock">
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Karan'si BULLET -->
+        <div class="vertical-hover-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/images/popularim3.jpg" alt="Karan'si BULLET" class="vertical-hover-img">
+          <div class="vertical-hover-overlay"></div>
+          <div class="vertical-hover-content">
+            <div class="vertical-hover-text-block">
+              <h3 class="vertical-hover-title">KARAN'S BULLET</h3>
+              <p class="vertical-hover-desc">Bold blended XXX rum with rich character.</p>
+            </div>
+            <a href="contact.html" class="vertical-hover-circle-btn" aria-label="Discover Karan'si Bullet">
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="premium-products-section" id="premium-products">
+    <div class="premium-products-inner">
+
+      <!-- Section Header -->
+      <div class="premium-products-header" data-aos="fade-up">
+        <div>
+          <span class="section-tag-badge">PREMIUM PRODUCTS</span>
+          <h2 class="premium-products-title">Our premium products</h2>
+        </div>
+        <a href="javascript:void(0);" class="premium-view-all">VIEW ALL</a>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="premium-products-grid">
+
+        <!-- Product Card 1 -->
+        <div class="premium-product-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="ppc-img-wrap">
+            <img src="assets/images/premiumproimg1.png" alt="DJ Single Malt Whisky" class="ppc-img">
+          </div>
+          <div class="ppc-body">
+            <h5 class="ppc-name">UNCLE 39<br>Premium Whisky</h5>
+            <p>Rich character. Smooth finish.</p>
+            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="premium-product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ppc-img-wrap">
+            <img src="assets/images/premiumproimg4.png" alt="DJ Craft Rum" class="ppc-img">
+          </div>
+          <div class="ppc-body">
+            <h5 class="ppc-name">KNIGHT FOX <br> American Dry Gin</h5>
+            <p>Crisp juniper. Clean finish.
+            </p>
+            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="premium-product-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="ppc-img-wrap">
+            <img src="assets/images/premiumproimg3.png" alt="DJ Premium Vodka" class="ppc-img">
+          </div>
+          <div class="ppc-body">
+            <h5 class="ppc-name">CAPTAIN KOOK<br>Caribbean Pirate Rhum</h5>
+            <p>Bold, rich & unmistakably Caribbean.</p>
+            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="premium-product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ppc-img-wrap">
+            <img src="assets/images/premiumproimg2.png" alt="DJ Aged Brandy" class="ppc-img">
+          </div>
+          <div class="ppc-body">
+            <h5 class="ppc-name">BLUE MARINE <br>Premium GIN</h5>
+            <p>Fresh citrus. Perfectly balanced.</p>
+            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+          </div>
+        </div>
+
+        <!-- Promo Banner Card -->
+        <div class="premium-promo-card" data-aos="fade-up" data-aos-delay="250">
+          <!-- <span class="promo-sale-badge">SALE NOW</span> -->
+          <h2 class="promo-heading">CLASSICS TASTE</h2>
+          <p class="promo-sub">Don & Master Gold Blended Malt Whisky.</p>
+          <img src="assets/images/primicards.jpeg" alt="Promo Bottles" class="promo-img">
+          <a href="contact.html" class="btn-promo-shop">Discover Brand</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODERN SOLUTIONS & LASTING BENEFITS SECTION ================= -->
+  <section class="benefits-solutions-section d-none" id="benefits">
+    <div class="benefits-sticky-container">
+      <div class="benefits-solutions-container">
+
+        <!-- Section Header -->
+        <div class="benefits-header" data-aos="fade-up">
+          <h2 class="benefits-section-title">Modern Solutions &amp; Lasting<br>Benefits for Farmers</h2>
+        </div>
+
+        <!-- Horizontal Slider Wrapper & Track -->
+        <div class="benefits-slider-wrapper" id="benefitsSliderWrapper">
+          <div class="benefits-slider-track" id="benefitsSliderTrack">
+
+            <!-- Card 1 -->
+            <div class="benefit-card">
+              <div class="benefit-card-bg" style="background-image: url('assets/images/benefit_card1.jpg');"></div>
+              <div class="benefit-card-overlay"></div>
+              <div class="benefit-card-content">
+                <h4 class="benefit-card-title">Grow Smarter with<br>Agronomic Support</h4>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="benefit-card">
+              <div class="benefit-card-bg" style="background-image: url('assets/images/benefit_card2.jpg');"></div>
+              <div class="benefit-card-overlay"></div>
+              <div class="benefit-card-content">
+                <div class="benefit-card-header">
+                  <span class="benefit-card-num">04<sup class="benefit-sup">™</sup></span>
+                  <h4 class="benefit-card-title">Profits With Less<br>Waste</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="benefit-card">
+              <div class="benefit-card-bg" style="background-image: url('assets/images/benefit_card3.jpg');"></div>
+              <div class="benefit-card-overlay"></div>
+              <div class="benefit-card-content">
+                <div class="benefit-card-header">
+                  <span class="benefit-card-num">05<sup class="benefit-sup">™</sup></span>
+                  <h4 class="benefit-card-title">Smart Decisions<br>from Soil Data</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="benefit-card">
+              <div class="benefit-card-bg" style="background-image: url('assets/images/benefit_card4.jpg');"></div>
+              <div class="benefit-card-overlay"></div>
+              <div class="benefit-card-content">
+                <div class="benefit-card-header">
+                  <span class="benefit-card-num">06<sup class="benefit-sup">™</sup></span>
+                  <h4 class="benefit-card-title">Low-Impact Inputs,<br>Big Savings</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="benefit-card">
+              <div class="benefit-card-bg" style="background-image: url('assets/images/benefit_card5.jpg');"></div>
+              <div class="benefit-card-overlay"></div>
+              <div class="benefit-card-content">
+                <div class="benefit-card-header">
+                  <span class="benefit-card-num">01<sup class="benefit-sup">™</sup></span>
+                  <h4 class="benefit-card-title">Unlocking the Full<br>Potential of Your Land</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Subtle Progress Indicator -->
+        <!-- <div class="benefits-progress-wrapper">
+          <div class="benefits-progress-track">
+            <div class="benefits-progress-fill" id="benefitsProgressBar"></div>
+          </div>
+        </div> -->
+
+        <!-- Section 3 Docked Bottle Slot (Stays fixed when scroll passes) -->
+        <div class="benefits-docked-bottle-slot" id="benefitsDockedBottleSlot">
+          <img src="assets/images/dist2.png" alt="Distillery Spirit" class="benefits-docked-bottle-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="beer-stack-section d-none" id="craft-beer-stack">
+    <div class="beer-stack-container">
+
+      <!-- Stack Card 1: Pilsner With Red Hops -->
+      <div class="beer-stack-card" data-stack-index="0">
+        <div class="beer-stack-card-inner">
+          <img src="assets/images/stackimg13.png" alt="Pilsner With Red Hops" class="beer-stack-img">
+          <div class="beer-stack-overlay-content">
+            <div class="beer-stack-layout-grid">
+
+              <!-- Left Column: Title & Description -->
+              <div class="beer-stack-col-left" data-aos="fade-up">
+                <h2 class="beer-stack-item-title" data-aos="fade-up" data-aos-delay="100">PILSNER WITH RED HOPS</h2>
+                <p class="beer-stack-item-desc" data-aos="fade-up" data-aos-delay="200">
+                  Crafted with slow fermentation and rare Bavarian red hops for crisp aromatic complexity and a golden
+                  finish.
+                </p>
+                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                  READ MORE
+                </a>
+              </div>
+
+              <!-- Center Column: Spacer for bottle center with docked bottle slot -->
+              <div class="beer-stack-center-spacer">
+                <div class="stack-docked-bottle-wrap" id="stackDockedBottle1">
+                  <img src="assets/images/banner3.png" alt="Pilsner Bottle" class="stack-docked-bottle-img">
+                </div>
+              </div>
+
+              <!-- Right Column: Ingredients & Specs -->
+              <div class="beer-stack-col-right">
+                <!-- <div class="beer-stack-ingredients-block">
+                  <h4 class="beer-stack-ing-label">INGREDIENT:</h4>
+                  <ul class="beer-stack-ing-list">
+                    <li><span class="ing-bullet-dot"></span> ORGANIC HOPS</li>
+                    <li><span class="ing-bullet-dot"></span> YEAST (RESPONSIBLE FOR FERMENTATION)</li>
+                    <li><span class="ing-bullet-dot"></span> WATER 95%</li>
+                  </ul>
+                </div> -->
+
+                <!-- <div class="beer-stack-specs-row">
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-cup-straw"></i></div>
+                    <span class="beer-spec-value">750ml</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-percent"></i></div>
+                    <span class="beer-spec-value">5.0% Alc.</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-record-circle"></i></div>
+                    <span class="beer-spec-value">CRAFT</span>
+                  </div>
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stack Card 2: Grand Master's Strawberry Vodka -->
+      <div class="beer-stack-card" data-stack-index="1">
+        <div class="beer-stack-card-inner">
+          <img src="assets/images/stackimg11.png" alt="Grand Master's Strawberry Vodka" class="beer-stack-img">
+          <div class="beer-stack-overlay-content">
+            <div class="beer-stack-layout-grid">
+
+              <!-- Left Column: Title & Description -->
+              <div class="beer-stack-col-left" data-aos="fade-up">
+                <h2 class="beer-stack-item-title" data-aos="fade-up" data-aos-delay="100">GRAND MASTER'S STRAWBERRY</h2>
+                <p class="beer-stack-item-desc" data-aos="fade-up" data-aos-delay="200">
+                  Infused with fresh garden strawberries and five-times distilled platinum grain spirits for unmatched
+                  smoothness.
+                </p>
+                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                  READ MORE
+                </a>
+              </div>
+
+              <!-- Center Column: Spacer for bottle center with docked bottle slot -->
+              <div class="beer-stack-center-spacer">
+                <div class="stack-docked-bottle-wrap" id="stackDockedBottle2">
+                  <img src="assets/images/recent_launch_vodka2.png" alt="Strawberry Vodka Bottle"
+                    class="stack-docked-bottle-img">
+                </div>
+              </div>
+
+              <!-- Right Column: Ingredients & Specs -->
+              <div class="beer-stack-col-right">
+                <!-- <div class="beer-stack-ingredients-block">
+                  <h4 class="beer-stack-ing-label">INGREDIENT:</h4>
+                  <ul class="beer-stack-ing-list">
+                    <li><span class="ing-bullet-dot"></span> RIPE STRAWBERRY EXTRACT</li>
+                    <li><span class="ing-bullet-dot"></span> PLATINUM GRAIN SPIRITS</li>
+                    <li><span class="ing-bullet-dot"></span> ARTESIAN WATER 95%</li>
+                  </ul>
+                </div> -->
+
+                <!-- <div class="beer-stack-specs-row">
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-cup-straw"></i></div>
+                    <span class="beer-spec-value">750ml</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-percent"></i></div>
+                    <span class="beer-spec-value">42.8% Alc.</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-record-circle"></i></div>
+                    <span class="beer-spec-value">PREMIUM</span>
+                  </div>
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stack Card 3: Dark Lager Beer Special Reserve -->
+      <div class="beer-stack-card" data-stack-index="2">
+        <div class="beer-stack-card-inner">
+          <img src="assets/images/stackimg11.png" alt="Dark Lager Beer Special Reserve" class="beer-stack-img">
+          <div class="beer-stack-overlay-content">
+            <div class="beer-stack-layout-grid">
+
+              <!-- Left Column: Title & Description -->
+              <div class="beer-stack-col-left" data-aos="fade-up">
+                <h2 class="beer-stack-item-title" data-aos="fade-up" data-aos-delay="100">DARK LAGER SPECIAL RESERVE
+                </h2>
+                <p class="beer-stack-item-desc" data-aos="fade-up" data-aos-delay="200">
+                  Rich roasted malts with smooth caramel undertones, matured for depth, velvety head, and balanced malt
+                  sweetness.
+                </p>
+                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                  READ MORE
+                </a>
+              </div>
+
+              <!-- Center Column: Spacer for bottle center with docked bottle slot -->
+              <div class="beer-stack-center-spacer">
+                <div class="stack-docked-bottle-wrap" id="stackDockedBottle3">
+                  <img src="assets/images/recent_launch_vodka3.png" alt="Dark Lager Bottle"
+                    class="stack-docked-bottle-img">
+                </div>
+              </div>
+
+              <!-- Right Column: Ingredients & Specs -->
+              <div class="beer-stack-col-right">
+                <!-- <div class="beer-stack-ingredients-block">
+                  <h4 class="beer-stack-ing-label">INGREDIENT:</h4>
+                  <ul class="beer-stack-ing-list">
+                    <li><span class="ing-bullet-dot"></span> ROASTED CARAMEL MALT</li>
+                    <li><span class="ing-bullet-dot"></span> NOBLE AROMATIC HOPS</li>
+                    <li><span class="ing-bullet-dot"></span> PURE SPRING WATER</li>
+                  </ul>
+                </div> -->
+
+                <!-- <div class="beer-stack-specs-row">
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-cup-straw"></i></div>
+                    <span class="beer-spec-value">750ml</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-percent"></i></div>
+                    <span class="beer-spec-value">4.8% Alc.</span>
+                  </div>
+                  <div class="beer-spec-badge">
+                    <div class="beer-spec-icon-box"><i class="bi bi-record-circle"></i></div>
+                    <span class="beer-spec-value">SPECIAL</span>
+                  </div>
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= RECENT LAUNCHES SECTION ================= -->
+  <section class="recent-launches-section d-none" id="recent-launches">
+    <div class="recent-launches-container">
+      <div class="recent-launches-header" data-aos="fade-up">
+        <div class="recent-launches-header-left">
+          <h2 class="recent-launches-title">Recent Launches</h2>
+        </div>
+        <div class="recent-launches-header-right">
+          <a href="javascript:void(0);" class="recent-launches-view-all">
+            View All Releases
+          </a>
+        </div>
+      </div>
+      <div class="recent-launches-grid">
+        <div class="launch-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="launch-card-bg" style="background-image: url('assets/images/recent_launch_vodka1.png');"></div>
+          <div class="launch-card-overlay"></div>
+          <div class="launch-card-content">
+            <h3 class="launch-card-title">GRAND MASTER'S<br>VODKA</h3>
+            <p class="launch-card-desc">
+              Grand Master's is a youthful vodka brand with exciting flavours, perfect for those looking to explore and
+              try something new.
+            </p>
+            <div class="launch-card-footer">
+              <a href="javascript:void(0);" class="launch-card-link">
+                Explore Flavours
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="launch-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="launch-card-bg" style="background-image: url('assets/images/recent_launch_vodka2.png');"></div>
+          <div class="launch-card-overlay"></div>
+          <div class="launch-card-content">
+            <h3 class="launch-card-title">GRAND MASTER'S<br>VODKA</h3>
+            <p class="launch-card-desc">
+              Grand Master's is a youthful vodka brand with exciting flavours, perfect for those looking to explore and
+              try something new.
+            </p>
+            <div class="launch-card-footer">
+              <a href="javascript:void(0);" class="launch-card-link">
+                Explore Flavours
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="launch-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="launch-card-bg" style="background-image: url('assets/images/recent_launch_vodka3.png');"></div>
+          <div class="launch-card-overlay"></div>
+          <div class="launch-card-content">
+            <h3 class="launch-card-title">GRAND MASTER'S<br>VODKA</h3>
+            <p class="launch-card-desc">
+              Grand Master's is a youthful vodka brand with exciting flavours, perfect for those looking to explore and
+              try something new.
+            </p>
+            <div class="launch-card-footer">
+              <a href="javascript:void(0);" class="launch-card-link">
+                Explore Flavours
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Launch Card 2: Indica Red Rum -->
+        <div class="launch-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="launch-card-bg" style="background-image: url('assets/images/recent_launch_vodka4.png');"></div>
+          <div class="launch-card-overlay"></div>
+          <div class="launch-card-content">
+            <h3 class="launch-card-title">INDICA RED<br>RUM</h3>
+            <p class="launch-card-desc">
+              Indica Red is a bold, smooth rum for those who enjoy a rich and distinctive drinking experience.
+            </p>
+            <div class="launch-card-footer">
+              <a href="javascript:void(0);" class="launch-card-link">
+                Explore Products
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FLAVOURS & BRANDS PINNED SCROLL SECTION ================= -->
+  <section class="flavour-pin-section d-none" id="brands">
+    <div class="flavour-sticky-container">
+      <div class="flavour-container">
+        <div class="flavour-header-row" data-aos="fade-up">
+          <div class="flavour-header-left">
+            <h2 class="flavour-main-heading">Signature Brands &amp; Distinctive Flavours</h2>
+            <p class="flavour-para">
+              From smooth single grains and vibrant botanical gins to exotic ginger infusions and vintage aged brandies,
+              each blend is masterfully crafted for extraordinary taste and unforgettable moments.
+            </p>
+          </div>
+
+          <div class="flavour-header-right">
+            <a href="javascript:void(0);" class="flavour-cta-btn">
+              Explore All Brands
+            </a>
+            <!-- <div class="flavour-slider-controls">
+              <button class="slider-nav-btn" id="flavourPrevBtn" aria-label="Previous Slide">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="slider-nav-btn" id="flavourNextBtn" aria-label="Next Slide">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Touch / Drag / Button Controlled Slider -->
+        <div class="flavour-slider-wrapper" id="flavourSliderWrapper">
+          <div class="flavour-slider-track" id="flavourSliderTrack">
+
+            <!-- Card 1: RIA BLACK -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="50">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Ria Black Premium Whisky" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: TANGAWISI -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Tangawisi Original" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: BLUE DIAMOND -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Blue Diamond Dry Gin" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: DOCTOR BRANDY -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Doctor Brandy" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: SOLERA RUM -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Solera Dark Rum" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: GRAND MASTER VODKA -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Grand Master Vodka" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: HIGHLAND RESERVE -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Highland Reserve Malt Spirit" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: BOTANICAL HERITAGE -->
+            <div class="flavour-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="flavour-card-img-box">
+                <img src="assets/images/tangawisi2.png" alt="Botanical Heritage Craft Spirit" class="flavour-card-img">
+                <div class="flavour-card-bottom-bar">
+                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CRAFT BEER SCROLL STACKING SECTION ================= -->
+
+
+  <!-- ================= PRODUCT INNOVATIONS & NEWS SECTION ================= -->
+  <section class="product-news-section" id="products" data-aos="fade-up">
+    <div class="product-news-container">
+
+      <!-- Section Header with Heading, Paragraph and View All Button -->
+      <div class="product-news-header-row" data-aos="fade-up">
+        <div class="product-news-header-left" data-aos="fade-up" data-aos-delay="50">
+          <h2 class="product-news-heading">Pioneering Spirits &amp; Global Milestones</h2>
+          <p class="product-news-para">
+            From new vodka flavor launches and artisanal distillation expansions to showcasing our portfolio at premier
+            international trade expos, discover our latest product developments.
+          </p>
+        </div>
+        <div class="product-news-header-right" data-aos="fade-up" data-aos-delay="100">
+          <a href="products.html" class="product-news-cta-btn">
+            View All
+          </a>
+        </div>
+      </div>
+
+      <!-- Featured Big Top Card (Split 50/50 Image & Amber Content) -->
+      <div class="product-news-featured-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="pn-featured-img-col">
+          <img src="assets/images/about_team12.webp" alt="Global Spirits Expo Exhibition Hall" class="pn-featured-img">
+        </div>
+        <div class="pn-featured-content-col">
+          <span class="pn-badge-news">NEWS</span>
+          <h3 class="pn-featured-title">Launch of Grand Master's Vodka New Flavours</h3>
+          <p class="pn-featured-desc">
+            From new vodka flower launches and artisanal distillation expansions to showcasing our portfolio at premier international trade expos, discover our latest product developments.
+          </p>
+          <a href="products.html" class="pn-featured-btn">
+            View vodka range
+          </a>
+        </div>
+      </div>
+
+      <!-- 3-Column Bottom Sub Cards Grid -->
+      <div class="product-news-bottom-grid">
+
+        <!-- Sub Card 1 -->
+        <div class="pn-sub-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pn-sub-img-wrap">
+            <img src="assets/images/Hover4.jpg" alt="Grand Master's Vodka Melon" class="pn-sub-img">
+          </div>
+          <div class="pn-sub-body">
+            <span class="pn-sub-badge">NEWS</span>
+            <h4 class="pn-sub-title">Launch of Grand Master's Vodka New Flavours</h4>
+            <p class="pn-sub-desc">Introducing our vibrant Melon flavoured vodka, crafted with crisp fruit infusions and pure grain spirit for refreshing cocktail creations.</p>
+            <a href="products.html" class="pn-sub-btn">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Sub Card 2 -->
+        <div class="pn-sub-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pn-sub-img-wrap">
+            <img src="assets/images/process.png" alt="State-of-the-Art Distillation" class="pn-sub-img">
+          </div>
+          <div class="pn-sub-body">
+            <span class="pn-sub-badge">NEWS</span>
+            <h4 class="pn-sub-title">Launch of Grand Master's Vodka New Flavours</h4>
+            <p class="pn-sub-desc">Expanding our artisanal distillation facility with high-precision copper column stills, ensuring peak purity and small-batch excellence.</p>
+            <a href="products.html" class="pn-sub-btn">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Sub Card 3 -->
+        <div class="pn-sub-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pn-sub-img-wrap">
+            <img src="assets/images/Hover1.jpg" alt="Strawberry Vodka Cocktail" class="pn-sub-img">
+          </div>
+          <div class="pn-sub-body">
+            <span class="pn-sub-badge">NEWS</span>
+            <h4 class="pn-sub-title">Launch of Grand Master's Vodka New Flavours</h4>
+            <p class="pn-sub-desc">Experience the bold sweetness of Grand Master's Strawberry Vodka, distilled to perfection for modern, elevated party cocktails.</p>
+            <a href="products.html" class="pn-sub-btn">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BLOGS & INSIGHTS SECTION ================= -->
+  <section class="blogs-section d-none" id="blogs">
+    <div class="blogs-container">
+
+      <!-- Section Header -->
+      <div class="blogs-header-row" data-aos="fade-up">
+        <div class="blogs-header-left">
+          <span class="section-tag-badge">DISTILLERY JOURNAL</span>
+          <h2 class="blogs-main-heading">Distillery Journal &amp; <br> Industry Insights</h2>
+        </div>
+        <div class="blogs-header-right">
+          <a href="javascript:void(0);" class="blogs-view-all-btn">
+            View All Insights <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Paired Cards Grid (Matching User Reference Layout) -->
+      <div class="blogs-grid">
+
+        <!-- Blog 1 - Visual Card -->
+        <div class="blog-card blog-card-visual" style="background-image: url('assets/images/new.jpeg');"
+          data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-visual-overlay"></div>
+          <div class="blog-visual-top">
+            <div class="blog-brand-tag">
+              <img src="assets/images/logo.png" alt="Deejay Crest">
+            </div>
+          </div>
+          <div class="blog-visual-bottom">
+            <h3 class="blog-visual-title">Empowering workplaces</h3>
+            <p class="blog-visual-desc">
+              with AI-driven intranet solutions that inspire collaboration and mastercraft heritage.
+            </p>
+          </div>
+        </div>
+
+        <!-- Blog 2 - Visual Card -->
+        <div class="blog-card blog-card-visual" style="background-image: url('assets/images/new.jpeg');"
+          data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-visual-overlay blog-overlay-blue"></div>
+          <div class="blog-visual-top">
+            <div class="blog-brand-tag">
+
+            </div>
+          </div>
+          <div class="blog-visual-bottom">
+            <h3 class="blog-visual-title">Transforming education</h3>
+            <p class="blog-visual-desc">
+              with AI-powered ERP systems built for smarter campus operations and spirit distillation.
+            </p>
+          </div>
+        </div>
+        <div class="blog-card blog-card-visual" style="background-image: url('assets/images/new.jpeg');"
+          data-aos="fade-up" data-aos-delay="300">
+          <div class="blog-visual-overlay blog-overlay-blue"></div>
+          <div class="blog-visual-top">
+            <div class="blog-brand-tag">
+
+            </div>
+          </div>
+          <div class="blog-visual-bottom">
+            <h3 class="blog-visual-title">Transforming education</h3>
+            <p class="blog-visual-desc">
+              with AI-powered ERP systems built for smarter campus operations and spirit distillation.
+            </p>
+          </div>
+        </div>
+        <div class="blog-card blog-card-visual" style="background-image: url('assets/images/new.jpeg');"
+          data-aos="fade-up" data-aos-delay="400">
+          <div class="blog-visual-overlay blog-overlay-blue"></div>
+          <div class="blog-visual-top">
+            <div class="blog-brand-tag">
+
+            </div>
+          </div>
+          <div class="blog-visual-bottom">
+            <h3 class="blog-visual-title">Transforming education</h3>
+            <p class="blog-visual-desc">
+              with AI-powered ERP systems built for smarter campus operations and spirit distillation.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MODERN CONTACT US SECTION ================= -->
+  <section class="contact-modern-section d-none" id="contact">
+    <div class="contact-modern-container">
+      <div class="contact-modern-grid">
+
+        <!-- Left Column: Title with Underline, Subtitle & Info Card -->
+        <div class="contact-modern-left" data-aos="fade-up">
+          <div class="contact-modern-title-wrap">
+            <span class="contact-modern-eyebrow">CONTACT US</span>
+            <h2 class="contact-modern-title">
+              Let's Build<br>The Future Together
+            </h2>
+            <div class="contact-modern-title-line"></div>
+          </div>
+          <p class="contact-modern-subtitle">
+            We are here to create solid and courageous brands that can leave a strong mark on the world.
+          </p>
+
+          <!-- Contact Information Card -->
+          <div class="contact-modern-info-card">
+            
+            <!-- Corporate Office Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18"></path>
+                  <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                  <path d="M9 7h1"></path>
+                  <path d="M14 7h1"></path>
+                  <path d="M9 11h1"></path>
+                  <path d="M14 11h1"></path>
+                  <path d="M9 15h1"></path>
+                  <path d="M14 15h1"></path>
+                  <path d="M10 21v-3h4v3"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Corporate Office:</span>
+                <p class="contact-info-value">
+                  B-1, Daffodil, Hiranandani Garden,<br>
+                  Powai, Mumbai - 400 076, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Distillery & Plant Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+                  <path d="M17 18h1"></path>
+                  <path d="M12 18h1"></path>
+                  <path d="M7 18h1"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Distillery &amp; Plant:</span>
+                <p class="contact-info-value">
+                  Deejay Distilleries Ltd.<br>
+                  Maharashtra, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Direct Inquiries Item -->
+            <div class="contact-modern-info-item">
+              <div class="contact-info-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <span class="contact-info-label">Direct Inquiries:</span>
+                <a href="mailto:info@deejaydistilleries.com" class="contact-info-link">info@deejaydistilleries.com</a>
+                <a href="tel:+919867360000" class="contact-info-link">+91 9867360000</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Elevated Form Card -->
+        <div class="contact-modern-right" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-modern-form-card">
+            <form id="modernContactFormHome" class="contact-modern-form">
+
+              <!-- Row 1: Name & Email -->
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="contactNameHome" class="contact-form-label">Name*</label>
+                  <input type="text" id="contactNameHome" name="name" class="contact-form-input" placeholder="Name*" required>
+                </div>
+                <div class="contact-form-group">
+                  <label for="contactEmailHome" class="contact-form-label">Email*</label>
+                  <input type="email" id="contactEmailHome" name="email" class="contact-form-input" placeholder="Email*" required>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Company -->
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="contactPhoneHome" class="contact-form-label">Phone*</label>
+                  <input type="tel" id="contactPhoneHome" name="phone" class="contact-form-input" placeholder="Phone*" required>
+                </div>
+                <div class="contact-form-group">
+                  <label for="contactCompanyHome" class="contact-form-label">Company</label>
+                  <input type="text" id="contactCompanyHome" name="company" class="contact-form-input" placeholder="Company">
+                </div>
+              </div>
+
+              <!-- Row 3: Select Inquiring Service -->
+              <div class="contact-form-group">
+                <label for="contactServicesHome" class="contact-form-label">Select Inquiring Service</label>
+                <select id="contactServicesHome" name="service" class="contact-form-select">
+                  <option value="" disabled selected>Select Inquiring Service</option>
+                  <option value="distillery-partnership">Distillery Partnership &amp; Manufacturing</option>
+                  <option value="export-distribution">Global Export &amp; Distribution</option>
+                  <option value="private-label">Private Label &amp; Custom Bottling</option>
+                  <option value="bulk-spirits">Bulk Spirits Supply</option>
+                  <option value="brand-collaboration">Brand Collaboration</option>
+                </select>
+              </div>
+
+              <!-- Row 4: Message -->
+              <div class="contact-form-group">
+                <label for="contactMessageHome" class="contact-form-label">Message*</label>
+                <textarea id="contactMessageHome" name="message" class="contact-form-textarea" placeholder="Message*" rows="5" required></textarea>
+              </div>
+
+              <!-- Row 5: Submit Button & Disclaimer -->
+              <div class="contact-form-actions">
+                <button type="submit" class="contact-btn-submit">
+                  Send Message
+                </button>
+                <p class="contact-terms-notice">
+                  By clicking 'Send Message' you acknowledge that you have<br class="d-none d-md-inline"> read and agree to our <a href="javascript:void(0);" class="contact-terms-link">Terms of Service</a>.
+                </p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORLD MAP SECTION (MODERN LUXURY GLOBAL PRESENCE) ================= -->
+ 
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="siteFooter">
+    <!-- Top Amber / Whiskey Brown Section -->
+    <div class="footer-top-block">
+      <div class="footer-container">
+        <!-- Centered Crest Logo -->
+        <div class="footer-minimal-top" data-aos="fade-up">
+          <a href="index.html" class="footer-brand-logo" aria-label="Deejay Distilleries Home">
+            <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="footer-minimal-logo">
+          </a>
+        </div>
+
+        <!-- Subtle Divider Line -->
+        <div class="footer-divider"></div>
+
+        <!-- Centered Navigation Links -->
+        <div class="footer-minimal-links" data-aos="fade-up" data-aos-delay="50">
+          <a href="index.html" class="footer-minimal-link">Home</a>
+          <a href="about.html" class="footer-minimal-link">Our Story</a>
+          <a href="products.html" class="footer-minimal-link">Our Brands</a>
+          <a href="exports.html" class="footer-minimal-link">Exports</a>
+          <a href="contact.html" class="footer-minimal-link">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom White Legal Bar -->
+    <div class="footer-bottom-block">
+      <div class="footer-container footer-bottom-inner" data-aos="fade-up" data-aos-delay="100">
+        <div class="footer-bottom-left">
+          &copy; 2026 Deejay Distilleries Ltd. All Rights Reserved. | Created by <a href="https://www.10dumbs.com"
+            target="_blank">10 Dumbs Inc.</a>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="javascript:void(0);" class="footer-legal-link">Security</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Privacy &amp; Cookie Policy</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Terms of Services</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= ABOUT US VIDEO POPUP MODAL ================= -->
+  <div class="video-modal-backdrop" id="videoModalBackdrop" aria-hidden="true" role="dialog"
+    aria-label="About Us Video Player">
+    <div class="video-modal-dialog">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close Video Player">&times;</button>
+      <div class="video-modal-content">
+        <video id="aboutPopupVideo" src="assets/videos/aboutusvideo.mp4" controls playsinline
+          preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= AGE VERIFICATION POPUP (AGE GATE) ================= -->
+  <div class="age-gate-overlay" id="ageGateModal" aria-modal="true" role="dialog" aria-labelledby="ageGateHeading">
+    <div class="age-gate-container">
+      <!-- Decorative Ambient Glow -->
+      <div class="age-gate-glow age-gate-glow-top"></div>
+
+      <!-- Main Content Card -->
+      <div class="age-gate-content">
+        <!-- Brand Crest Logo & Company Name -->
+        <div class="age-gate-brand">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="age-gate-logo">
+          <!-- <span class="age-gate-brand-name">DEEJAY DISTILLERIES</span> -->
+        </div>
+
+        <!-- Prompt Eyebrow -->
+        <p class="age-gate-prompt">You must be 18 years old or older to enter this site.</p>
+
+        <!-- Main Heading Title -->
+        <h1 class="age-gate-title" id="ageGateHeading">I AM OVER 18</h1>
+
+        <!-- Action Choice Buttons (YES / NO) -->
+        <div class="age-gate-choice-btns">
+          <button type="button" class="age-gate-btn age-gate-btn-yes" id="ageGateYes">YES</button>
+          <button type="button" class="age-gate-btn age-gate-btn-no" id="ageGateNo">NO</button>
+        </div>
+
+        <!-- Underage Notice Message (hidden by default) -->
+        <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+        <!-- Legal Notice & Disclaimer -->
+        <p class="age-gate-disclaimer">
+          Use of this site is for personal use in countries and territories where the consumption of alcohol beverages
+          is lawful, and for persons who are lawfully permitted to consume alcohol beverages. By entering here you agree
+          to our <a href="javascript:void(0);">Terms and Conditions</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (Local with CDN fallback) -->
+  <script src="js/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>')</script>
+
+  <!-- jQuery Ripples Plugin (Water Ripple Effect - Disabled) -->
+  <!-- <script src="js/jquery.ripples.min.js"></script> -->
+  <!-- <script>window.jQuery && window.jQuery.fn && window.jQuery.fn.ripples || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"><\/script>')</script> -->
+
+
+  <!-- Bootstrap 5 JS Bundle with Popper (Local with CDN fallback) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>window.bootstrap || document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"><\/script>')</script>
+
+  <!-- Lenis Smooth Scroll Engine (Local with CDN fallback) -->
+  <script src="js/lenis.min.js"></script>
+  <script>window.Lenis || document.write('<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"><\/script>')</script>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- GSAP 3 & ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
