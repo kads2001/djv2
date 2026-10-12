@@ -355,140 +355,106 @@
     </div>
   </section>
 
-  <!-- ================= STYLE SHOWCASE & BRANDS SECTION ================= -->
-  <section class="style-showcase-section" id="showcase" data-aos="fade-up">
-    <div class="style-showcase-pin-wrapper">
-      <div class="style-showcase-container">
 
-        <!-- Header Row: Title & Filter Tabs on Left, Arrows & View All on Right -->
-        <div class="style-showcase-header">
-          <div class="style-showcase-header-left" data-aos="fade-up">
-            <span class="section-tag-badge">OUR BRANDS</span>
-            <h2 class="style-showcase-title">
-              Find your own unique style,<br>
-              and thousands of brands
-            </h2>
-            <div class="style-filter-tabs" data-aos="fade-up" data-aos-delay="100">
-              <button class="filter-pill-btn active" data-filter="all">All Products</button>
-              <button class="filter-pill-btn" data-filter="gin">Gin</button>
-              <button class="filter-pill-btn" data-filter="rum">Rum</button>
-              <button class="filter-pill-btn" data-filter="whisky">Whisky</button>
-              <button class="filter-pill-btn" data-filter="vodka">Vodka</button>
-            </div>
+
+  <!-- ================= SCROLL-DRIVEN TIMELINE SECTION ================= -->
+  <section class="timeline-scroll-section" id="brand-timeline">
+    <div class="timeline-glow-top-left"></div>
+    <div class="timeline-glow-top-right"></div>
+
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="timeline-header-wrap" data-aos="fade-up">
+        <div class="timeline-badge-square"></div>
+        <span class="timeline-eyebrow">The London Base For<br>Global Ambition</span>
+        <h2 class="timeline-main-title">
+          The Root of Our Success and<br>Foundation We Stand On
+        </h2>
+      </div>
+
+      <!-- Timeline Track Interactive Stage -->
+      <div class="timeline-stage-wrap" id="timelineStage">
+        
+        <!-- SVG Snake Path Canvas -->
+        <svg class="timeline-svg-canvas" viewBox="0 0 1140 1750" preserveAspectRatio="none" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="timelineGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#caa04c" />
+              <stop offset="50%" stop-color="#b4581b" />
+              <stop offset="100%" stop-color="#dfb76c" />
+            </linearGradient>
+          </defs>
+
+          <!-- Background Faint Path -->
+          <path id="timelineTrackBg" class="timeline-path-bg"
+            d="M 570 0 C 570 70, 640 110, 640 170 C 640 230, 470 290, 470 560 C 470 780, 520 840, 520 1000 C 520 1180, 700 1280, 700 1440 C 700 1620, 570 1690, 570 1750" />
+
+          <!-- Active Animated Glowing Progress Path -->
+          <path id="timelineTrackActive" class="timeline-path-active"
+            stroke="url(#timelineGoldGrad)"
+            d="M 570 0 C 570 70, 640 110, 640 170 C 640 230, 470 290, 470 560 C 470 780, 520 840, 520 1000 C 520 1180, 700 1280, 700 1440 C 700 1620, 570 1690, 570 1750" />
+        </svg>
+
+        <!-- Milestone 01: 2016 -->
+        <div class="timeline-milestone-node node-2016" data-progress="0.10">
+          <div class="timeline-pin-anchor">
+            <div class="timeline-glow-dot"></div>
+            <span class="timeline-step-index">01</span>
           </div>
-
-          <div class="style-showcase-header-right" data-aos="fade-up" data-aos-delay="150">
-            <div class="showcase-nav-arrows">
-              <button class="showcase-arrow-btn prev-arrow" id="showcasePrev" aria-label="Previous Products">
-                <i class="bi bi-arrow-left"></i>
-              </button>
-              <button class="showcase-arrow-btn next-arrow" id="showcaseNext" aria-label="Next Products">
-                <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-            <a href="products.html" class="btn-showcase-view-all">View All</a>
-          </div>
-        </div>
-
-        <!-- Horizontal Scroll Cards Track Outer Container -->
-        <div class="style-wine-triptych-track-outer" data-aos="fade-up" data-aos-delay="150">
-          <div class="style-wine-triptych" id="styleShowcaseTrack">
-
-            <!-- Card 1: GRAND MASTER'S RED (Whisky) -->
-            <div class="wine-triptych-item" data-category="whisky" data-aos="fade-up" data-aos-delay="100">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg1.png" alt="Grand Master's Deluxe Whisky" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">GRAND MASTER'S</h3>
-                <p class="showcase-card-desc">
-                  A rich, harmonious blend crafted from fine grain spirits and premium malts.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- Card 2: BLUE MARINE GIN (Gin) -->
-            <div class="wine-triptych-item is-center" data-category="gin" data-aos="fade-up" data-aos-delay="200">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg2.png" alt="Blue Marine Gin" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">BLUE MARINE GIN</h3>
-                <p class="showcase-card-desc">
-                  Distilled with handpicked botanicals and bright citrus notes for an invigorating finish.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- Card 3: ONE-UP DOCTOR BRANDY (Whisky / Brandy) -->
-            <div class="wine-triptych-item" data-category="whisky" data-aos="fade-up" data-aos-delay="300">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg3.png" alt="Doctor Brandy" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">ONE-UP DOCTOR <br> BRANDY</h3>
-                <p class="showcase-card-desc">
-                  Meticulously blended from selected grape spirits and aged to perfection.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- Card 4: UNCLE 39 (Whisky) -->
-            <div class="wine-triptych-item" data-category="whisky" data-aos="fade-up" data-aos-delay="400">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg4.png" alt="Uncle 39 Whisky" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">UNCLE 39</h3>
-                <p class="showcase-card-desc">
-                  A finely crafted premium whisky featuring a rich golden hue and delicate malt character.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- Card 5: BULLET XXX RUM (Rum) -->
-            <div class="wine-triptych-item" data-category="rum" data-aos="fade-up" data-aos-delay="500">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg5.png" alt="Bullet XXX Rum" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">BULLET XXX RUM</h3>
-                <p class="showcase-card-desc">
-                  Distilled from select cane spirits and matured for deep, bold flavor.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
-            <!-- Card 6: KALANOV COCONUT VODKA (Vodka) -->
-            <div class="wine-triptych-item" data-category="vodka" data-aos="fade-up" data-aos-delay="600">
-              <div class="showcase-card-img-wrap">
-                <img src="assets/images/proimg6.png" alt="Kalanov Coconut Vodka" class="wine-triptych-img">
-              </div>
-              <div class="showcase-card-content">
-                <h3 class="showcase-card-title">KALANOV COCONUT <br> VODKA</h3>
-                <p class="showcase-card-desc">
-                  Ultra-smooth grain vodka infused with tropical, sweet natural coconut essence.
-                </p>
-                <a href="products.html" class="showcase-card-btn">Read More</a>
-              </div>
-            </div>
-
+          <div class="timeline-card-content">
+            <h3 class="timeline-year-big">2016</h3>
+            <p class="timeline-narrative">
+              This foundation of agility and trend laid the groundwork for our rapid growth and service excellence across domestic bottling.
+            </p>
           </div>
         </div>
 
-        <!-- Progressive Scroll Indicator Track Below Cards -->
-        <div class="showcase-progress-bar-wrap" data-aos="fade-up" data-aos-delay="250">
-          <div class="showcase-progress-track">
-            <div class="showcase-progress-line" id="showcaseProgressLine"></div>
+        <!-- Milestone 02: 2019 -->
+        <div class="timeline-milestone-node node-2019" data-progress="0.32">
+          <div class="timeline-pin-anchor">
+            <div class="timeline-glow-dot"></div>
+            <span class="timeline-step-index">02</span>
+          </div>
+          <div class="timeline-card-content">
+            <h3 class="timeline-year-big">2019</h3>
+            <p class="timeline-narrative">
+              That bedrock of agility and foresight not only fueled our rapid growth, but also spearheaded our first overseas export shipments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 03: 2023 -->
+        <div class="timeline-milestone-node node-2023" data-progress="0.58">
+          <div class="timeline-pin-anchor">
+            <div class="timeline-glow-dot"></div>
+            <span class="timeline-step-index">03</span>
+          </div>
+          <div class="timeline-card-content">
+            <h3 class="timeline-year-big">2023</h3>
+            <p class="timeline-narrative">
+              Built on a foundation of quick adaptation and trend recognition and framework spurred an expansion to over 30 global markets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 04: 2025 -->
+        <div class="timeline-milestone-node node-2025" data-progress="0.84">
+          <div class="timeline-pin-anchor">
+            <div class="timeline-glow-dot"></div>
+            <span class="timeline-step-index">04</span>
+          </div>
+          <div class="timeline-card-content">
+            <h3 class="timeline-year-big">2025</h3>
+            <p class="timeline-narrative">
+              The very foundation of adaptability and strategic vision defined our operational mode as an internationally recognized spirits exporter.
+            </p>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
@@ -605,6 +571,85 @@
 
   <!-- Custom Main JS -->
   <script src="js/main.js"></script>
+
+  <!-- Interactive Scroll-Driven Timeline Engine -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const stage = document.getElementById('timelineStage');
+      const activePath = document.getElementById('timelineTrackActive');
+      const nodes = document.querySelectorAll('.timeline-milestone-node');
+
+      if (!stage || !activePath) return;
+
+      // Calculate path total length
+      let pathLength = 0;
+      try {
+        pathLength = activePath.getTotalLength();
+      } catch (err) {
+        pathLength = 1950;
+      }
+
+      // Prepare SVG path dasharray for smooth stroke draw
+      activePath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+      activePath.style.strokeDashoffset = `${pathLength}`;
+
+      function updateTimelineOnScroll() {
+        const rect = stage.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // When stage top reaches middle of screen, start drawing
+        const startOffset = windowHeight * 0.75;
+        const totalDistance = rect.height;
+        const currentProgress = (startOffset - rect.top) / totalDistance;
+
+        // Clamp progress between 0 and 1
+        const clampedProgress = Math.min(Math.max(currentProgress, 0), 1);
+
+        // Draw the glowing line
+        const drawLength = pathLength * clampedProgress;
+        activePath.style.strokeDashoffset = `${pathLength - drawLength}`;
+
+        // Activate milestones when line passes their threshold
+        nodes.forEach(node => {
+          const threshold = parseFloat(node.getAttribute('data-progress')) || 0;
+          if (clampedProgress >= threshold) {
+            node.classList.add('is-active');
+          } else {
+            node.classList.remove('is-active');
+          }
+        });
+      }
+
+      // Listen on scroll and resize with requestAnimationFrame
+      let ticking = false;
+      function onScrollHandler() {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            updateTimelineOnScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+
+      window.addEventListener('scroll', onScrollHandler, { passive: true });
+      window.addEventListener('resize', () => {
+        try {
+          pathLength = activePath.getTotalLength();
+          activePath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+        } catch(e) {}
+        updateTimelineOnScroll();
+      });
+
+      // If Lenis is present on window, hook into its scroll event
+      if (window.lenis && typeof window.lenis.on === 'function') {
+        window.lenis.on('scroll', onScrollHandler);
+      }
+
+      // Initial calculation
+      updateTimelineOnScroll();
+    });
+  </script>
 </body>
 
 </html>

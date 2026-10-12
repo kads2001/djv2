@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="metaPageTitle">The Art of Oak Maturation | Deejay Distilleries Journal</title>
+  <meta name="description" id="metaPageDesc"
+    content="Discover how wood chemistry, char levels, and tropical barrel aging shape the distinct flavors and smooth finish of Deejay Distilleries' world-class spirits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo+Black&family=Isometra&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="blog-details-page-wrapper">
+  <!-- ================= FULLSCREEN PRELOADER (CLASSIC LIGHT THEME WITH DUAL FLOWING WAVES) ================= -->
+  <div class="site-preloader" id="sitePreloader" aria-hidden="true">
+    <div class="preloader-bg-glow"></div>
+
+    <!-- Center Logo & Brand Tagline -->
+    <div class="preloader-center-content">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="preloader-logo">
+      </div>
+      <span class="preloader-tagline">DISTILLERY JOURNAL</span>
+    </div>
+
+    <!-- Intersecting Golden Wavy Lines across Lower Screen (Flowing Left to Right) -->
+    <div class="preloader-waves-wrap">
+      <svg class="preloader-waves-svg" viewBox="0 0 1920 160" preserveAspectRatio="none" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldWaveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#caa04c" stop-opacity="0.3" />
+            <stop offset="25%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#dfb76c" stop-opacity="1" />
+            <stop offset="75%" stop-color="#b4581b" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#caa04c" stop-opacity="0.4" />
+          </linearGradient>
+          <linearGradient id="goldWaveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#b4581b" stop-opacity="0.25" />
+            <stop offset="25%" stop-color="#dfb76c" stop-opacity="0.85" />
+            <stop offset="55%" stop-color="#b4581b" stop-opacity="0.95" />
+            <stop offset="80%" stop-color="#dfb76c" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#b4581b" stop-opacity="0.3" />
+          </linearGradient>
+        </defs>
+
+        <!-- Wavy Line 1 -->
+        <path class="wave-path wave-path-1"
+          d="M -800 65 C -600 15, -200 115, 0 65 C 200 15, 600 115, 800 65 C 1000 15, 1400 115, 1600 65 C 1800 15, 2200 115, 2400 65 C 2600 15, 3000 115, 3200 65"
+          stroke="url(#goldWaveGrad1)" stroke-width="1.6" stroke-linecap="round" />
+
+        <!-- Wavy Line 2 -->
+        <path class="wave-path wave-path-2"
+          d="M -800 90 C -550 145, -250 35, 0 90 C 250 145, 550 35, 800 90 C 1050 145, 1350 35, 1600 90 C 1850 145, 2150 35, 2400 90 C 2650 145, 2950 35, 3200 90"
+          stroke="url(#goldWaveGrad2)" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      <!-- Logo Left Side -->
+      <div class="brand-left">
+        <a href="index.html" title="Deejay Distilleries">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Royal Crest" class="brand-crest-logo">
+        </a>
+      </div>
+
+      <!-- Navigation Right Side: Desktop Menu + Exports Button + Mobile Toggle -->
+      <div class="nav-right" aria-label="Right Navigation">
+        <nav class="nav-desktop-menu" aria-label="Main Navigation">
+          <a href="about.html" class="nav-header-link">Our Story</a>
+          <a href="products.html" class="nav-header-link">Our Brands</a>
+          <a href="index.html#global-presence" class="nav-header-link">Global Reach</a>
+          <a href="blog-details.html" class="nav-header-link active">Journal</a>
+          <a href="exports.html" class="btn-nav-export">Exports</a>
+        </nav>
+        <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Drawer Backdrop Overlay -->
+  <div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
+
+  <!-- Fullscreen / Drawer Navigation Menu -->
+  <div class="mobile-nav-menu" id="mobileNavDrawer">
+    <button class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation">&times;</button>
+    <div class="nav-drawer-header">
+      <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="nav-drawer-logo">
+    </div>
+    <nav class="nav-drawer-links">
+      <a href="index.html" class="nav-custom-link">Home</a>
+      <a href="about.html" class="nav-custom-link">Our Story</a>
+      <a href="products.html" class="nav-custom-link">Our Brands</a>
+      <a href="index.html#global-presence" class="nav-custom-link">Global Reach</a>
+      <a href="blog-details.html" class="nav-custom-link active">Distillery Journal</a>
+      <a href="exports.html" class="nav-custom-link">Exports</a>
+      <a href="contact.html" class="nav-custom-link">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- ================= INNER PAGE BANNER ================= -->
+  <section class="inner-banner-section inner-banner-blog-details" id="inner-banner">
+    <div class="inner-banner-overlay"></div>
+    <div class="inner-banner-content" data-aos="fade-up">
+      <div class="inner-banner-breadcrumb">
+        <a href="index.html">HOME</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="index.html#blogs">DISTILLERY JOURNAL</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-active" id="bannerActiveArticle">INSIGHTS DETAILS</span>
+      </div>
+      <h1 class="inner-banner-title" id="bannerArticleTitle">The Art of Oak Maturation: How Wood Chemistry Defines Indian Mastercraft Spirits</h1>
+      <p class="inner-banner-subtitle" id="bannerArticleSubtitle">
+        An in-depth exploration into barrel selection, charring profiles, and the dynamic tropical climate that accelerates wood interaction in our cellars.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= BLOG DETAILS MAIN CONTENT & SIDEBAR ================= -->
+  <section class="blog-details-section" id="blog-content">
+    <div class="container">
+      <div class="blog-details-grid">
+
+        <!-- LEFT COLUMN: ARTICLE CONTENT -->
+        <article class="blog-article-card" data-aos="fade-up">
+
+          <!-- Article Meta Row -->
+          <div class="blog-article-meta-row">
+            <span class="blog-category-badge" id="artCategoryBadge">Distillery Craft</span>
+            <span class="blog-meta-item">
+              <i class="bi bi-calendar3"></i>
+              <span id="artDate">October 12, 2026</span>
+            </span>
+            <span class="blog-meta-item">
+              <i class="bi bi-clock"></i>
+              <span id="artReadTime">6 Min Read</span>
+            </span>
+            <span class="blog-meta-item">
+              <i class="bi bi-eye"></i>
+              <span id="artViews">2,480 Reads</span>
+            </span>
+          </div>
+
+          <!-- Article Headline -->
+          <h1 class="blog-article-headline" id="artHeadline">
+            The Art of Oak Maturation: How Wood Chemistry Defines Indian Mastercraft Spirits
+          </h1>
+
+          <!-- Hero Media -->
+          <div class="blog-hero-media-wrap">
+            <img src="assets/images/who_we_are_barrels.png" alt="Oak Cask Maturation Cellar" class="blog-hero-media-img" id="artHeroImg">
+          </div>
+
+          <!-- Author Info Strip with Share Buttons -->
+          <div class="blog-author-strip">
+            <div class="blog-author-left">
+              <img src="assets/images/about_team1.jpg" alt="Master Blender Dr. Robert Vance" class="blog-author-avatar">
+              <div>
+                <h4 class="blog-author-name">Dr. Robert Vance</h4>
+                <p class="blog-author-role">Chief Distiller &amp; Master Blender, Deejay Distilleries</p>
+              </div>
+            </div>
+            <div class="blog-share-buttons">
+              <span class="blog-share-label">Share:</span>
+              <a href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer" class="btn-blog-share" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" class="btn-blog-share" title="Share on X / Twitter" aria-label="Share on Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer" class="btn-blog-share" title="Share on Facebook" aria-label="Share on Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send" target="_blank" rel="noopener noreferrer" class="btn-blog-share" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <button type="button" class="btn-blog-share" id="btnCopyArticleLink" title="Copy Article URL" aria-label="Copy Article Link">
+                <i class="bi bi-link-45deg"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Article Prose Body -->
+          <div class="blog-prose" id="artProseBody">
+            <p>
+              In the alchemy of distilling, spirit off the still is transparent, spirited, and uncompromisingly sharp. The transformative alchemy—the rich amber sheen, the nuanced bouquet of vanilla and toasted caramel, and the lingering, velvety finish—takes place inside the silent, breathing sanctum of charred oak barrels.
+            </p>
+            <p>
+              At Deejay Distilleries, oak maturation is not merely a waiting period; it is an active biochemical conversation between spirit, porous wood, and atmospheric micro-climates. Our aging cellars in western India leverage a distinct thermal cycle where warm tropical days expand spirit deep into the wood grain, while cool dusk breezes draw it back into the cask, extracting complex congeners at three times the speed of traditional cool-climate cellars.
+            </p>
+
+            <h2>The Science of Wood Chemistry: Lignin, Vanillin, and Lactones</h2>
+            <p>
+              Oak wood is a complex organic matrix composed primarily of cellulose, hemicellulose, lignin, and wood extractives. When barrels are toasted and charred by our cooperage partners, heat triggers profound molecular transformations:
+            </p>
+            <ul>
+              <li><strong>Thermal Degradation of Lignin:</strong> Extreme heat breaks complex polymers down into vanillin (producing sweet creamy vanilla notes) and syringaldehyde (introducing delicate spicy accents).</li>
+              <li><strong>Caramelization of Hemicellulose:</strong> Wood sugars convert into furfural and maltol, yielding subtle toasted almond, butterscotch, and sweet praline undertones.</li>
+              <li><strong>Oak Lactones (Quercus Lactones):</strong> Impart characteristic coconut and rich woody aroma profiles that anchor our signature reserve blends.</li>
+              <li><strong>Hydrolysable Tannins:</strong> Contribute structural astringency, mouthfeel weight, and the golden mahogany pigmentation that deepens year after year.</li>
+            </ul>
+
+            <!-- Stylized Quote Callout -->
+            <div class="blog-quote-callout">
+              <div class="blog-quote-icon">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="blog-quote-text">
+                "The barrel is not a vessel of storage; it is an active ingredient. Sixty to seventy percent of a whisky's final aroma and complexity is authored entirely by the soul of the wood."
+              </p>
+              <span class="blog-quote-author">— Dr. Robert Vance, Master Blender</span>
+            </div>
+
+            <h2>Char Levels and Cask Reconditioning</h2>
+            <p>
+              The level of barrel toasting and charring dictates how deeply the spirit penetrates before encountering charcoal filtration. At Deejay Distilleries, we employ custom Level 3 and Level 4 "Alligator Char" American White Oak barrels (<em>Quercus alba</em>) alongside seasoned European Oak casks (<em>Quercus robur</em>) previously seasoned with fortified wines.
+            </p>
+            <p>
+              The dense charcoal layer acts as an organic carbon filter, absorbing aggressive sulfur compounds and harsh aldehydes from the new-make spirit. Simultaneously, the toasted layer just beneath the char provides an abundant reservoir of caramelized sugars and aromatic oak lactones.
+            </p>
+
+            <!-- Inset Image Grid -->
+            <div class="blog-inset-grid">
+              <div class="blog-inset-item">
+                <img src="assets/images/who_we_are_stills.png" alt="Copper Pot Still Distillation" class="blog-inset-img">
+              </div>
+              <div class="blog-inset-item">
+                <img src="assets/images/process.png" alt="Precision Distillation Monitoring" class="blog-inset-img">
+              </div>
+            </div>
+
+            <h2>Tropical Aging: The Unique Indian Advantage</h2>
+            <p>
+              One of the defining frontiers of contemporary world whisky is tropical maturation. In Scotland or Ireland, average warehouse temperatures hover between 8°C and 15°C, resulting in an annual evaporation loss (the celebrated "Angel's Share") of roughly 1.5% to 2%.
+            </p>
+            <p>
+              In our temperature-controlled aging warehouses, ambient temperatures create a much higher evaporation rate—often between 8% and 11% annually. While this requires exceptional discipline in stock management, the intensified wood extraction and oxidation rate achieve a depth of flavor in 3 to 5 years that would require 12 to 15 years in temperate northern latitudes. The result is a bold, rounded spirit with remarkably softened tannins and intense aromatic concentration.
+            </p>
+
+            <!-- Key Takeaways Highlight Box -->
+            <div class="blog-highlights-box">
+              <h4 class="blog-highlights-title">
+                <i class="bi bi-check2-circle"></i>
+                Key Insights on Deejay Maturation Standards
+              </h4>
+              <ul class="blog-highlights-list">
+                <li><strong>Dual-Oak Strategy:</strong> Strategic balancing between sweet vanillin-forward American White Oak and structured European Oak.</li>
+                <li><strong>Microclimate Warehouse Management:</strong> Natural airflow convection racks that ensure even barrel breathing across tiered pallet stacks.</li>
+                <li><strong>Slow Hydration:</strong> Progressive proof reduction over several months using demineralized artisanal water to prevent shock precipitation.</li>
+                <li><strong>No Artificial Additives:</strong> Natural maturation color and uncompromised ester purity across our entire portfolio.</li>
+              </ul>
+            </div>
+
+            <p>
+              As global appreciation for Indian mastercraft spirits continues its exponential rise, our commitment remains uncompromising: honoring traditional cooperage heritage while pioneering modern thermal maturation science. Each bottle poured is a testament to patience, wood chemistry, and the unyielding quest for perfection.
+            </p>
+          </div>
+
+          <!-- Tags Row -->
+          <div class="blog-tags-row">
+            <span class="blog-tag-pill">#OakMaturation</span>
+            <span class="blog-tag-pill">#WoodChemistry</span>
+            <span class="blog-tag-pill">#IndianSpirits</span>
+            <span class="blog-tag-pill">#DistilleryCraft</span>
+            <span class="blog-tag-pill">#MasterBlender</span>
+            <span class="blog-tag-pill">#WhiskyHeritage</span>
+          </div>
+
+          <!-- Post Pagination Bar (Prev / Next) -->
+          <div class="blog-pagination-nav">
+            <a href="blog-details.html?id=copper-pot-stills" class="blog-nav-card">
+              <span class="blog-nav-label"><i class="bi bi-arrow-left"></i> Previous Article</span>
+              <h5 class="blog-nav-title">The Geometry of Copper: Pot Still Column Hydrodynamics</h5>
+            </a>
+            <a href="blog-details.html?id=global-export-trends" class="blog-nav-card text-end">
+              <span class="blog-nav-label justify-content-end">Next Article <i class="bi bi-arrow-right"></i></span>
+              <h5 class="blog-nav-title">Emerging Markets: The Global Thirst for Indian Craft Spirits</h5>
+            </a>
+          </div>
+
+        </article>
+
+        <!-- RIGHT COLUMN: SIDEBAR WIDGETS -->
+        <aside class="blog-sidebar-wrap" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- 1. Search Box Widget -->
+          <div class="blog-widget">
+            <h3 class="blog-widget-title">Search Journal</h3>
+            <form class="blog-search-form" id="blogSearchForm" onsubmit="event.preventDefault(); handleBlogSearch();">
+              <input type="text" class="blog-search-input" id="blogSearchInput" placeholder="Search insights, casks, gin..." aria-label="Search articles">
+              <button type="submit" class="blog-search-btn" aria-label="Submit Search">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- 2. Categories Widget -->
+          <div class="blog-widget">
+            <h3 class="blog-widget-title">Journal Categories</h3>
+            <ul class="blog-cats-list">
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Distillation Craft</span>
+                  <span class="blog-cat-count">14</span>
+                </a>
+              </li>
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Oak Aging &amp; Casks</span>
+                  <span class="blog-cat-count">8</span>
+                </a>
+              </li>
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Global Spirits Export</span>
+                  <span class="blog-cat-count">19</span>
+                </a>
+              </li>
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Master Blender's Log</span>
+                  <span class="blog-cat-count">6</span>
+                </a>
+              </li>
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Botanicals &amp; Flavors</span>
+                  <span class="blog-cat-count">11</span>
+                </a>
+              </li>
+              <li class="blog-cat-item">
+                <a href="javascript:void(0);" class="blog-cat-link">
+                  <span>Sustainable Distilling</span>
+                  <span class="blog-cat-count">5</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. Recent Articles Widget -->
+          <div class="blog-widget">
+            <h3 class="blog-widget-title">Recent Articles</h3>
+            <div class="blog-recent-list">
+
+              <a href="blog-details.html?id=copper-pot-stills" class="blog-recent-item">
+                <div class="blog-recent-thumb">
+                  <img src="assets/images/who_we_are_stills.png" alt="Copper Pot Still">
+                </div>
+                <div class="blog-recent-info">
+                  <span class="blog-recent-date">Sep 28, 2026</span>
+                  <h5 class="blog-recent-heading">The Geometry of Copper: Pot Still Column Hydrodynamics</h5>
+                </div>
+              </a>
+
+              <a href="blog-details.html?id=global-export-trends" class="blog-recent-item">
+                <div class="blog-recent-thumb">
+                  <img src="assets/images/banner1.jpeg" alt="Global Export Trends">
+                </div>
+                <div class="blog-recent-info">
+                  <span class="blog-recent-date">Sep 15, 2026</span>
+                  <h5 class="blog-recent-heading">Emerging Markets: Global Thirst for Indian Craft Spirits</h5>
+                </div>
+              </a>
+
+              <a href="blog-details.html?id=botanical-infusions" class="blog-recent-item">
+                <div class="blog-recent-thumb">
+                  <img src="assets/images/popularim1.jpg" alt="Botanical Infusion">
+                </div>
+                <div class="blog-recent-info">
+                  <span class="blog-recent-date">Aug 30, 2026</span>
+                  <h5 class="blog-recent-heading">Artisanal Botanicals: Redefining Premium Craft Gin</h5>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- 4. Trade Desk Inquiry Widget -->
+          <div class="blog-trade-widget">
+            <img src="assets/images/logo.png" alt="Deejay Crest" class="blog-trade-crest">
+            <h4 class="blog-trade-title">Partner With Deejay Distilleries</h4>
+            <p class="blog-trade-desc">
+              We supply international importers, bulk spirit blenders, and private label partners across 25+ global territories.
+            </p>
+            <a href="exports.html" class="btn-blog-trade">Connect With Trade Desk</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RELATED ARTICLES / COMPANION INSIGHTS SECTION ================= -->
+  <section class="blog-related-section">
+    <div class="container">
+      <div class="blog-related-header" data-aos="fade-up">
+        <div>
+          <span class="section-tag-badge">COMPANION READS</span>
+          <h2 class="blog-related-title">Explore Related Insights</h2>
+        </div>
+        <a href="index.html#blogs" class="blogs-view-all-btn d-none d-md-inline-flex">
+          View All Insights <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+      <div class="blog-related-grid">
+
+        <!-- Card 1 -->
+        <a href="blog-details.html?id=copper-pot-stills" class="blog-related-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="blog-related-img-wrap">
+            <img src="assets/images/who_we_are_stills.png" alt="Copper Still Distillation">
+          </div>
+          <div class="blog-related-body">
+            <span class="blog-related-meta">Distillation Engineering</span>
+            <h4 class="blog-related-card-title">The Geometry of Copper: Pot Still Column Hydrodynamics</h4>
+            <p class="blog-related-card-desc">
+              How copper reflux contact removes heavy congeners and purifies sulfur volatiles for a silkier profile.
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="blog-details.html?id=global-export-trends" class="blog-related-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="blog-related-img-wrap">
+            <img src="assets/images/banner1.jpeg" alt="Global Spirits Export">
+          </div>
+          <div class="blog-related-body">
+            <span class="blog-related-meta">Export Logistics</span>
+            <h4 class="blog-related-card-title">Emerging Markets: Global Thirst for Indian Craft Spirits</h4>
+            <p class="blog-related-card-desc">
+              Navigating international compliance, temperature-controlled transit, and consumer shifts in Europe and Africa.
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="blog-details.html?id=botanical-infusions" class="blog-related-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="blog-related-img-wrap">
+            <img src="assets/images/popularim1.jpg" alt="Botanical Gin Distillation">
+          </div>
+          <div class="blog-related-body">
+            <span class="blog-related-meta">Botanical Sciences</span>
+            <h4 class="blog-related-card-title">Artisanal Botanicals: Redefining Premium Craft Gin</h4>
+            <p class="blog-related-card-desc">
+              Vapour infusion techniques extracting delicate terpenes from juniper, coriander, and native citrus peels.
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer" id="site-footer">
+    <!-- Top Amber Block -->
+    <div class="footer-top-block">
+      <div class="footer-container">
+        <!-- Centered Crest Logo -->
+        <div class="footer-minimal-top" data-aos="fade-up">
+          <a href="index.html" class="footer-brand-logo" aria-label="Deejay Distilleries Home">
+            <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="footer-minimal-logo">
+          </a>
+        </div>
+
+        <!-- Subtle Divider Line -->
+        <div class="footer-divider"></div>
+
+        <!-- Centered Navigation Links -->
+        <div class="footer-minimal-links" data-aos="fade-up" data-aos-delay="50">
+          <a href="index.html" class="footer-minimal-link">Home</a>
+          <a href="about.html" class="footer-minimal-link">Our Story</a>
+          <a href="products.html" class="footer-minimal-link">Our Brands</a>
+          <a href="blog-details.html" class="footer-minimal-link">Journal</a>
+          <a href="exports.html" class="footer-minimal-link">Exports</a>
+          <a href="contact.html" class="footer-minimal-link">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom White Legal Bar -->
+    <div class="footer-bottom-block">
+      <div class="footer-container footer-bottom-inner" data-aos="fade-up" data-aos-delay="100">
+        <div class="footer-bottom-left">
+          &copy; 2026 Deejay Distilleries Ltd. All Rights Reserved. | Created by <a href="https://www.10dumbs.com"
+            target="_blank">10 Dumbs Inc.</a>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="javascript:void(0);" class="footer-legal-link">Security</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Privacy &amp; Cookie Policy</a>
+          <a href="javascript:void(0);" class="footer-legal-link">Terms of Services</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= AGE VERIFICATION POPUP (AGE GATE) ================= -->
+  <div class="age-gate-overlay" id="ageGateModal" aria-modal="true" role="dialog" aria-labelledby="ageGateHeading">
+    <div class="age-gate-container">
+      <div class="age-gate-glow age-gate-glow-top"></div>
+      <div class="age-gate-content">
+        <div class="age-gate-brand">
+          <img src="assets/images/logo.png" alt="Deejay Distilleries Logo" class="age-gate-logo">
+          <span class="age-gate-brand-name">DEEJAY DISTILLERIES</span>
+        </div>
+        <p class="age-gate-prompt">You must be 18 years old or older to enter this site.</p>
+        <h1 class="age-gate-title" id="ageGateHeading">I AM OVER 18</h1>
+        <div class="age-gate-choice-btns">
+          <button type="button" class="age-gate-btn age-gate-btn-yes" id="ageGateYes">YES</button>
+          <button type="button" class="age-gate-btn age-gate-btn-no" id="ageGateNo">NO</button>
+        </div>
+        <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+        <p class="age-gate-disclaimer">
+          Use of this site is for personal use in countries and territories where the consumption of alcohol beverages
+          is lawful, and for persons who are lawfully permitted to consume alcohol beverages. By entering here you agree
+          to our <a href="javascript:void(0);">Terms and Conditions</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy Link -->
+  <div id="copyToast" style="position: fixed; bottom: 30px; right: 30px; background: #111111; color: #ffffff; padding: 12px 24px; border-radius: 50px; font-size: 13.5px; font-weight: 600; box-shadow: 0 10px 30px rgba(0,0,0,0.25); border: 1px solid #b4581b; display: none; z-index: 99999; transition: opacity 0.3s ease;">
+    <i class="bi bi-check-circle-fill" style="color: #caa04c; margin-right: 8px;"></i> Article link copied to clipboard!
+  </div>
+
+  <!-- jQuery (Local with CDN fallback) -->
+  <script src="js/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>')</script>
+
+  <!-- Bootstrap 5 JS Bundle with Popper (Local with CDN fallback) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>window.bootstrap || document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"><\/script>')</script>
+
+  <!-- Lenis Smooth Scroll Engine (Local with CDN fallback) -->
+  <script src="js/lenis.min.js"></script>
+  <script>window.Lenis || document.write('<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"><\/script>')</script>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- GSAP 3 & ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+
+  <!-- Article Dynamic Loader & Interactive Script -->
+  <script>
+    // Copy Article Link Functionality
+    document.getElementById('btnCopyArticleLink')?.addEventListener('click', function() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const toast = document.getElementById('copyToast');
+        if (toast) {
+          toast.style.display = 'block';
+          toast.style.opacity = '1';
+          setTimeout(() => {
+            toast.style.opacity = '0';
+            setTimeout(() => { toast.style.display = 'none'; }, 300);
+          }, 3000);
+        }
+      }).catch(err => {
+        alert('URL copied: ' + window.location.href);
+      });
+    });
+
+    // Client-side Blog Search filtering
+    function handleBlogSearch() {
+      const q = document.getElementById('blogSearchInput')?.value.trim().toLowerCase();
+      if (!q) return;
+
+      const prose = document.getElementById('artProseBody');
+      const headline = document.getElementById('artHeadline');
+      if (headline && headline.textContent.toLowerCase().includes(q)) {
+        headline.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      if (prose) {
+        const matches = prose.querySelectorAll('p, h2, h3, li');
+        for (let el of matches) {
+          if (el.textContent.toLowerCase().includes(q)) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            el.style.backgroundColor = '#fff3cd';
+            setTimeout(() => { el.style.backgroundColor = ''; }, 2500);
+            return;
+          }
+        }
+      }
+      alert('No matches found in this article for: "' + q + '"');
+    }
+
+    // Dynamic Article Switching Support via URL query '?id=...'
+    const articlesDatabase = {
+      'copper-pot-stills': {
+        title: 'The Geometry of Copper: Pot Still Column Hydrodynamics',
+        subtitle: 'An engineering dive into how vapor velocity, copper surface contact, and reflux coils cleanse sulfur volatiles.',
+        category: 'Distillation Engineering',
+        date: 'September 28, 2026',
+        readTime: '5 Min Read',
+        views: '3,120 Reads',
+        image: 'assets/images/who_we_are_stills.png',
+        quote: 'Copper is not merely conductive metal; it is the ultimate purifier of raw alcohol vapors.',
+        author: 'Marcus Sterling, Chief Chemical Engineer'
+      },
+      'global-export-trends': {
+        title: 'Emerging Markets: The Global Thirst for Indian Craft Spirits',
+        subtitle: 'Navigating international customs, cold-chain transport, and premium shelf placement across Europe, Africa, and Southeast Asia.',
+        category: 'Global Spirits Export',
+        date: 'September 15, 2026',
+        readTime: '7 Min Read',
+        views: '4,050 Reads',
+        image: 'assets/images/banner1.jpeg',
+        quote: 'Indian single malts and craft blends have transitioned from novelties to medal-winning global titans.',
+        author: 'Ananya Sharma, Head of International Trade'
+      },
+      'botanical-infusions': {
+        title: 'Artisanal Botanicals: Redefining Premium Craft Gin',
+        subtitle: 'Examining the precise vapor infusion temperature windows required to harvest delicate terpenes and floral esters.',
+        category: 'Botanical Sciences',
+        date: 'August 30, 2026',
+        readTime: '4 Min Read',
+        views: '1,890 Reads',
+        image: 'assets/images/popularim1.jpg',
+        quote: 'The finest gin is composed like classical music: delicate high citrus notes supported by deep woody juniper bass.',
+        author: 'Claire Delacroix, Lead Botanist & Alchemist'
+      }
+    };
+
+    (function checkUrlArticle() {
+      const params = new URLSearchParams(window.location.search);
+      const articleId = params.get('id');
+      if (articleId && articlesDatabase[articleId]) {
+        const item = articlesDatabase[articleId];
+        document.title = item.title + " | Deejay Distilleries Journal";
+        const metaTitle = document.getElementById('metaPageTitle');
+        if (metaTitle) metaTitle.textContent = item.title + " | Deejay Distilleries Journal";
+
+        const bannerTitle = document.getElementById('bannerArticleTitle');
+        if (bannerTitle) bannerTitle.textContent = item.title;
+
+        const bannerSub = document.getElementById('bannerArticleSubtitle');
+        if (bannerSub) bannerSub.textContent = item.subtitle;
+
+        const headline = document.getElementById('artHeadline');
+        if (headline) headline.textContent = item.title;
+
+        const catBadge = document.getElementById('artCategoryBadge');
+        if (catBadge) catBadge.textContent = item.category;
+
+        const artDate = document.getElementById('artDate');
+        if (artDate) artDate.textContent = item.date;
+
+        const artRead = document.getElementById('artReadTime');
+        if (artRead) artRead.textContent = item.readTime;
+
+        const artViews = document.getElementById('artViews');
+        if (artViews) artViews.textContent = item.views;
+
+        const heroImg = document.getElementById('artHeroImg');
+        if (heroImg) heroImg.src = item.image;
+      }
+    })();
+  </script>
+</body>
+
+</html>

@@ -2594,35 +2594,123 @@ document.addEventListener('DOMContentLoaded', function() {
   initPreloader();
 
   // =========================================================================
-  // PRODUCT CATALOG CATEGORY FILTER
+  // PRODUCT CATALOG CATEGORY & REGION FILTER (INDIA & OUT OF INDIA)
   // =========================================================================
   function initProductFilter() {
     const $filterBtns = $('.product-filter-btn');
+    const $regionBtns = $('.region-filter-btn');
     const $productItems = $('.modern-product-item');
+    const $emptyState = $('#productCatalogEmptyState');
 
-    if (!$filterBtns.length || !$productItems.length) return;
+    if (!$productItems.length) return;
 
-    $filterBtns.on('click', function () {
-      $filterBtns.removeClass('active');
-      $(this).addClass('active');
+    let activeCategory = 'all';
+    let activeRegion = 'all';
 
-      const filterVal = $(this).attr('data-filter');
+    function runFiltering() {
+      let visibleCount = 0;
 
       $productItems.each(function () {
-        const itemCategory = $(this).attr('data-category');
-        if (filterVal === 'all' || itemCategory === filterVal) {
-          $(this).removeClass('is-hidden').fadeIn(350);
+        const itemCategory = $(this).attr('data-category') || '';
+        const itemRegions = ($(this).attr('data-region') || 'india out-of-india').toLowerCase().split(/\s+/);
+
+        const categoryMatches = (activeCategory === 'all' || itemCategory === activeCategory);
+        const regionMatches = (activeRegion === 'all' || itemRegions.includes(activeRegion.toLowerCase()));
+
+        if (categoryMatches && regionMatches) {
+          $(this).removeClass('is-hidden').stop(true, true).fadeIn(320);
+          visibleCount++;
         } else {
-          $(this).addClass('is-hidden').hide();
+          $(this).addClass('is-hidden').stop(true, true).hide();
         }
       });
+
+      if ($emptyState.length) {
+        if (visibleCount === 0) {
+          $emptyState.stop(true, true).fadeIn(300);
+        } else {
+          $emptyState.hide();
+        }
+      }
 
       if (typeof AOS !== 'undefined') {
         setTimeout(function () {
           AOS.refresh();
-        }, 360);
+        }, 340);
       }
+    }
+
+    // Category button click
+    if ($filterBtns.length) {
+      $filterBtns.on('click', function (e) {
+        e.preventDefault();
+        $filterBtns.removeClass('active');
+        $(this).addClass('active');
+        activeCategory = $(this).attr('data-filter') || 'all';
+        runFiltering();
+      });
+    }
+
+    // Region tag button click (All, India, Out of India)
+    if ($regionBtns.length) {
+      $regionBtns.on('click', function (e) {
+        e.preventDefault();
+        const clickedRegion = $(this).attr('data-region') || 'all';
+
+        // Toggle back to 'all' if clicking already-active tag other than 'all'
+        if ($(this).hasClass('active') && clickedRegion !== 'all') {
+          $regionBtns.removeClass('active');
+          $regionBtns.filter('[data-region="all"]').addClass('active');
+          activeRegion = 'all';
+        } else {
+          $regionBtns.removeClass('active');
+          $(this).addClass('active');
+          activeRegion = clickedRegion;
+        }
+
+        runFiltering();
+      });
+    }
+
+    // Reset filters button in empty state
+    $(document).on('click', '.btn-reset-catalog-filters', function (e) {
+      e.preventDefault();
+      $filterBtns.removeClass('active');
+      $filterBtns.filter('[data-filter="all"]').addClass('active');
+      $regionBtns.removeClass('active');
+      $regionBtns.filter('[data-region="all"]').addClass('active');
+      activeCategory = 'all';
+      activeRegion = 'all';
+      runFiltering();
     });
+
+    // Check URL parameters for preset region (e.g. products.html?region=india or ?region=out-of-india)
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlRegion = urlParams.get('region');
+      const urlCategory = urlParams.get('category') || urlParams.get('filter');
+
+      if (urlRegion && ['india', 'out-of-india'].includes(urlRegion.toLowerCase())) {
+        $regionBtns.removeClass('active');
+        $regionBtns.filter(`[data-region="${urlRegion.toLowerCase()}"]`).addClass('active');
+        activeRegion = urlRegion.toLowerCase();
+      }
+
+      if (urlCategory) {
+        const $targetCatBtn = $filterBtns.filter(`[data-filter="${urlCategory.toLowerCase()}"]`);
+        if ($targetCatBtn.length) {
+          $filterBtns.removeClass('active');
+          $targetCatBtn.addClass('active');
+          activeCategory = urlCategory.toLowerCase();
+        }
+      }
+
+      if (urlRegion || urlCategory) {
+        runFiltering();
+      }
+    } catch (err) {
+      // Ignore URL parsing errors
+    }
   }
 
   initProductFilter();
