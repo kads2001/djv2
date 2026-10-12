@@ -112,7 +112,7 @@
   </section>
 
   <!-- ================= EXPORTS KEY METRICS SECTION ================= -->
-  <section class="exports-metrics-section">
+  <section class="exports-metrics-section d-none">
     <div class="container">
       <div class="exports-metrics-grid" data-aos="fade-up">
         
@@ -160,7 +160,119 @@
     </div>
   </section>
 
-  <!-- ================= BRAND LOGO STRIP SECTION (PORTFOLIO PARTNERS) ================= -->
+  
+
+  <!-- ================= CREATIVE INTERACTIVE MAP SECTION ================= -->
+  <section class="exports-map-section" id="export-map-view">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="exports-section-header" data-aos="fade-up">
+        <div class="exports-section-eyebrow">CREATIVE MAP DIRECTORY</div>
+        <h2 class="exports-section-title">Explore Our 33 Export Destinations</h2>
+        <p class="exports-section-desc">
+          Click on any country, region filter, or marker below to explore our international trade routes dispatched from our distillery in Maharashtra via Nhava Sheva (JNPT) Port, Mumbai.
+        </p>
+      </div>
+
+      <!-- Map Canvas Box -->
+      <div class="exports-map-display-wrap" data-lenis-prevent data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Active View Indicator -->
+        <div class="exports-map-view-indicator">
+          <span class="indicator-dot"></span>
+          <span id="activeViewLabel">Global View - 33 Countries Highlighted</span>
+        </div>
+
+        <!-- Zoom & Fullscreen Controls -->
+        <div class="exports-map-zoom-tools">
+          <button type="button" class="exports-zoom-btn" id="mapZoomInBtn" title="Zoom In" aria-label="Zoom In">
+            <i class="bi bi-plus-lg"></i>
+          </button>
+          <button type="button" class="exports-zoom-btn" id="mapZoomOutBtn" title="Zoom Out" aria-label="Zoom Out">
+            <i class="bi bi-dash-lg"></i>
+          </button>
+          <button type="button" class="exports-zoom-btn" id="mapResetViewBtn" title="Reset View" aria-label="Reset View">
+            <i class="bi bi-arrows-angle-contract"></i>
+          </button>
+          <button type="button" class="exports-zoom-btn" id="mapFullscreenBtn" title="Open Fullscreen HD Map" aria-label="Open Fullscreen HD Map">
+            <i class="bi bi-fullscreen"></i>
+          </button>
+        </div>
+
+        <!-- Interactive Map Viewport -->
+        <div class="exports-map-viewport" id="mapViewport" data-lenis-prevent>
+          <div class="exports-map-stage" id="mapStage">
+            <div class="exports-map-inner" id="mapInner">
+              <img src="assets/images/Map.jpg" alt="Deejay Distilleries 33 Global Export Partner Countries Map" class="exports-map-interactive-img" id="mapInteractiveImg">
+              <div class="exports-map-pins-layer" id="mapPinsLayer"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Legend Badge -->
+        <div class="exports-map-legend-float">
+          <div class="exports-legend-row">
+            <span class="exports-legend-dot exports-legend-dot-export"></span>
+            <span class="exports-legend-key">33 Active Markets:</span>
+            <span class="exports-legend-val">Pinned in Official Red/Gold Markers</span>
+          </div>
+          <div class="exports-legend-row">
+            <span class="exports-legend-dot exports-legend-dot-hq"></span>
+            <span class="exports-legend-key">India (HQ):</span>
+            <span class="exports-legend-val">Maharashtra Distillery &amp; JNPT Port</span>
+          </div>
+        </div>
+
+        <!-- Floating Interactive Country Details Card -->
+        <div class="exports-country-focus-card" id="countryFocusCard">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="exports-country-num" id="cardCountryNum">#01</span>
+            <div class="d-flex align-items-center gap-2">
+              <span class="fs-4" id="cardCountryFlag">🌍</span>
+              <button type="button" class="btn-close" id="closeFocusCardBtn" aria-label="Close" style="font-size: 10px;"></button>
+            </div>
+          </div>
+          <h4 class="exports-country-name mb-1" id="cardCountryName">Country Name</h4>
+          <p class="exports-country-region mb-2" id="cardCountryRegion" style="color: #64748b; font-size: 12.5px;">Region</p>
+          <div class="mb-3" style="font-size: 12.5px; color: #334155; line-height: 1.55;">
+            <strong style="color: #b4581b;">Hub Port:</strong> <span id="cardCountryHub">Direct Port Dispatch</span><br>
+            <strong style="color: #b4581b;">Offerings:</strong> <span id="cardCountryProducts">Whisky, Rum, Bulk ENA</span>
+          </div>
+          <a href="#export-inquiry" class="btn btn-sm w-100 text-white" style="background: #b4581b; border-radius: 50px; font-weight: 700; font-size: 12.5px; padding: 8px 14px; box-shadow: 0 4px 12px rgba(180, 88, 27, 0.25);">
+            Inquire For This Market <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 33 COUNTRIES DIRECTORY GRID ================= -->
+  <section class="exports-directory-section d-none" id="countries-directory">
+    <div class="container">
+      
+      <div class="row align-items-end mb-4" data-aos="fade-up">
+        <div class="col-lg-8">
+          <span class="section-tag-badge">COMPLETE LISTING (2014–2026)</span>
+          <h2 class="exports-section-title mb-0">All 33 Partner Countries</h2>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <span class="badge" style="background: #fff3e8; color: #b4581b; border: 1px solid rgba(180,88,27,0.3); font-size: 13.5px; padding: 8px 16px; border-radius: 50px;">
+            Showing: <strong id="visibleCountText">33</strong> of 33 Countries
+          </span>
+        </div>
+      </div>
+
+      <!-- Countries Grid Container -->
+      <div class="exports-directory-grid" id="countriesDirectoryGrid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Rendered dynamically by JavaScript with comprehensive data for all 33 countries -->
+      </div>
+
+    </div>
+  </section>
+<!-- ================= BRAND LOGO STRIP SECTION (PORTFOLIO PARTNERS) ================= -->
   <section class="about-brand-strip-section py-4" data-aos="fade-up">
     <div class="container">
       <div class="about-logos-divider-top"></div>
@@ -221,141 +333,8 @@
       <div class="about-logos-divider-bottom"></div>
     </div>
   </section>
-
-  <!-- ================= CREATIVE INTERACTIVE MAP SECTION ================= -->
-  <section class="exports-map-section" id="export-map-view">
-    <div class="container">
-
-      <!-- Section Header -->
-      <div class="exports-section-header" data-aos="fade-up">
-        <span class="section-tag-badge">CREATIVE MAP DIRECTORY</span>
-        <h2 class="exports-section-title">Explore Our 33 Export Destinations</h2>
-        <p class="exports-section-desc">
-          Click on any country, region filter, or marker below to explore our international trade routes dispatched from our distillery in Maharashtra via Nhava Sheva (JNPT) Port, Mumbai.
-        </p>
-      </div>
-
-      <!-- Map Interactive Controls Bar -->
-      <div class="exports-map-controls-card" data-aos="fade-up" data-aos-delay="50">
-        
-        <!-- Region Filter Pills -->
-        <div class="exports-filters-group" id="regionFilterGroup">
-          <button type="button" class="exports-filter-chip active" data-filter="all">All (33)</button>
-          <button type="button" class="exports-filter-chip" data-filter="Africa">Africa (23)</button>
-          <button type="button" class="exports-filter-chip" data-filter="Middle East">Middle East (4)</button>
-          <button type="button" class="exports-filter-chip" data-filter="Americas">Americas (4)</button>
-          <button type="button" class="exports-filter-chip" data-filter="Europe">Europe (2)</button>
-        </div>
-
-        <!-- Search & Reset -->
-        <div class="exports-controls-right">
-          <div class="exports-search-wrap">
-            <i class="bi bi-search exports-search-icon"></i>
-            <input type="text" class="exports-search-input" id="countrySearchInput" placeholder="Search country or port...">
-          </div>
-          <button type="button" class="exports-reset-btn" id="resetMapBtn" title="Reset to global view">
-            <i class="bi bi-arrow-counterclockwise"></i> Reset View
-          </button>
-        </div>
-
-      </div>
-
-      <!-- Map Canvas Box -->
-      <div class="exports-map-display-wrap" data-aos="fade-up" data-aos-delay="100">
-
-        <!-- Active View Indicator -->
-        <div class="exports-map-view-indicator">
-          <span></span>
-          <span id="activeViewLabel">Global View • 33 Countries Highlighted</span>
-        </div>
-
-        <!-- Zoom & Fullscreen Controls -->
-        <div class="exports-map-zoom-tools">
-          <button type="button" class="exports-zoom-btn" id="mapZoomInBtn" title="Zoom In">
-            <i class="bi bi-plus-lg"></i>
-          </button>
-          <button type="button" class="exports-zoom-btn" id="mapZoomOutBtn" title="Zoom Out">
-            <i class="bi bi-dash-lg"></i>
-          </button>
-          <button type="button" class="exports-zoom-btn" id="mapResetViewBtn" title="Reset View">
-            <i class="bi bi-arrows-angle-contract"></i>
-          </button>
-          <button type="button" class="exports-zoom-btn" id="mapFullscreenBtn" title="Open Fullscreen HD Map">
-            <i class="bi bi-arrows-fullscreen"></i>
-          </button>
-        </div>
-
-        <!-- Interactive Map Viewport -->
-        <div class="exports-map-viewport" id="mapViewport">
-          <img src="assets/images/Map.jpg" alt="Deejay Distilleries 33 Global Export Partner Countries Map" class="exports-map-interactive-img" id="mapInteractiveImg">
-        </div>
-
-        <!-- Floating Legend Badge -->
-        <div class="exports-map-legend-float">
-          <div class="exports-legend-item">
-            <span class="exports-legend-dot exports-legend-dot-export"></span>
-            <strong>33 Active Markets:</strong> Pinned in Official Red/Gold Markers
-          </div>
-          <div class="exports-legend-item">
-            <span class="exports-legend-dot exports-legend-dot-hq"></span>
-            <strong>India (HQ):</strong> Maharashtra Distillery &amp; JNPT Port
-          </div>
-          <div class="exports-legend-item" style="font-size: 11.5px; color: #64748b;">
-            <i class="bi bi-info-circle" style="color: #b4581b;"></i> Use zoom controls or filter pills to inspect regions
-          </div>
-        </div>
-
-        <!-- Floating Interactive Country Details Card -->
-        <div class="exports-country-focus-card" id="countryFocusCard">
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <span class="exports-country-num" id="cardCountryNum">#01</span>
-            <div class="d-flex align-items-center gap-2">
-              <span class="fs-4" id="cardCountryFlag">🌍</span>
-              <button type="button" class="btn-close" id="closeFocusCardBtn" aria-label="Close" style="font-size: 10px;"></button>
-            </div>
-          </div>
-          <h4 class="exports-country-name mb-1" id="cardCountryName">Country Name</h4>
-          <p class="exports-country-region mb-2" id="cardCountryRegion" style="color: #64748b; font-size: 12.5px;">Region</p>
-          <div class="mb-3" style="font-size: 12.5px; color: #334155; line-height: 1.55;">
-            <strong style="color: #b4581b;">Hub Port:</strong> <span id="cardCountryHub">Direct Port Dispatch</span><br>
-            <strong style="color: #b4581b;">Offerings:</strong> <span id="cardCountryProducts">Whisky, Rum, Bulk ENA</span>
-          </div>
-          <a href="#export-inquiry" class="btn btn-sm w-100 text-white" style="background: #b4581b; border-radius: 50px; font-weight: 700; font-size: 12.5px; padding: 8px 14px; box-shadow: 0 4px 12px rgba(180, 88, 27, 0.25);">
-            Inquire For This Market <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= 33 COUNTRIES DIRECTORY GRID ================= -->
-  <section class="exports-directory-section" id="countries-directory">
-    <div class="container">
-      
-      <div class="row align-items-end mb-4" data-aos="fade-up">
-        <div class="col-lg-8">
-          <span class="section-tag-badge">COMPLETE LISTING (2014–2026)</span>
-          <h2 class="exports-section-title mb-0">All 33 Partner Countries</h2>
-        </div>
-        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-          <span class="badge" style="background: #fff3e8; color: #b4581b; border: 1px solid rgba(180,88,27,0.3); font-size: 13.5px; padding: 8px 16px; border-radius: 50px;">
-            Showing: <strong id="visibleCountText">33</strong> of 33 Countries
-          </span>
-        </div>
-      </div>
-
-      <!-- Countries Grid Container -->
-      <div class="exports-directory-grid" id="countriesDirectoryGrid" data-aos="fade-up" data-aos-delay="100">
-        <!-- Rendered dynamically by JavaScript with comprehensive data for all 33 countries -->
-      </div>
-
-    </div>
-  </section>
-
   <!-- ================= EXPORT CAPABILITIES & SERVICES ================= -->
-  <section class="exports-capabilities-section">
+  <section class="exports-capabilities-section d-none">
     <div class="container">
       
       <div class="exports-section-header" data-aos="fade-up">
@@ -786,12 +765,110 @@
           targetEl.classList.add('highlighted');
         }
 
+        // Highlight animated pin on map
+        document.querySelectorAll('.map-animated-pin').forEach(el => el.classList.remove('active'));
+        const pinTarget = document.querySelector(`.map-animated-pin[data-country-id="${c.id}"]`);
+        if (pinTarget) {
+          pinTarget.classList.add('active');
+        }
+
         // Auto zoom/focus into country's region on Map.jpg
         setRegionView(c.region);
       }
 
-      // ================= 3. MAP.JPG INTERACTIVE ENGINE =================
-      const mapImg = document.getElementById('mapInteractiveImg');
+      // ================= 3. ANIMATED PIN MARKERS ON MAP.JPG =================
+      const mapPinLocations = [
+        { id: 1, name: "Angola", pinX: 52.3, pinY: 69.8, flag: "🇦🇴", region: "Africa", subregion: "Southern Africa", hub: "Luanda Port", products: "Blended Whisky, Rum, Extra Neutral Alcohol" },
+        { id: 2, name: "Belize", pinX: 23.2, pinY: 52.6, flag: "🇧🇿", region: "Americas", subregion: "Central America", hub: "Belize City", products: "Premium Rum, Vodka, Private Label Bottling" },
+        { id: 3, name: "Benin", pinX: 48.2, pinY: 58.5, flag: "🇧🇯", region: "Africa", subregion: "West Africa", hub: "Cotonou Port", products: "Whisky, Brandy, Dry Gin" },
+        { id: 4, name: "Burkina Faso", pinX: 46.9, pinY: 56.6, flag: "🇧🇫", region: "Africa", subregion: "West Africa", hub: "Ouagadougou", products: "Rum, Dry Gin, Vodka" },
+        { id: 5, name: "Cameroon", pinX: 50.4, pinY: 61.3, flag: "🇨🇲", region: "Africa", subregion: "Central Africa", hub: "Douala Port", products: "Blended Whisky, French Style Brandy" },
+        { id: 6, name: "Central African Republic", pinX: 53.2, pinY: 59.4, flag: "🇨🇫", region: "Africa", subregion: "Central Africa", hub: "Bangui", products: "Blended Spirits, White Rum" },
+        { id: 7, name: "Democratic Republic of Congo", pinX: 53.8, pinY: 64.6, flag: "🇨🇩", region: "Africa", subregion: "Central Africa", hub: "Matadi / Kinshasa", products: "Whisky, Vodka, Grain Spirits" },
+        { id: 8, name: "Republic of Congo", pinX: 50.5, pinY: 63.4, flag: "🇨🇬", region: "Africa", subregion: "Central Africa", hub: "Pointe-Noire", products: "Brandy, Rum, Whisky" },
+        { id: 9, name: "Cuba", pinX: 24.8, pinY: 50.2, flag: "🇨🇺", region: "Americas", subregion: "Caribbean", hub: "Havana", products: "Bulk Neutral Spirits, Blended Formulations" },
+        { id: 10, name: "Côte d'Ivoire", pinX: 45.8, pinY: 59.2, flag: "🇨🇮", region: "Africa", subregion: "West Africa", hub: "Abidjan Port", products: "Whisky, Vodka, Private Label Brands" },
+        { id: 11, name: "Equatorial Guinea", pinX: 49.8, pinY: 62.6, flag: "🇬🇶", region: "Africa", subregion: "Central Africa", hub: "Malabo Port", products: "Rum, Blended Whisky" },
+        { id: 12, name: "Germany", pinX: 50.3, pinY: 30.6, flag: "🇩🇪", region: "Europe", subregion: "Western Europe", hub: "Hamburg Port", products: "Matured Malts, Grain Neutral Spirits (GNS)" },
+        { id: 13, name: "Ghana", pinX: 47.4, pinY: 59.2, flag: "🇬🇭", region: "Africa", subregion: "West Africa", hub: "Tema Port", products: "Whisky, Gin, Brandy" },
+        { id: 14, name: "Guinea", pinX: 44.1, pinY: 57.0, flag: "🇬🇳", region: "Africa", subregion: "West Africa", hub: "Conakry Port", products: "Dry Gin, Vodka, Rum" },
+        { id: 15, name: "Haiti", pinX: 27.8, pinY: 52.4, flag: "🇭🇹", region: "Americas", subregion: "Caribbean", hub: "Port-au-Prince", products: "Distilled Cane Spirits, Rum" },
+        { id: 16, name: "Iraq", pinX: 59.8, pinY: 44.0, flag: "🇮🇶", region: "Middle East", subregion: "Western Asia", hub: "Umm Qasr Port", products: "Whisky, Vodka, Neutral Spirits" },
+        { id: 17, name: "Israel", pinX: 57.1, pinY: 44.7, flag: "🇮🇱", region: "Middle East", subregion: "Western Asia", hub: "Haifa / Ashdod", products: "Premium Vodka, Gin Blends" },
+        { id: 18, name: "Italy", pinX: 51.2, pinY: 38.3, flag: "🇮🇹", region: "Europe", subregion: "Southern Europe", hub: "Genoa Port", products: "Specialty Neutral Alcohol, Bulk Distillates" },
+        { id: 19, name: "Kenya", pinX: 58.1, pinY: 63.0, flag: "🇰🇪", region: "Africa", subregion: "East Africa", hub: "Mombasa Port", products: "Blended Whisky, London Dry Gin, Vodka" },
+        { id: 20, name: "Liberia", pinX: 44.7, pinY: 60.1, flag: "🇱🇷", region: "Africa", subregion: "West Africa", hub: "Monrovia Port", products: "Dark Rum, Blended Whisky" },
+        { id: 21, name: "Niger", pinX: 50.4, pinY: 53.4, flag: "🇳🇪", region: "Africa", subregion: "West Africa", hub: "Niamey", products: "Whisky, Dry Gin" },
+        { id: 22, name: "Nigeria", pinX: 49.4, pinY: 58.4, flag: "🇳🇬", region: "Africa", subregion: "West Africa", hub: "Lagos / Apapa", products: "Whisky, Brandy, RTD Bases" },
+        { id: 23, name: "Oman", pinX: 63.4, pinY: 51.2, flag: "🇴🇲", region: "Middle East", subregion: "Western Asia", hub: "Sohar / Muscat", products: "Blended Whisky, Triple Distilled Vodka" },
+        { id: 24, name: "Panama", pinX: 23.3, pinY: 54.0, flag: "🇵🇦", region: "Americas", subregion: "Central America", hub: "Balboa / Colon", products: "Cane Spirits, Dark Rum" },
+        { id: 25, name: "Rwanda", pinX: 56.4, pinY: 63.6, flag: "🇷🇼", region: "Africa", subregion: "East Africa", hub: "Kigali", products: "Whisky, Vodka, Gin" },
+        { id: 26, name: "Sierra Leone", pinX: 42.6, pinY: 58.8, flag: "🇸🇱", region: "Africa", subregion: "West Africa", hub: "Freetown Port", products: "Rum, Dry Gin, Brandy" },
+        { id: 27, name: "South Sudan", pinX: 56.4, pinY: 59.5, flag: "🇸🇸", region: "Africa", subregion: "East Africa", hub: "Juba", products: "Blended Whisky, Vodka" },
+        { id: 28, name: "Sudan", pinX: 55.2, pinY: 53.7, flag: "🇸🇩", region: "Africa", subregion: "North Africa", hub: "Port Sudan", products: "Industrial Alcohol, High Purity ENA" },
+        { id: 29, name: "Tanzania", pinX: 57.8, pinY: 66.8, flag: "🇹🇿", region: "Africa", subregion: "East Africa", hub: "Dar es Salaam", products: "Whisky, Gin, White Rum" },
+        { id: 30, name: "Togo", pinX: 47.8, pinY: 58.8, flag: "🇹🇬", region: "Africa", subregion: "West Africa", hub: "Lome Port", products: "Brandy, Whisky, Vodka" },
+        { id: 31, name: "Uganda", pinX: 56.2, pinY: 61.8, flag: "🇺🇬", region: "Africa", subregion: "East Africa", hub: "Kampala", products: "Whisky, London Dry Gin, Vodka" },
+        { id: 32, name: "United Arab Emirates", pinX: 62.3, pinY: 49.6, flag: "🇦🇪", region: "Middle East", subregion: "Western Asia", hub: "Jebel Ali / Dubai", products: "Premium Blends, Bulk ENA 96%" },
+        { id: 33, name: "Zambia", pinX: 54.4, pinY: 71.4, flag: "🇿🇲", region: "Africa", subregion: "Southern Africa", hub: "Lusaka", products: "Blended Whisky, Brandy, Rum" },
+        { id: 0, name: "India (Distillery HQ & JNPT Port)", pinX: 70.8, pinY: 50.0, flag: "🇮🇳", region: "HQ", subregion: "Maharashtra Central Distillery", hub: "Nhava Sheva (JNPT) Port, Mumbai", products: "Global Distillation & Bottling Operations" }
+      ];
+
+      function renderMapPins() {
+        const pinsLayer = document.getElementById('mapPinsLayer');
+        if (!pinsLayer) return;
+        pinsLayer.innerHTML = '';
+
+        mapPinLocations.forEach(p => {
+          const isHQ = p.id === 0;
+          const pinEl = document.createElement('div');
+          pinEl.className = `map-animated-pin ${isHQ ? 'map-pin-hq' : ''}`;
+          pinEl.setAttribute('data-country-id', p.id);
+          pinEl.style.left = `${p.pinX}%`;
+          pinEl.style.top = `${p.pinY}%`;
+
+          pinEl.innerHTML = `
+            <div class="map-pin-pulse ${isHQ ? 'map-pin-pulse-hq' : ''}"></div>
+            <div class="map-pin-core ${isHQ ? 'map-pin-core-hq' : ''}">
+              <span class="map-pin-dot"></span>
+            </div>
+            <div class="map-pin-tooltip">
+              <span class="tooltip-flag">${p.flag}</span>
+              <span class="tooltip-name">${p.name}</span>
+            </div>
+          `;
+
+          pinEl.addEventListener('click', function (e) {
+            e.stopPropagation();
+            document.querySelectorAll('.map-animated-pin').forEach(el => el.classList.remove('active'));
+            pinEl.classList.add('active');
+
+            if (!isHQ) {
+              const countryData = exportCountriesData.find(c => c.id === p.id);
+              if (countryData) {
+                focusCountry(countryData);
+              }
+            } else {
+              if (focusCard) {
+                document.getElementById('cardCountryNum').textContent = 'HQ';
+                document.getElementById('cardCountryFlag').textContent = '🇮🇳';
+                document.getElementById('cardCountryName').textContent = 'India (Distillery HQ)';
+                document.getElementById('cardCountryRegion').textContent = 'Maharashtra Distillery & JNPT Port';
+                document.getElementById('cardCountryHub').textContent = 'Nhava Sheva (JNPT) Port, Mumbai';
+                document.getElementById('cardCountryProducts').textContent = 'Global Bottling, Private Label & Bulk ENA';
+                focusCard.classList.add('active');
+              }
+            }
+          });
+
+          pinsLayer.appendChild(pinEl);
+        });
+      }
+
+      renderMapPins();
+
+      // ================= 4. MAP STAGE ZOOM & PAN ENGINE (CONSTRAINED TO SECTION IMG ONLY) =================
+      const mapStage = document.getElementById('mapStage') || document.getElementById('mapInteractiveImg');
       const mapViewport = document.getElementById('mapViewport');
       const activeViewLabel = document.getElementById('activeViewLabel');
 
@@ -799,11 +876,11 @@
       let currentTransX = 0; // in percent
       let currentTransY = 0; // in percent
       const minScale = 1;
-      const maxScale = 4.5;
+      const maxScale = 5.0;
 
       // Region View Transformations tailored to Map.jpg
       const regionPresets = {
-        all: { scale: 1, x: 0, y: 0, label: "Global View • 33 Partner Countries" },
+        all: { scale: 1, x: 0, y: 0, label: "Global View - 33 Countries Highlighted" },
         Africa: { scale: 2.15, x: -3, y: -16, label: "Africa Focus • 23 Partner Countries" },
         "Middle East": { scale: 2.7, x: -16, y: -8, label: "Middle East Focus • 4 Partner Countries" },
         Americas: { scale: 2.4, x: 30, y: -6, label: "Americas Focus • 4 Partner Countries" },
@@ -811,9 +888,9 @@
       };
 
       function applyMapTransform(smooth = true) {
-        if (!mapImg) return;
-        mapImg.style.transition = smooth ? 'transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1)' : 'none';
-        mapImg.style.transform = `scale(${currentScale}) translate(${currentTransX}%, ${currentTransY}%)`;
+        if (!mapStage) return;
+        mapStage.style.transition = smooth ? 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)' : 'none';
+        mapStage.style.transform = `scale(${currentScale}) translate(${currentTransX}%, ${currentTransY}%)`;
       }
 
       function setRegionView(regionKey) {
@@ -827,14 +904,14 @@
         }
       }
 
-      // Drag to Pan State
+      // Drag to Pan State (Active only on the map stage)
       let isDragging = false;
       let dragStartX = 0;
       let dragStartY = 0;
       let dragInitialTransX = 0;
       let dragInitialTransY = 0;
 
-      if (mapViewport && mapImg) {
+      if (mapViewport && mapStage) {
         mapViewport.addEventListener('mousedown', function (e) {
           if (currentScale <= 1) return; // Only pan when zoomed in
           isDragging = true;
@@ -862,7 +939,7 @@
           }
         });
 
-        // Touch drag for mobile
+        // Touch drag for mobile (Constrained to map section only)
         mapViewport.addEventListener('touchstart', function (e) {
           if (currentScale <= 1 || e.touches.length !== 1) return;
           isDragging = true;
@@ -884,18 +961,84 @@
         window.addEventListener('touchend', function () {
           isDragging = false;
         });
+
+        // Mouse Enter / Leave: Pause Lenis smooth scrolling so wheel zooms the map ONLY
+        mapViewport.addEventListener('mouseenter', function () {
+          if (window.lenis && typeof window.lenis.stop === 'function') {
+            window.lenis.stop();
+          }
+        });
+
+        mapViewport.addEventListener('mouseleave', function () {
+          if (window.lenis && typeof window.lenis.start === 'function') {
+            window.lenis.start();
+          }
+          if (isDragging) {
+            isDragging = false;
+            mapViewport.classList.remove('is-dragging');
+          }
+        });
+
+        // Mouse Wheel Zoom: Zooms ONLY this section image (no page scrolling or jumping)
+        mapViewport.addEventListener('wheel', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+
+          // Ensure Lenis scroll is halted during wheel zoom
+          if (window.lenis && typeof window.lenis.stop === 'function') {
+            window.lenis.stop();
+          }
+
+          const zoomFactor = e.deltaY < 0 ? 1.15 : 0.87;
+          const targetScale = Math.min(maxScale, Math.max(minScale, currentScale * zoomFactor));
+          if (targetScale !== currentScale) {
+            currentScale = Math.round(targetScale * 100) / 100;
+            if (currentScale <= 1.05) {
+              currentScale = 1;
+              currentTransX = 0;
+              currentTransY = 0;
+              if (activeViewLabel) {
+                activeViewLabel.textContent = "Global View - 33 Countries Highlighted";
+              }
+            } else {
+              if (activeViewLabel) {
+                activeViewLabel.textContent = `Custom Zoom • ${Math.round(currentScale * 100)}%`;
+              }
+            }
+            applyMapTransform(true);
+          }
+          return false;
+        }, { passive: false, capture: true });
+
+        // Double-click to toggle zoom on image
+        mapViewport.addEventListener('dblclick', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (currentScale > 1) {
+            setRegionView('all');
+          } else {
+            currentScale = 2;
+            applyMapTransform(true);
+            if (activeViewLabel) {
+              activeViewLabel.textContent = "Custom Zoom • 200%";
+            }
+          }
+        });
       }
 
-      // Zoom Controls Handlers
+      // Zoom Controls Handlers (On this section img only)
       const zoomInBtn = document.getElementById('mapZoomInBtn');
       const zoomOutBtn = document.getElementById('mapZoomOutBtn');
       const mapResetViewBtn = document.getElementById('mapResetViewBtn');
       const mapFullscreenBtn = document.getElementById('mapFullscreenBtn');
 
       if (zoomInBtn) {
-        zoomInBtn.addEventListener('click', function () {
+        zoomInBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
           if (currentScale < maxScale) {
-            currentScale = Math.min(maxScale, currentScale + 0.5);
+            currentScale = Math.min(maxScale, Math.round((currentScale + 0.35) * 100) / 100);
             applyMapTransform(true);
             if (activeViewLabel) {
               activeViewLabel.textContent = `Custom Zoom • ${Math.round(currentScale * 100)}%`;
@@ -905,25 +1048,32 @@
       }
 
       if (zoomOutBtn) {
-        zoomOutBtn.addEventListener('click', function () {
+        zoomOutBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
           if (currentScale > minScale) {
-            currentScale = Math.max(minScale, currentScale - 0.5);
-            if (currentScale === 1) {
+            currentScale = Math.max(minScale, Math.round((currentScale - 0.35) * 100) / 100);
+            if (currentScale <= 1.05) {
+              currentScale = 1;
               currentTransX = 0;
               currentTransY = 0;
+              if (activeViewLabel) {
+                activeViewLabel.textContent = "Global View - 33 Countries Highlighted";
+              }
+            } else {
+              if (activeViewLabel) {
+                activeViewLabel.textContent = `Custom Zoom • ${Math.round(currentScale * 100)}%`;
+              }
             }
             applyMapTransform(true);
-            if (activeViewLabel) {
-              activeViewLabel.textContent = currentScale === 1 
-                ? "Global View • 33 Partner Countries" 
-                : `Custom Zoom • ${Math.round(currentScale * 100)}%`;
-            }
           }
         });
       }
 
       if (mapResetViewBtn) {
-        mapResetViewBtn.addEventListener('click', function () {
+        mapResetViewBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
           setRegionView('all');
         });
       }
@@ -955,46 +1105,50 @@
         });
       }
 
-      // ================= 4. SEARCH & FILTER LOGIC =================
+      // ================= 4. SEARCH & FILTER LOGIC (OPTIONAL / SAFE CHECKS) =================
       const searchInput = document.getElementById('countrySearchInput');
-      searchInput.addEventListener('input', function (e) {
-        const val = e.target.value.toLowerCase().trim();
-        const activeFilter = document.querySelector('.exports-filter-chip.active').getAttribute('data-filter');
-
-        const filtered = exportCountriesData.filter(c => {
-          const matchRegion = (activeFilter === 'all') || (c.region.toLowerCase() === activeFilter.toLowerCase());
-          const matchSearch = c.name.toLowerCase().includes(val) || c.subregion.toLowerCase().includes(val) || c.hub.toLowerCase().includes(val);
-          return matchRegion && matchSearch;
-        });
-
-        renderDirectory(filtered);
-
-        // If search narrows down to one country, auto-focus
-        if (filtered.length === 1 && val.length > 2) {
-          focusCountry(filtered[0]);
-        }
-      });
-
-      // Region Filter Chips Click Handlers
       const filterChips = document.querySelectorAll('.exports-filter-chip');
-      filterChips.forEach(chip => {
-        chip.addEventListener('click', function () {
-          filterChips.forEach(ch => ch.classList.remove('active'));
-          this.classList.add('active');
 
-          const region = this.getAttribute('data-filter');
-          const searchVal = searchInput.value.toLowerCase().trim();
+      if (searchInput) {
+        searchInput.addEventListener('input', function (e) {
+          const val = e.target.value.toLowerCase().trim();
+          const activeChip = document.querySelector('.exports-filter-chip.active');
+          const activeFilter = activeChip ? activeChip.getAttribute('data-filter') : 'all';
 
           const filtered = exportCountriesData.filter(c => {
-            const matchRegion = (region === 'all') || (c.region.toLowerCase() === region.toLowerCase());
-            const matchSearch = !searchVal || c.name.toLowerCase().includes(searchVal) || c.subregion.toLowerCase().includes(searchVal);
+            const matchRegion = (activeFilter === 'all') || (c.region.toLowerCase() === activeFilter.toLowerCase());
+            const matchSearch = c.name.toLowerCase().includes(val) || c.subregion.toLowerCase().includes(val) || c.hub.toLowerCase().includes(val);
             return matchRegion && matchSearch;
           });
 
           renderDirectory(filtered);
-          setRegionView(region);
+
+          if (filtered.length === 1 && val.length > 2) {
+            focusCountry(filtered[0]);
+          }
         });
-      });
+      }
+
+      if (filterChips.length) {
+        filterChips.forEach(chip => {
+          chip.addEventListener('click', function () {
+            filterChips.forEach(ch => ch.classList.remove('active'));
+            this.classList.add('active');
+
+            const region = this.getAttribute('data-filter');
+            const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+            const filtered = exportCountriesData.filter(c => {
+              const matchRegion = (region === 'all') || (c.region.toLowerCase() === region.toLowerCase());
+              const matchSearch = !searchVal || c.name.toLowerCase().includes(searchVal) || c.subregion.toLowerCase().includes(searchVal);
+              return matchRegion && matchSearch;
+            });
+
+            renderDirectory(filtered);
+            setRegionView(region);
+          });
+        });
+      }
 
       // Close Floating Country Card
       const closeCardBtn = document.getElementById('closeFocusCardBtn');
