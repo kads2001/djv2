@@ -820,7 +820,7 @@ h6,
 .nav-header-link {
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
-  font-size: 16.5px;
+  font-size: 20px;
   font-weight: 500;
   text-decoration: none;
   text-transform: capitalize;
@@ -842,7 +842,7 @@ h6,
 .site-header.scrolled .nav-header-link:hover,
 .site-header.scrolled .nav-header-link.active {
   color: var(--gold-primary, #b4581b);
-}
+} 
 
 /* Exports & Contact Pill Buttons in Nav */
 .btn-nav-export,
@@ -853,7 +853,7 @@ h6,
   background-color: var(--gold-primary, #b4581b);
   color: #ffffff !important;
   font-family: var(--font-heading, 'Anybody', sans-serif);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: normal;
   text-decoration: none;
@@ -1147,7 +1147,7 @@ h6,
   background-color: #ffffff;
   color: #0b0c10;
   font-family: var(--font-main);
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
@@ -1176,7 +1176,7 @@ h6,
   background-color: transparent;
   color: #ffffff;
   font-family: var(--font-main);
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
@@ -5098,8 +5098,8 @@ h6,
 
 .pn-badge-news {
   font-family: var(--font-main, 'Anybody', sans-serif);
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
@@ -5108,37 +5108,37 @@ h6,
 }
 
 .pn-featured-title {
-  font-family: var(--font-main, 'Anybody', sans-serif);
-  font-weight: 600;
-  font-size: clamp(24px, 2.4vw, 48px);
-  line-height: 1.2;
-  color: #ffffff;
-  margin-bottom: 16px;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: clamp(24px, 3vw, 60px);
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 16px;
 }
-
 .pn-featured-desc {
-  font-family: var(--font-main);
-  font-size: 16px;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 28px;
-  max-width: 480px;
+    font-family: var(--font-main);
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 28px;
+    max-width: 640px;
 }
 
 .pn-featured-btn {
-  font-family: var(--font-main, 'Anybody', sans-serif);
-  font-size: 12.5px;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 9px 24px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  background: transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.25s ease;
+    font-family: var(--font-main);
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
 }
 
 .pn-featured-btn:hover {
@@ -5211,8 +5211,8 @@ h6,
 .pn-sub-title {
   font-family: var(--font-main, 'Anybody', sans-serif);
   font-weight: 600;
-  font-size: 15.5px;
-  line-height: 1.35;
+  font-size: 24px;
+  line-height: 1.2;
   color: #111111;
   margin-bottom: 0;
   transition: color 0.2s ease;
@@ -5223,30 +5223,29 @@ h6,
 }
 
 .pn-sub-desc {
-  font-family: var(--font-main, 'Anybody', sans-serif);
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: #555555;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  font-weight: 400;
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555555;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-weight: 400;
 }
-
 .pn-sub-btn {
-  font-family: var(--font-main, 'Anybody', sans-serif);
-  font-size: 12.5px;
-  font-weight: 600;
-  color: #b4581b;
-  border: 1px solid #b4581b;
-  border-radius: 50px;
-  padding: 7px 20px;
-  background: transparent;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0px;
-  transition: all 0.25s ease;
-  margin-top: auto;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 600;
+    color: #b4581b;
+    border: 1px solid #b4581b;
+    border-radius: 50px;
+    padding: 7px 20px;
+    background: transparent;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+    transition: all 0.25s ease;
+    margin-top: auto;
 }
 
 .pn-sub-btn:hover {
@@ -6552,8 +6551,8 @@ h6,
   color: #ffffff !important;
   text-decoration: none;
   font-family: var(--font-main, sans-serif);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   transition: opacity 0.25s ease, transform 0.25s ease;
   white-space: nowrap;
   display: inline-block;
@@ -6567,7 +6566,7 @@ h6,
 .footer-policy-link {
   color: #4b5563;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-family: var(--font-main, sans-serif);
   transition: color 0.2s ease;
 }
@@ -6602,7 +6601,7 @@ h6,
 
 .footer-bottom-left {
   color: #2b2b2b;
-  font-size: 13.5px;
+  font-size: 16px;
   font-family: var(--font-main, sans-serif);
   font-weight: 500;
   text-align: left;
@@ -7880,7 +7879,7 @@ select,
   color: #fff;
   border: 2px solid #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
@@ -7910,7 +7909,7 @@ select,
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.85);
   font-family: var(--font-heading, 'Anybody', sans-serif);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
@@ -7941,7 +7940,7 @@ select,
   color: var(--gold-primary, #b4581b);
   border: 1.5px solid var(--gold-primary, #b4581b);
   font-family: var(--font-heading, 'Anybody', sans-serif);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
