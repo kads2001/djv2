@@ -17,6 +17,7 @@
   <!-- AOS (Animate On Scroll) CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -86,7 +87,9 @@
           <a href="exports.html" class="btn-nav-export">Exports</a>
         </nav>
         <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
-          <i class="bi bi-list"></i>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
@@ -251,7 +254,7 @@
       <div class="product-cards-grid">
 
         <!-- 1. Gin: Blue Marine Botanical Dry Gin -->
-        <div class="modern-product-item" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="blue-marine" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -308,7 +311,7 @@
         </div>
 
         <!-- 2. Whisky: Bishop's Oak Blended Malt Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="bishops-oak" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -365,7 +368,7 @@
         </div>
 
         <!-- 3. Gin: Ria Lemony Refreshing Craft Gin -->
-        <div class="modern-product-item" data-category="gin" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="ria-gin" data-category="gin" data-region="india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -422,7 +425,7 @@
         </div>
 
         <!-- 4. Rum: Captain Kook Dark Café Rhum -->
-        <div class="modern-product-item" data-category="rum" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="captain-kook" data-category="rum" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -473,7 +476,7 @@
         </div>
 
         <!-- 5. Gin: Knight Fox American Dry Gin -->
-        <div class="modern-product-item" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="knight-fox" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -524,7 +527,7 @@
         </div>
 
         <!-- 6. Brandy: Karan's One-Up Doctor Brandy -->
-        <div class="modern-product-item" data-category="brandy" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="one-up-brandy" data-category="brandy" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -569,7 +572,7 @@
         </div>
 
         <!-- 7. Vodka: Silver Kastle Pure Grain Vodka -->
-        <div class="modern-product-item" data-category="vodka" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="silver-kastle" data-category="vodka" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -608,7 +611,7 @@
         </div>
 
         <!-- 8. Whisky: Karan's Gold Original Deluxe Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="karans-gold" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -647,7 +650,7 @@
         </div>
 
         <!-- 9. Whisky: Barrel 24 Original Premium Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="barrel-24" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -698,7 +701,7 @@
         </div>
 
         <!-- 10. Whisky: Uncle 39 Blended Reserve Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="uncle-39" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -743,7 +746,7 @@
         </div>
 
         <!-- 11. Rum: Karan's Bullet Original XXX Rum -->
-        <div class="modern-product-item" data-category="rum" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="bullet-rum" data-category="rum" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -767,7 +770,7 @@
         </div>
 
         <!-- 12. Whisky: Tangawisi Original Ginger Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="tangawisi" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -806,7 +809,7 @@
         </div>
 
         <!-- 13. Whisky: 6 Horas Premium Blended Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="seis-horas" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -845,7 +848,7 @@
         </div>
 
         <!-- 14. Gin: Blue Diamond Distilled Dry Gin -->
-        <div class="modern-product-item" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="blue-diamond" data-category="gin" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -884,7 +887,7 @@
         </div>
 
         <!-- 15. Vodka: Kalanov Pure Grain Vodka -->
-        <div class="modern-product-item" data-category="vodka" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="kalanov-vodka" data-category="vodka" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -929,7 +932,7 @@
         </div>
 
         <!-- 16. Brandy: Deejay's Special Doctor Brandy -->
-        <div class="modern-product-item" data-category="brandy" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="deejays-brandy" data-category="brandy" data-region="india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -974,7 +977,7 @@
         </div>
 
         <!-- 17. Whisky: Old Bombay Quarter Deluxe Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="old-bombay" data-category="whisky" data-region="india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1025,7 +1028,7 @@
         </div>
 
         <!-- 18. Vodka: Kalanov Coconut Flavoured Vodka -->
-        <div class="modern-product-item" data-category="vodka" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="kalanov-coconut" data-category="vodka" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1082,7 +1085,7 @@
         </div>
 
         <!-- 19. Exotic: Mitishamba Herbal Liquor Bitters -->
-        <div class="modern-product-item" data-category="exotic" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="mitishamba" data-category="exotic" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1121,7 +1124,7 @@
         </div>
 
         <!-- 20. Gin: Karan's EDL Duet Gin & Lime -->
-        <div class="modern-product-item" data-category="gin" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="edl-duet" data-category="gin" data-region="india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1166,7 +1169,7 @@
         </div>
 
         <!-- 21. Vodka: Empire Platinum Green Apple Vodka -->
-        <div class="modern-product-item" data-category="vodka" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="empire-green-apple" data-category="vodka" data-region="india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1205,7 +1208,7 @@
         </div>
 
         <!-- 22. Vodka: Karan's Empire Platinum Classic Vodka -->
-        <div class="modern-product-item" data-category="vodka" data-region="india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="empire-classic" data-category="vodka" data-region="india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1244,7 +1247,7 @@
         </div>
 
         <!-- 23. Whisky: The Grand Master's Malt Blended Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="grand-masters" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1283,7 +1286,7 @@
         </div>
 
         <!-- 24. Brandy: Doctor's Brandy Napoleon Fine Gold -->
-        <div class="modern-product-item" data-category="brandy" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="napoleon-brandy" data-category="brandy" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1307,7 +1310,7 @@
         </div>
 
         <!-- 25. Rum: Jamaican Exported Gold Rum -->
-        <div class="modern-product-item" data-category="rum" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="jamaican-rum" data-category="rum" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1331,7 +1334,7 @@
         </div>
 
         <!-- 26. Whisky: Jamaican Express Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="jamaican-whisky" data-category="whisky" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1355,7 +1358,7 @@
         </div>
 
         <!-- 27. Whisky: Don & Master Blended Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="don-master" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1394,7 +1397,7 @@
         </div>
 
         <!-- 28. Whisky: Lion Swagger Premium Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="lion-swagger" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1439,7 +1442,7 @@
         </div>
 
         <!-- 29. Rum: The Grand Master's Coffee Rum -->
-        <div class="modern-product-item" data-category="rum" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="coffee-rum" data-category="rum" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1463,7 +1466,7 @@
         </div>
 
         <!-- 30. Whisky: Dynasty Gold Reserve Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="dynasty-gold" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1487,7 +1490,7 @@
         </div>
 
         <!-- 31. Rum: Café Rum Original -->
-        <div class="modern-product-item" data-category="rum" data-region="out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="cafe-rum" data-category="rum" data-region="out-of-india" data-aos="fade-up"
           data-aos-delay="50">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1511,7 +1514,7 @@
         </div>
 
         <!-- 32. Whisky: Lion Diamond Deluxe Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="lion-diamond" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="100">
           <div class="modern-product-card">
             <div class="modern-card-slider">
@@ -1535,7 +1538,7 @@
         </div>
 
         <!-- 33. Whisky: Ria Blue Malt Whisky -->
-        <div class="modern-product-item" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
+        <div class="modern-product-item" data-product-id="ria-whisky" data-category="whisky" data-region="india out-of-india" data-aos="fade-up"
           data-aos-delay="150">
           <div class="modern-product-card has-slider">
             <div class="modern-card-slider">
@@ -1778,39 +1781,110 @@
   <!-- Custom Main JS -->
   <script src="js/main.js"></script>
 
-  <!-- Auto-link Modern Product Cards to Product Details -->
+      <!-- Auto-link Modern Product Cards to Product Details -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const brandToIdMap = {
-        'uncle 39': 'uncle-39',
-        'grand master': 'grand-masters',
-        'blue marine': 'blue-marine',
-        'knight fox': 'knight-fox',
-        'captain kook': 'captain-kook',
-        'captain kock': 'captain-kook',
+        "blue marine botanical dry gin": 'blue-marine',
+        "bishop's oak blended malt whisky": 'bishops-oak',
+        "ria lemony refreshing craft gin": 'ria-gin',
+        "captain kook dark caf\u00e9 rhum": 'captain-kook',
+        "knight fox american dry gin": 'knight-fox',
+        "karan's one-up doctor brandy": 'one-up-brandy',
+        "one-up doctor brandy": 'one-up-brandy',
+        "silver kastle pure grain vodka": 'silver-kastle',
+        "karan's gold original deluxe whisky": 'karans-gold',
+        "gold original deluxe whisky": 'karans-gold',
+        "barrel 24 original premium whisky": 'barrel-24',
+        "uncle 39 blended reserve whisky": 'uncle-39',
+        "karan's bullet original xxx rum": 'bullet-rum',
+        "bullet original xxx rum": 'bullet-rum',
+        "tangawisi original ginger whisky": 'tangawisi',
+        "6 horas premium blended whisky": 'seis-horas',
+        "blue diamond distilled dry gin": 'blue-diamond',
+        "kalanov pure grain vodka": 'kalanov-vodka',
+        "deejay's special doctor brandy": 'deejays-brandy',
+        "special doctor brandy": 'deejays-brandy',
+        "old bombay quarter deluxe whisky": 'old-bombay',
+        "kalanov coconut flavoured vodka": 'kalanov-coconut',
+        "mitishamba herbal liquor bitters": 'mitishamba',
+        "karan's edl duet gin & lime": 'edl-duet',
+        "edl duet gin & lime": 'edl-duet',
+        "empire platinum green apple vodka": 'empire-green-apple',
+        "karan's empire platinum classic vodka": 'empire-classic',
+        "empire platinum classic vodka": 'empire-classic',
+        "the grand master's malt blended whisky": 'grand-masters',
+        "grand master's malt blended whisky": 'grand-masters',
+        "doctor's brandy napoleon fine gold": 'napoleon-brandy',
+        "jamaican exported gold rum": 'jamaican-rum',
+        "jamaican express whisky": 'jamaican-whisky',
+        "don & master blended whisky": 'don-master',
+        "lion swagger premium whisky": 'lion-swagger',
+        "the grand master's coffee rum": 'coffee-rum',
+        "grand master's coffee rum": 'coffee-rum',
+        "dynasty gold reserve whisky": 'dynasty-gold',
+        "caf\u00e9 rum original": 'cafe-rum',
+        "lion diamond deluxe whisky": 'lion-diamond',
+        "ria blue malt whisky": 'ria-whisky',
+        "blue marine": 'blue-marine',
         "bishop's oak": 'bishops-oak',
-        'silver kastle': 'silver-kastle',
-        'doctor brandy': 'karans-doctor-brandy',
-        "karan's bullet": 'karans-bullet-rum',
-        'bullet': 'karans-bullet-rum',
-        'tangawisi': 'tangawisi'
+        "ria lemony": 'ria-gin',
+        "captain kook": 'captain-kook',
+        "captain kock": 'captain-kook',
+        "knight fox": 'knight-fox',
+        "one-up": 'one-up-brandy',
+        "silver kastle": 'silver-kastle',
+        "karan's gold": 'karans-gold',
+        "barrel 24": 'barrel-24',
+        "uncle 39": 'uncle-39',
+        "bullet": 'bullet-rum',
+        "tangawisi": 'tangawisi',
+        "6 horas": 'seis-horas',
+        "blue diamond": 'blue-diamond',
+        "kalanov vodka": 'kalanov-vodka',
+        "kalanov coconut": 'kalanov-coconut',
+        "kalanov": 'kalanov-vodka',
+        "doctor brandy": 'deejays-brandy',
+        "old bombay": 'old-bombay',
+        "mitishamba": 'mitishamba',
+        "edl duet": 'edl-duet',
+        "green apple": 'empire-green-apple',
+        "empire platinum": 'empire-classic',
+        "grand master": 'grand-masters',
+        "grand masters": 'grand-masters',
+        "napoleon": 'napoleon-brandy',
+        "jamaican export": 'jamaican-rum',
+        "jamaican express": 'jamaican-whisky',
+        "don & master": 'don-master',
+        "lion swagger": 'lion-swagger',
+        "coffee rum": 'coffee-rum',
+        "dynasty gold": 'dynasty-gold',
+        "caf\u00e9 rum": 'cafe-rum',
+        "cafe rum": 'cafe-rum',
+        "lion diamond": 'lion-diamond',
+        "ria blue": 'ria-whisky',
       };
 
-      document.querySelectorAll('.modern-product-card').forEach(function (card) {
+      document.querySelectorAll('.modern-product-item').forEach(function (item) {
+        const card = item.querySelector('.modern-product-card');
+        if (!card) return;
         const titleEl = card.querySelector('.modern-card-title');
         if (!titleEl) return;
-        const text = titleEl.innerText.toLowerCase().trim();
 
-        // Find best match ID
-        let targetId = 'uncle-39';
-        for (const [key, val] of Object.entries(brandToIdMap)) {
-          if (text.includes(key)) {
-            targetId = val;
-            break;
+        // Direct product ID from data attribute or lookup
+        let targetId = item.getAttribute('data-product-id');
+        if (!targetId) {
+          const text = titleEl.innerText.toLowerCase().trim();
+          targetId = 'blue-marine';
+          for (const [key, val] of Object.entries(brandToIdMap)) {
+            if (text.includes(key)) {
+              targetId = val;
+              break;
+            }
           }
         }
 
-        // Wrap title text in link if not already wrapped
+        // Wrap title text in link
         if (!titleEl.querySelector('a')) {
           titleEl.innerHTML = `<a href="product-details.html?id=${targetId}" title="View details for ${titleEl.innerText.trim()}">${titleEl.innerHTML}</a>`;
         }

@@ -17,6 +17,7 @@
   <!-- AOS (Animate On Scroll) CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body class="blog-details-page-wrapper">
@@ -86,7 +87,9 @@
           <a href="exports.html" class="btn-nav-export">Exports</a>
         </nav>
         <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
-          <i class="bi bi-list"></i>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
@@ -412,7 +415,7 @@
           <span class="section-tag-badge">COMPANION READS</span>
           <h2 class="blog-related-title">Explore Related Insights</h2>
         </div>
-        <a href="index.html#blogs" class="blogs-view-all-btn d-none d-md-inline-flex">
+        <a href="blogs.html" class="blogs-view-all-btn d-none d-md-inline-flex">
           View All Insights <i class="bi bi-arrow-up-right"></i>
         </a>
       </div>
@@ -607,6 +610,17 @@
 
     // Dynamic Article Switching Support via URL query '?id=...'
     const articlesDatabase = {
+      'oak-maturation': {
+        title: 'The Art of Oak Maturation',
+        subtitle: 'How wood chemistry, charring levels, and tropical cellars define mastercraft spirit profiles.',
+        category: 'Maturation Sciences',
+        date: 'October 12, 2026',
+        readTime: '6 Min Read',
+        views: '4,520 Reads',
+        image: 'assets/images/who_we_are_barrels.png',
+        quote: 'Oak casks do not merely store spirit; they breathe, react, and sculpt its immortal character.',
+        author: 'Master Blender Cellar Notes'
+      },
       'copper-pot-stills': {
         title: 'The Geometry of Copper: Pot Still Column Hydrodynamics',
         subtitle: 'An engineering dive into how vapor velocity, copper surface contact, and reflux coils cleanse sulfur volatiles.',

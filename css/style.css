@@ -842,7 +842,7 @@ h6,
 .site-header.scrolled .nav-header-link:hover,
 .site-header.scrolled .nav-header-link.active {
   color: var(--gold-primary, #b4581b);
-} 
+}
 
 /* Exports & Contact Pill Buttons in Nav */
 .btn-nav-export,
@@ -3824,6 +3824,8 @@ h6,
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 42%;
+    bottom: 8%;
   }
 
   .showcase-card-desc {
@@ -5108,37 +5110,38 @@ h6,
 }
 
 .pn-featured-title {
-    font-family: var(--font-main);
-    font-weight: 600;
-    font-size: clamp(24px, 3vw, 60px);
-    line-height: 1.2;
-    color: #ffffff;
-    margin-bottom: 16px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 60px);
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
+
 .pn-featured-desc {
-    font-family: var(--font-main);
-    font-size: 20px;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 28px;
-    max-width: 640px;
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 28px;
+  max-width: 640px;
 }
 
 .pn-featured-btn {
-    font-family: var(--font-main);
-    font-size: 17px;
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    background: transparent;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s ease;
-    text-transform: uppercase;
+  font-family: var(--font-main);
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
 }
 
 .pn-featured-btn:hover {
@@ -5223,29 +5226,30 @@ h6,
 }
 
 .pn-sub-desc {
-    font-family: var(--font-main);
-    font-size: 16px;
-    line-height: 1.4;
-    color: #555555;
-    margin-top: 10px;
-    margin-bottom: 16px;
-    font-weight: 400;
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555555;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 400;
 }
+
 .pn-sub-btn {
-    font-family: var(--font-main);
-    font-size: 16px;
-    font-weight: 600;
-    color: #b4581b;
-    border: 1px solid #b4581b;
-    border-radius: 50px;
-    padding: 7px 20px;
-    background: transparent;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0px;
-    transition: all 0.25s ease;
-    margin-top: auto;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 600;
+  color: #b4581b;
+  border: 1px solid #b4581b;
+  border-radius: 50px;
+  padding: 7px 20px;
+  background: transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  transition: all 0.25s ease;
+  margin-top: auto;
 }
 
 .pn-sub-btn:hover {
@@ -6889,15 +6893,21 @@ h6,
   }
 
   .nav-menu-links,
-  .nav-left,
-  .nav-right {
+  .nav-desktop-menu,
+  .nav-left {
     display: none !important;
   }
 
-  .mobile-nav-toggle {
+  .nav-right {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .brand-crest-logo {
@@ -8426,7 +8436,7 @@ select,
 .inner-banner-blog-details::before,
 .inner-banner-blogs::before,
 .inner-banner-blog::before {
-  background-image: var(--banner-bg, url('../assets/images/banner1.jpeg'));
+  background-image: var(--banner-bg, url('../assets/images/banner3.webp'));
 }
 
 .inner-banner-overlay {

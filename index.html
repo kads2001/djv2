@@ -19,6 +19,7 @@
   <!-- AOS (Animate On Scroll) CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -92,38 +93,13 @@
           <a href="exports.html" class="btn-nav-export">Exports</a>
         </nav>
             <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open Navigation">
-              <i class="bi bi-list"></i>
-            </button>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
           </div>
         </div>
       </header>
-
-      <!-- Navigation Drawer Backdrop Overlay -->
-      <div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
-
-      <!-- Fullscreen / Drawer Navigation Menu -->
-      <div class="mobile-nav-menu" id="mobileNavDrawer">
-        <button class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation">&times;</button>
-        <div class="nav-drawer-header">
-          <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="nav-drawer-logo">
-        </div>
-            <nav class="nav-drawer-links">
-      <a href="index.html" class="nav-custom-link">Home</a>
-      <a href="about.html" class="nav-custom-link">About Us</a>
-      <a href="products.html" class="nav-custom-link">Our Products</a>
-      <a href="blogs.html" class="nav-custom-link">Blogs</a>
-      <a href="exports.html" class="nav-custom-link">Exports</a>
-      <a href="contact.html" class="nav-custom-link">Contact Us</a>
-    </nav>
-        <!-- <div class="nav-drawer-footer">
-          <a href="javascript:void(0);" class="btn-nav-contact">Get In Touch</a>
-          <div class="nav-socials" style="border-left: none; padding-left: 0; margin-top: 10px; justify-content: center;">
-            <a href="javascript:void(0);" class="nav-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="javascript:void(0);" class="nav-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="javascript:void(0);" class="nav-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div> -->
-      </div>
 
 
       <div class="hero-video-slider-wrap" id="heroVideoSlider">
@@ -145,8 +121,8 @@
                   </p>
                   <div class="hero-action-btns" data-aos="fade-up" data-aos-delay="300"
                     style="margin-top: 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
-                    <a href="javascript:void(0);" class="btn-hero-solid">Explore Brands</a>
-                    <a href="javascript:void(0);" class="btn-hero-outline">Our Story</a>
+                    <a href="products.html" class="btn-hero-solid">Explore Brands</a>
+                    <a href="about.html" class="btn-hero-outline">Our Story</a>
                   </div>
                 </div>
               </div>
@@ -220,7 +196,7 @@
 
           <!-- Callout CTA Button -->
           <div class="about-lead-cta mb-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="javascript:void(0);" class="btn-story-outline">Explore Our Story</a>
+            <a href="about.html" class="btn-story-outline">Explore Our Story</a>
           </div>
 
           <!-- Stats Row with Vertical Line Dividers -->
@@ -333,7 +309,7 @@
                 <i class="bi bi-arrow-right"></i>
               </button>
             </div>
-            <a href="javascript:void(0);" class="btn-showcase-view-all">View All</a>
+            <a href="products.html" class="btn-showcase-view-all">View All</a>
           </div>
         </div>
 
@@ -351,7 +327,7 @@
                 <p class="showcase-card-desc">
                   A rich, harmonious blend crafted from fine grain spirits and premium malts.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=grand-masters" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -365,7 +341,7 @@
                 <p class="showcase-card-desc">
                   Distilled with handpicked botanicals and bright citrus notes for an invigorating finish.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=blue-marine" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -379,7 +355,7 @@
                 <p class="showcase-card-desc">
                   Meticulously blended from selected grape spirits and aged to perfection.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=one-up-brandy" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -393,7 +369,7 @@
                 <p class="showcase-card-desc">
                   A finely crafted premium whisky featuring a rich golden hue and delicate malt character.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=uncle-39" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -407,7 +383,7 @@
                 <p class="showcase-card-desc">
                   Distilled from select cane spirits and matured for deep, bold flavor.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=bullet-rum" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -421,7 +397,7 @@
                 <p class="showcase-card-desc">
                   Ultra-smooth grain vodka infused with tropical, sweet natural coconut essence.
                 </p>
-                <a href="javascript:void(0);" class="showcase-card-btn">Read More</a>
+                <a href="product-details.html?id=kalanov-coconut" class="showcase-card-btn">Read More</a>
               </div>
             </div>
 
@@ -518,7 +494,7 @@
           <span class="section-tag-badge">PREMIUM PRODUCTS</span>
           <h2 class="premium-products-title">Our premium products</h2>
         </div>
-        <a href="javascript:void(0);" class="premium-view-all">VIEW ALL</a>
+        <a href="products.html" class="premium-view-all">VIEW ALL</a>
       </div>
 
       <!-- Products Grid -->
@@ -532,7 +508,7 @@
           <div class="ppc-body">
             <h5 class="ppc-name">Lion Diamond <br> Deluxe Whisky</h5>
             <p>Rich character and smooth finish.</p>
-            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+            <a href="product-details.html?id=lion-diamond" class="btn-ppc-discover">Discover Brand</a>
           </div>
         </div>
 
@@ -545,7 +521,7 @@
             <h5 class="ppc-name">6 Horas <br> Blended Whisky</h5>
             <p>Expertly blended for smooth taste.
             </p>
-            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+            <a href="product-details.html?id=seis-horas" class="btn-ppc-discover">Discover Brand</a>
           </div>
         </div>
 
@@ -557,7 +533,7 @@
           <div class="ppc-body">
             <h5 class="ppc-name">Jamaican Express <br> Whisky</h5>
             <p>Bold and rich Caribbean flavor.</p>
-            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+            <a href="product-details.html?id=jamaican-whisky" class="btn-ppc-discover">Discover Brand</a>
           </div>
         </div>
 
@@ -569,7 +545,7 @@
           <div class="ppc-body">
             <h5 class="ppc-name">Royal Gold <br> Premium Whisky</h5>
             <p>Premium blend with fine finish.</p>
-            <a href="contact.html" class="btn-ppc-discover">Discover Brand</a>
+            <a href="product-details.html?id=karans-gold" class="btn-ppc-discover">Discover Brand</a>
           </div>
         </div>
 
@@ -579,7 +555,7 @@
           <h2 class="promo-heading">CLASSICS TASTE</h2>
           <p class="promo-sub">Don & Master Gold Blended Malt Whisky.</p>
           <img src="assets/images/primicards.jpeg" alt="Promo Bottles" class="promo-img">
-          <a href="contact.html" class="btn-promo-shop">Discover Brand</a>
+          <a href="product-details.html?id=don-master" class="btn-promo-shop">Discover Brand</a>
         </div>
 
       </div>
@@ -692,7 +668,7 @@
                   Crafted with slow fermentation and rare Bavarian red hops for crisp aromatic complexity and a golden
                   finish.
                 </p>
-                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                <a href="products.html" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
                   READ MORE
                 </a>
               </div>
@@ -750,7 +726,7 @@
                   Infused with fresh garden strawberries and five-times distilled platinum grain spirits for unmatched
                   smoothness.
                 </p>
-                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                <a href="product-details.html?id=grand-masters" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
                   READ MORE
                 </a>
               </div>
@@ -810,7 +786,7 @@
                   Rich roasted malts with smooth caramel undertones, matured for depth, velvety head, and balanced malt
                   sweetness.
                 </p>
-                <a href="javascript:void(0);" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
+                <a href="products.html" class="beer-stack-read-more" data-aos="fade-up" data-aos-delay="300">
                   READ MORE
                 </a>
               </div>
@@ -866,7 +842,7 @@
           <h2 class="recent-launches-title">Recent Launches</h2>
         </div>
         <div class="recent-launches-header-right">
-          <a href="javascript:void(0);" class="recent-launches-view-all">
+          <a href="products.html" class="recent-launches-view-all">
             View All Releases
           </a>
         </div>
@@ -882,11 +858,9 @@
               try something new.
             </p>
             <div class="launch-card-footer">
-              <a href="javascript:void(0);" class="launch-card-link">
+              <a href="product-details.html?id=grand-masters" class="launch-card-link">
                 Explore Flavours
               </a>
-
-
             </div>
           </div>
         </div>
@@ -900,11 +874,9 @@
               try something new.
             </p>
             <div class="launch-card-footer">
-              <a href="javascript:void(0);" class="launch-card-link">
+              <a href="product-details.html?id=grand-masters" class="launch-card-link">
                 Explore Flavours
               </a>
-
-
             </div>
           </div>
         </div>
@@ -918,11 +890,9 @@
               try something new.
             </p>
             <div class="launch-card-footer">
-              <a href="javascript:void(0);" class="launch-card-link">
+              <a href="product-details.html?id=grand-masters" class="launch-card-link">
                 Explore Flavours
               </a>
-
-
             </div>
           </div>
         </div>
@@ -937,11 +907,9 @@
               Indica Red is a bold, smooth rum for those who enjoy a rich and distinctive drinking experience.
             </p>
             <div class="launch-card-footer">
-              <a href="javascript:void(0);" class="launch-card-link">
+              <a href="product-details.html?id=bullet-rum" class="launch-card-link">
                 Explore Products
               </a>
-
-
             </div>
           </div>
         </div>
@@ -964,17 +932,9 @@
           </div>
 
           <div class="flavour-header-right">
-            <a href="javascript:void(0);" class="flavour-cta-btn">
+            <a href="products.html" class="flavour-cta-btn">
               Explore All Brands
             </a>
-            <!-- <div class="flavour-slider-controls">
-              <button class="slider-nav-btn" id="flavourPrevBtn" aria-label="Previous Slide">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="slider-nav-btn" id="flavourNextBtn" aria-label="Next Slide">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-            </div> -->
           </div>
         </div>
 
@@ -987,7 +947,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Ria Black Premium Whisky" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=ria-whisky" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -997,7 +957,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Tangawisi Original" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=tangawisi" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1007,7 +967,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Blue Diamond Dry Gin" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=blue-diamond" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1017,7 +977,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Doctor Brandy" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=one-up-brandy" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1027,7 +987,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Solera Dark Rum" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=bullet-rum" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1037,7 +997,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Grand Master Vodka" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=grand-masters" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1047,7 +1007,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Highland Reserve Malt Spirit" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="products.html" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1057,7 +1017,7 @@
               <div class="flavour-card-img-box">
                 <img src="assets/images/tangawisi2.png" alt="Botanical Heritage Craft Spirit" class="flavour-card-img">
                 <div class="flavour-card-bottom-bar">
-                  <a href="javascript:void(0);" class="link-view-details">View Details</a>
+                  <a href="product-details.html?id=blue-marine" class="link-view-details">View Details</a>
                 </div>
               </div>
             </div>
@@ -1443,6 +1403,23 @@
       </div>
     </div>
   </footer>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER & BACKDROP ================= -->
+  <div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
+  <div class="mobile-nav-menu" id="mobileNavDrawer">
+    <button class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation">&times;</button>
+    <div class="nav-drawer-header">
+      <img src="assets/images/logo.png" alt="Deejay Distilleries Crest" class="nav-drawer-logo">
+    </div>
+    <nav class="nav-drawer-links">
+      <a href="index.html" class="nav-custom-link active">Home</a>
+      <a href="about.html" class="nav-custom-link">About Us</a>
+      <a href="products.html" class="nav-custom-link">Our Products</a>
+      <a href="blogs.html" class="nav-custom-link">Blogs</a>
+      <a href="exports.html" class="nav-custom-link">Exports</a>
+      <a href="contact.html" class="nav-custom-link">Contact Us</a>
+    </nav>
+  </div>
 
   <!-- ================= ABOUT US VIDEO POPUP MODAL ================= -->
   <div class="video-modal-backdrop" id="videoModalBackdrop" aria-hidden="true" role="dialog"

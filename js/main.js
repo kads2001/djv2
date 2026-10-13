@@ -81,23 +81,25 @@ $(document).ready(function () {
   }
 
   // 3. Navigation Drawer Toggle (Desktop & Mobile)
-  function openNavDrawer() {
-    $('#mobileNavDrawer').addClass('active');
-    $('#navDrawerBackdrop').addClass('active');
+  function openNavDrawer(e) {
+    if (e) e.preventDefault();
+    $('#mobileNavDrawer, .mobile-nav-menu').addClass('active');
+    $('#navDrawerBackdrop, .nav-drawer-backdrop').addClass('active');
+    $('.mobile-nav-toggle, #mobileMenuOpen').addClass('is-active');
     $('body').css('overflow', 'hidden');
     if (lenis) lenis.stop();
   }
 
-  function closeNavDrawer() {
-    $('#mobileNavDrawer').removeClass('active');
-    $('#navDrawerBackdrop').removeClass('active');
+  function closeNavDrawer(e) {
+    $('#mobileNavDrawer, .mobile-nav-menu').removeClass('active');
+    $('#navDrawerBackdrop, .nav-drawer-backdrop').removeClass('active');
+    $('.mobile-nav-toggle, #mobileMenuOpen').removeClass('is-active');
     $('body').css('overflow', 'auto');
     if (lenis) lenis.start();
   }
 
-  $('#mobileMenuOpen').on('click', openNavDrawer);
-
-  $('#mobileMenuClose, #navDrawerBackdrop, .mobile-nav-menu .nav-custom-link, .mobile-nav-menu .btn-nav-contact').on('click', closeNavDrawer);
+  $(document).on('click', '#mobileMenuOpen, .mobile-nav-toggle', openNavDrawer);
+  $(document).on('click', '#mobileMenuClose, .mobile-close-btn, #navDrawerBackdrop, .nav-drawer-backdrop, .mobile-nav-menu .nav-custom-link, .nav-drawer-links .nav-custom-link', closeNavDrawer);
 
   $(document).on('keydown', function (e) {
     if (e.key === 'Escape' && $('#mobileNavDrawer').hasClass('active')) {
