@@ -363,7 +363,7 @@ h6,
 .hero-eyebrow-badge {
   font-family: var(--font-main);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: capitalize;
   color: var(--gold-primary, #c4893b);
   margin-bottom: 14px;
@@ -437,13 +437,13 @@ h6,
 .hero-slider-counter {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.75);
 }
 
 .hero-slider-counter strong {
   color: #ffffff;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* ================= ANIMATED REALISTIC MOUNTAIN LANDSCAPE ================= */
@@ -1105,7 +1105,7 @@ h6,
 
 .hero-main-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--font-hero-title, clamp(38px, 5.2vw, 76px));
   line-height: 1;
   text-transform: capitalize;
@@ -1146,7 +1146,7 @@ h6,
   color: #0b0c10;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
   text-decoration: none;
@@ -1175,7 +1175,7 @@ h6,
   color: #ffffff;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
   text-decoration: none;
@@ -1265,7 +1265,7 @@ h6,
   left: 10px;
   font-family: var(--font-main);
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   z-index: 5;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
@@ -1665,7 +1665,7 @@ h6,
 .about-callout-title {
   font-family: var(--font-main);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.35;
   color: #000;
   margin: 0;
@@ -1681,7 +1681,7 @@ h6,
   color: #ffffff !important;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   padding: 12px 28px;
   border-radius: 50px !important;
@@ -1781,7 +1781,7 @@ h6,
   background: transparent !important;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -1814,7 +1814,7 @@ h6,
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16 / 9;
-  max-height: 640px;
+  /* max-height: 640px; */
   background: #000000;
   cursor: pointer;
 }
@@ -1838,7 +1838,7 @@ h6,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(41 41 41 / 50%);
+  background: rgb(0 0 0 / 55%);
   transition: background 0.3s ease;
   pointer-events: none;
 }
@@ -1926,7 +1926,7 @@ h6,
   color: #b4581b;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -1941,7 +1941,7 @@ h6,
 .about-who-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(24px, 2.4vw, 34px);
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.25;
   margin-bottom: 20px;
@@ -2018,7 +2018,7 @@ h6,
   padding: 8px 18px;
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
 }
 
@@ -2315,7 +2315,7 @@ h6,
 .popular-section-title {
   font-family: var(--font-main, sans-serif);
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
   text-transform: capitalize;
   line-height: 1.15;
@@ -2323,12 +2323,12 @@ h6,
 }
 
 .popular-section-title span {
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
 }
 
 .popular-section-title strong {
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -2354,7 +2354,7 @@ h6,
   border: 1.5px solid #b4581b;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -2458,7 +2458,7 @@ h6,
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(19px, 1.6vw, 23px);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
   margin: 0 0 6px 0;
@@ -2558,7 +2558,7 @@ h6,
 .premium-products-title {
   font-family: var(--font-main, sans-serif);
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
   text-transform: capitalize;
   line-height: 1.15;
@@ -2664,7 +2664,7 @@ h6,
   padding: 8px 26px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   margin: 14px auto 0 auto;
@@ -2686,7 +2686,7 @@ h6,
 
 .ppc-price {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   color: #b4581b;
   margin-bottom: 14px;
 }
@@ -2699,7 +2699,7 @@ h6,
   background-color: transparent;
   color: #1a1a1a;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -2730,7 +2730,7 @@ h6,
   background-color: #c0392b;
   color: #ffffff;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 4px 12px;
   border-radius: 50px;
@@ -2779,7 +2779,7 @@ h6,
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
   border-radius: 50px;
@@ -3113,7 +3113,7 @@ h6,
 .benefits-section-title {
   font-family: var(--font-main);
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   color: #11141a;
   text-transform: capitalize;
@@ -3212,7 +3212,7 @@ h6,
 .benefit-card-num {
   font-family: var(--font-main);
   font-size: clamp(28px, 2.2vw, 36px);
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   line-height: 0.95;
   flex-shrink: 0;
@@ -3356,7 +3356,7 @@ h6,
 .style-showcase-title {
   font-family: var(--font-main, sans-serif);
   font-size: var(--font-section-title, clamp(30px, 3.2vw, 48px));
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.18;
   color: #000000;
   text-transform: capitalize;
@@ -3401,8 +3401,8 @@ h6,
 .style-showcase-header-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   gap: 14px;
   padding-top: 6px;
   height: 100%;
@@ -3476,7 +3476,7 @@ h6,
   background-color: transparent;
   font-family: var(--font-main, sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.25s ease;
@@ -3603,7 +3603,7 @@ h6,
 .showcase-card-title {
   font-family: var(--font-main, sans-serif);
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   color: #1a1a1a;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -3631,7 +3631,7 @@ h6,
   color: #ffffff;
   font-family: var(--font-main, sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.3s ease;
@@ -3884,7 +3884,7 @@ h6,
   gap: 8px;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 16px;
   text-transform: capitalize;
   color: #111111;
@@ -3947,7 +3947,7 @@ h6,
   z-index: 5;
   font-family: var(--font-main);
   font-size: 13.5px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   color: #ffffff;
   text-transform: capitalize;
@@ -3986,7 +3986,7 @@ h6,
   display: block;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   color: var(--gold-primary, #c4893b);
   text-transform: capitalize;
@@ -3996,7 +3996,7 @@ h6,
 .recent-launches-title {
   font-family: var(--font-main);
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   color: #1a1a1a;
   text-transform: capitalize;
@@ -4006,7 +4006,7 @@ h6,
 .recent-launches-view-all {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   text-transform: capitalize;
   text-decoration: none;
@@ -4084,7 +4084,7 @@ h6,
 .launch-card-title {
   font-family: var(--font-main);
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 36px;
   color: #ffffff;
   margin-bottom: 10px;
@@ -4111,7 +4111,7 @@ h6,
 .launch-card-link {
   font-family: var(--font-main);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
@@ -4140,7 +4140,7 @@ h6,
   background: rgba(255, 255, 255, 0.85);
   color: #0b0c10;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4207,7 +4207,7 @@ h6,
 .flavour-tagline {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   text-transform: capitalize;
   color: var(--gold-primary, #c4893b);
@@ -4217,7 +4217,7 @@ h6,
 
 .flavour-main-heading {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
   line-height: 1.15;
   color: #1a1a1a;
@@ -4249,7 +4249,7 @@ h6,
   border-radius: 50px !important;
   font-family: var(--font-main);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 16px;
   text-transform: capitalize;
   text-decoration: none;
@@ -4378,7 +4378,7 @@ h6,
 .link-view-details {
   font-family: var(--font-main);
   font-size: 10.5px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 14px;
   text-transform: capitalize;
   color: #ffffff;
@@ -4465,7 +4465,7 @@ h6,
   display: inline-block;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   text-transform: capitalize;
   color: var(--gold-light);
@@ -4475,7 +4475,7 @@ h6,
 .zoom-banner-title {
   font-family: var(--font-main);
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   text-transform: capitalize;
   color: #ffffff;
@@ -4502,7 +4502,7 @@ h6,
   color: #0b0c10;
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
   padding: 12px 28px;
@@ -4651,7 +4651,7 @@ h6,
 .beer-stack-item-title {
   font-family: var(--font-main);
   font-size: clamp(26px, 4vw, 75px);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 72px;
   text-transform: capitalize;
   margin-bottom: 16px;
@@ -4671,7 +4671,7 @@ h6,
 .beer-stack-read-more {
   font-family: var(--font-main);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
   display: inline-flex;
@@ -4740,7 +4740,7 @@ h6,
 .beer-stack-ing-label {
   font-family: var(--font-main);
   font-size: 13.5px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 14px;
 }
@@ -4754,7 +4754,7 @@ h6,
 .beer-stack-ing-list li {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 10px;
   display: flex;
@@ -4803,7 +4803,7 @@ h6,
 .beer-spec-value {
   font-family: var(--font-main);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   white-space: nowrap;
 }
@@ -4988,7 +4988,7 @@ h6,
 .product-news-tagline {
   font-family: var(--font-main, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   text-transform: capitalize;
   color: #705510;
@@ -4998,7 +4998,7 @@ h6,
 
 .product-news-heading {
   font-family: var(--font-main, 'Anybody', sans-serif);
-  font-weight: 800;
+  font-weight: 600;
   font-size: clamp(28px, 3.4vw, 42px);
   line-height: 1.15;
   color: #111111;
@@ -5096,7 +5096,7 @@ h6,
 .pn-badge-news {
   font-family: var(--font-main, 'Anybody', sans-serif);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
@@ -5106,7 +5106,7 @@ h6,
 
 .pn-featured-title {
   font-family: var(--font-main, 'Anybody', sans-serif);
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(24px, 2.4vw, 34px);
   line-height: 1.2;
   color: #ffffff;
@@ -5194,7 +5194,7 @@ h6,
 .pn-sub-badge {
   font-family: var(--font-main, 'Anybody', sans-serif);
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #444444;
@@ -5207,7 +5207,7 @@ h6,
 
 .pn-sub-title {
   font-family: var(--font-main, 'Anybody', sans-serif);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15.5px;
   line-height: 1.35;
   color: #111111;
@@ -5336,7 +5336,7 @@ h6,
 .blogs-tagline {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 18px;
   text-transform: capitalize;
   color: #705510;
@@ -5346,7 +5346,7 @@ h6,
 
 .blogs-main-heading {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--font-section-title, clamp(32px, 3.6vw, 54px));
   line-height: 1.15;
   color: #1a1a1a;
@@ -5357,7 +5357,7 @@ h6,
 .blogs-view-all-btn {
   font-family: var(--font-main);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 16px;
   text-transform: capitalize;
   color: #111111;
@@ -5441,7 +5441,7 @@ h6,
   gap: 10px;
   font-family: var(--font-main);
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -5458,7 +5458,7 @@ h6,
 .blog-visual-title {
   font-family: var(--font-main);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 26px;
   color: #ffffff;
   margin-bottom: 10px;
@@ -5495,7 +5495,7 @@ h6,
 }
 
 .blog-text-headline strong {
-  font-weight: 800;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -5506,7 +5506,7 @@ h6,
 .blog-underline-link {
   font-family: var(--font-main);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 18px;
   color: #111111;
   text-decoration: none;
@@ -5571,7 +5571,7 @@ h6,
 .contact-modern-eyebrow {
   font-family: var(--font-heading, 'Anybody', sans-serif) !important;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.5px;
   color: #111111;
   text-transform: uppercase;
@@ -5582,7 +5582,7 @@ h6,
 .contact-modern-title {
   font-family: var(--font-heading, 'Anybody', sans-serif) !important;
   font-size: clamp(36px, 4.2vw, 54px);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: #111111;
@@ -5977,7 +5977,7 @@ h6,
   color: #b4581b;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -5992,7 +5992,7 @@ h6,
 .contact-cards-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(28px, 3.2vw, 44px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
 }
@@ -6052,7 +6052,7 @@ h6,
 .contact-card-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 8px;
 }
@@ -6086,7 +6086,7 @@ h6,
   display: block;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #b4581b;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -6095,7 +6095,7 @@ h6,
 .contact-dept-link {
   display: block;
   font-size: 14.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #1a1a1a;
   text-decoration: none;
   line-height: 1.6;
@@ -6197,7 +6197,7 @@ h6,
 .world-map-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(30px, 3.8vw, 46px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.18;
   margin-bottom: 16px;
@@ -6307,7 +6307,7 @@ h6,
   padding: 6px 16px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -6327,7 +6327,7 @@ h6,
   position: relative;
   width: 100%;
   background: transparent;
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   border-top: none;
   overflow: hidden;
@@ -6335,7 +6335,7 @@ h6,
 
 .footer-top-block {
   background-color: #b4581b;
-  padding: 48px 0 38px 0;
+  padding: 64px 0 56px 0;
   width: 100%;
 }
 
@@ -6348,10 +6348,20 @@ h6,
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+  gap: 48px;
+  width: 100%;
+  align-items: start;
+}
+
+.footer-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer-minimal-top {
@@ -6365,10 +6375,11 @@ h6,
 .footer-brand-logo {
   display: inline-block;
   text-decoration: none;
+  margin-bottom: 18px;
 }
 
 .footer-minimal-logo {
-  height: 200px;
+  height: 170px;
   width: auto;
   display: block;
   filter: brightness(0) invert(1);
@@ -6377,6 +6388,54 @@ h6,
 
 .footer-brand-logo:hover .footer-minimal-logo {
   transform: scale(1.05);
+}
+
+.footer-brand-text {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 310px;
+  font-weight: 400;
+}
+
+.footer-col-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.footer-col-line {
+  width: 36px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 24px;
+}
+
+.footer-links-list,
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contact-icon {
+  color: #ffffff;
+  font-size: 15px;
+  flex-shrink: 0;
+  opacity: 0.92;
 }
 
 .footer-divider {
@@ -6400,11 +6459,11 @@ h6,
   color: #ffffff !important;
   text-decoration: none;
   font-family: var(--font-main, sans-serif);
-  font-size: 15px;
-  font-weight: 500;
-
-  transition: opacity 0.25s ease;
+  font-size: 14.5px;
+  font-weight: 400;
+  transition: opacity 0.25s ease, transform 0.25s ease;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .footer-minimal-link:hover {
@@ -6439,7 +6498,7 @@ h6,
   color: #2b2b2b;
   font-size: 13.5px;
   font-family: var(--font-main, sans-serif);
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
 }
 
@@ -6461,7 +6520,46 @@ h6,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 26px;
+  gap: 20px;
+}
+
+.footer-visit-link {
+  color: #b4581b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.footer-visit-link:hover {
+  color: #8c3e0e;
+  text-decoration: underline;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(180, 88, 27, 0.12);
+  color: #b4581b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: #b4581b;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .footer-legal-link {
@@ -6478,13 +6576,29 @@ h6,
   color: #b4581b;
 }
 
+@media (max-width: 991px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer-top-block {
-    padding: 36px 0 28px 0;
+    padding: 44px 0 36px 0;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .footer-minimal-logo {
-    height: 65px;
+    height: 75px;
+  }
+
+  .footer-brand-text {
+    max-width: 100%;
   }
 
   .footer-minimal-links {
@@ -7485,7 +7599,7 @@ h6,
 .logo-track img {
   height: 100px;
   width: 100%;
-  max-width: 230px;
+  max-width: 190px;
   min-width: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -7880,7 +7994,7 @@ select,
   color: var(--gold-primary, #b4581b);
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 2px solid var(--gold-primary, #b4581b);
@@ -7937,7 +8051,7 @@ select,
   border: 2px solid var(--gold-primary, #b4581b);
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.3s ease;
@@ -7956,7 +8070,7 @@ select,
   color: var(--gold-primary, #b4581b);
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   /* border-bottom: 1.5px solid var(--gold-primary, #b4581b); */
@@ -8008,7 +8122,7 @@ select,
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -8035,7 +8149,7 @@ select,
   border-radius: 50px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -8235,7 +8349,7 @@ select,
   gap: 8px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -8260,7 +8374,7 @@ select,
 .inner-banner-title {
   font-family: var(--font-main, sans-serif);
   font-size: clamp(34px, 4.5vw, 56px);
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1.15;
   text-transform: capitalize;
@@ -8374,7 +8488,7 @@ html.age-gate-locked {
 .age-gate-brand-name {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--gold-light, #dfb76c);
   text-transform: uppercase;
 }
@@ -8392,7 +8506,7 @@ html.age-gate-locked {
 .age-gate-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(28px, 4.5vw, 44px);
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1.15;
   text-transform: uppercase;
@@ -8421,7 +8535,7 @@ html.age-gate-locked {
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -8572,8 +8686,8 @@ html.age-gate-locked {
 }
 
 .preloader-logo-wrap {
-  width: 250px;
-  height: 150px;
+  width: 450px;
+  height: 300px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -8596,13 +8710,12 @@ html.age-gate-locked {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(180, 88, 27, 0.18));
 }
 
 .preloader-tagline {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(10px, 0.95vw, 12px);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--gold-primary, #b4581b);
   text-transform: uppercase;
   margin-top: 2px;
@@ -8761,7 +8874,7 @@ html.age-gate-locked {
 .region-filter-label {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #7a7067;
@@ -8844,7 +8957,7 @@ button.region-filter-btn.active {
 .catalog-empty-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 8px;
 }
@@ -8889,7 +9002,7 @@ button.region-filter-btn.active {
   color: #b4581b;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -8904,7 +9017,7 @@ button.region-filter-btn.active {
 .product-catalog-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(30px, 3.5vw, 46px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
   text-align: left;
@@ -9076,7 +9189,7 @@ button.product-filter-btn.active {
   border: 1px solid rgba(17, 17, 17, 0.12);
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 4px 10px;
@@ -9200,7 +9313,7 @@ button.product-filter-btn.active {
   border: 1px solid rgb(0 0 0);
   color: #000000;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: lowercase;
 }
 
@@ -9224,7 +9337,8 @@ button.product-filter-btn.active {
   margin: 0 auto;
 }
 
-@media (hover: none), (max-width: 991px) {
+@media (hover: none),
+(max-width: 991px) {
   .card-slider-arrow {
     opacity: 0.92 !important;
     transform: scale(1) !important;
@@ -9616,7 +9730,7 @@ button.product-filter-btn.active {
 .exports-metric-number {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(26px, 2.2vw, 32px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.05;
   margin-bottom: 5px;
@@ -9649,7 +9763,7 @@ button.product-filter-btn.active {
 .exports-section-eyebrow {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #4b5563;
@@ -9659,7 +9773,7 @@ button.product-filter-btn.active {
 .exports-section-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(32px, 3.8vw, 48px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.16;
   margin-bottom: 14px;
@@ -9874,7 +9988,7 @@ button.product-filter-btn.active {
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   padding: 5px 10px;
   border-radius: 6px;
@@ -9919,7 +10033,7 @@ button.product-filter-btn.active {
   padding: 7px 18px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   display: inline-flex;
@@ -10019,7 +10133,7 @@ button.product-filter-btn.active {
 }
 
 .exports-legend-key {
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   font-family: var(--font-heading, 'Anybody', sans-serif);
 }
@@ -10120,7 +10234,7 @@ button.product-filter-btn.active {
 .exports-modal-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   display: flex;
   align-items: center;
@@ -10255,7 +10369,7 @@ button.product-filter-btn.active {
 .exports-country-num {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--gold-primary, #b4581b);
   background: #fff6ee;
   border: 1px solid rgba(180, 88, 27, 0.2);
@@ -10271,7 +10385,7 @@ button.product-filter-btn.active {
 .exports-country-name {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 6px;
 }
@@ -10362,7 +10476,7 @@ button.product-filter-btn.active {
 .exports-cap-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
   line-height: 1.3;
@@ -10500,7 +10614,7 @@ button.product-filter-btn.active {
 
 .pd-breadcrumbs .active {
   color: var(--gold-primary, #b4581b);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .pd-back-btn {
@@ -10514,7 +10628,7 @@ button.product-filter-btn.active {
   color: #334155;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.25s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
@@ -10556,7 +10670,7 @@ button.product-filter-btn.active {
   padding: 6px 16px;
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -10618,7 +10732,7 @@ button.product-filter-btn.active {
   justify-content: space-between;
   margin-bottom: 12px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: #334155;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -10640,7 +10754,7 @@ button.product-filter-btn.active {
   color: #334155;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -10684,7 +10798,7 @@ button.product-filter-btn.active {
   background: #111111;
   color: #ffffff;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 6px 16px;
@@ -10696,7 +10810,7 @@ button.product-filter-btn.active {
   color: #b4581b;
   border: 1px solid rgba(180, 88, 27, 0.25);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 6px 14px;
   border-radius: 50px;
 }
@@ -10713,7 +10827,7 @@ button.product-filter-btn.active {
 .pd-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(32px, 3.5vw, 46px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.15;
   margin-bottom: 12px;
@@ -10784,7 +10898,7 @@ button.product-filter-btn.active {
 .pd-spec-value {
   font-size: 14px;
   color: #111111;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.35;
 }
 
@@ -10805,7 +10919,7 @@ button.product-filter-btn.active {
   border-radius: 50px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14.5px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -10830,7 +10944,7 @@ button.product-filter-btn.active {
   border-radius: 50px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -10887,7 +11001,7 @@ button.product-filter-btn.active {
   padding: 6px 16px;
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -10896,7 +11010,7 @@ button.product-filter-btn.active {
 .pd-section-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(28px, 3.2vw, 42px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
 }
@@ -10946,7 +11060,7 @@ button.product-filter-btn.active {
 
 .pd-sensory-title {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 10px;
 }
@@ -10969,7 +11083,7 @@ button.product-filter-btn.active {
 
 .pd-meters-title {
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 24px;
   text-align: center;
@@ -10983,7 +11097,7 @@ button.product-filter-btn.active {
   display: flex;
   justify-content: space-between;
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #334155;
   margin-bottom: 6px;
 }
@@ -11033,7 +11147,7 @@ button.product-filter-btn.active {
 .pd-craft-step-num {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   color: #b4581b;
   margin-bottom: 12px;
   display: inline-block;
@@ -11041,7 +11155,7 @@ button.product-filter-btn.active {
 
 .pd-craft-title {
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 10px;
   line-height: 1.3;
@@ -11076,7 +11190,7 @@ button.product-filter-btn.active {
 
 .pd-cocktail-badge {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   color: #b4581b;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -11086,7 +11200,7 @@ button.product-filter-btn.active {
 
 .pd-cocktail-name {
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 16px;
 }
@@ -11166,7 +11280,7 @@ button.product-filter-btn.active {
 
 .pd-related-cat {
   font-size: 11.5px;
-  font-weight: 800;
+  font-weight: 600;
   color: #b4581b;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -11175,7 +11289,7 @@ button.product-filter-btn.active {
 
 .pd-related-title {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.3;
 }
@@ -11321,7 +11435,7 @@ button.product-filter-btn.active {
 
 .pd-thumb-label {
   font-size: 10.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #475569;
   margin-top: 4px;
   font-family: var(--font-heading, 'Anybody', sans-serif);
@@ -11359,7 +11473,7 @@ button.product-filter-btn.active {
   border: 1px solid rgba(180, 88, 27, 0.3);
   color: #b4581b;
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 4px 12px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -11446,7 +11560,7 @@ button.product-filter-btn.active {
 .pd-brand-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(23px, 2.3vw, 29px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.25;
   margin-bottom: 8px;
@@ -11495,7 +11609,7 @@ button.product-filter-btn.active {
 
 .pd-rating-score {
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
 }
 
@@ -11514,7 +11628,7 @@ button.product-filter-btn.active {
   background: #232f3e;
   color: #ffffff;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 3px 8px;
   border-radius: 3px;
   letter-spacing: 0.04em;
@@ -11546,7 +11660,7 @@ button.product-filter-btn.active {
 .pd-variant-heading {
   font-size: 13.5px;
   color: #111111;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -11596,7 +11710,7 @@ button.product-filter-btn.active {
 
 .pd-variant-card-title {
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.2;
   margin-bottom: 3px;
@@ -11655,7 +11769,7 @@ button.product-filter-btn.active {
 
 .pd-attr-name {
   width: 155px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
 }
 
@@ -11671,7 +11785,7 @@ button.product-filter-btn.active {
 
 .pd-about-bullets-title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
 }
@@ -11708,7 +11822,7 @@ button.product-filter-btn.active {
 .pd-dispatch-status {
   font-size: 13.5px;
   color: #16a34a;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -11739,7 +11853,7 @@ button.product-filter-btn.active {
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
   border-radius: 50px;
   padding: 12px 18px;
@@ -11767,7 +11881,7 @@ button.product-filter-btn.active {
   color: #111111;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   border: 1px solid #cbd5e1;
   border-radius: 50px;
   padding: 11px 18px;
@@ -11825,7 +11939,7 @@ button.product-filter-btn.active {
 
 .pd-sponsored-title {
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.3;
   margin-bottom: 6px;
@@ -11845,7 +11959,7 @@ button.product-filter-btn.active {
   border: 1px solid #b4581b;
   color: #b4581b;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
 }
@@ -11874,7 +11988,7 @@ button.product-filter-btn.active {
   border: 1px solid rgba(180, 88, 27, 0.3);
   color: #b4581b;
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 5px 16px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -11885,7 +11999,7 @@ button.product-filter-btn.active {
 .pd-visual-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(28px, 3.2vw, 42px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 12px;
 }
@@ -11945,7 +12059,7 @@ button.product-filter-btn.active {
   backdrop-filter: blur(8px);
   color: #ffffff;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 4px 12px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -11962,7 +12076,7 @@ button.product-filter-btn.active {
 .pd-visual-card-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 8px;
 }
@@ -12073,7 +12187,7 @@ button.product-filter-btn.active {
 .timeline-main-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(34px, 4.6vw, 62px);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.15;
   color: #ffffff;
   letter-spacing: -0.02em;
@@ -12165,7 +12279,7 @@ button.product-filter-btn.active {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.4);
   margin-top: 8px;
   transition: color 0.4s ease, transform 0.4s ease;
@@ -12374,7 +12488,7 @@ button.product-filter-btn.active {
   border: 1px solid rgba(180, 88, 27, 0.3);
   color: #b4581b;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 6px 16px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -12392,7 +12506,7 @@ button.product-filter-btn.active {
 .blog-article-headline {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(30px, 3.4vw, 46px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -12452,7 +12566,7 @@ button.product-filter-btn.active {
 .blog-author-name {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 14.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 2px;
 }
@@ -12515,7 +12629,7 @@ button.product-filter-btn.active {
 .blog-prose h3 {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   color: #111111;
-  font-weight: 800;
+  font-weight: 600;
   margin-top: 40px;
   margin-bottom: 16px;
   line-height: 1.25;
@@ -12550,7 +12664,7 @@ button.product-filter-btn.active {
 .blog-quote-text {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
   color: #111111;
   line-height: 1.55;
@@ -12559,7 +12673,7 @@ button.product-filter-btn.active {
 
 .blog-quote-author {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: #b4581b;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -12597,7 +12711,7 @@ button.product-filter-btn.active {
 .blog-highlights-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 14px;
   display: flex;
@@ -12674,7 +12788,7 @@ button.product-filter-btn.active {
 
 .blog-nav-label {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   color: #b4581b;
   margin-bottom: 4px;
@@ -12686,7 +12800,7 @@ button.product-filter-btn.active {
 .blog-nav-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.35;
   margin: 0;
@@ -12712,7 +12826,7 @@ button.product-filter-btn.active {
 .blog-widget-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 20px;
   padding-bottom: 12px;
@@ -12838,7 +12952,7 @@ button.product-filter-btn.active {
 .blog-recent-heading {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.35;
   margin: 0;
@@ -12866,7 +12980,7 @@ button.product-filter-btn.active {
 .blog-trade-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 8px;
 }
@@ -12884,7 +12998,7 @@ button.product-filter-btn.active {
   color: #ffffff;
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 22px;
   border-radius: 50px;
   text-decoration: none;
@@ -12913,7 +13027,7 @@ button.product-filter-btn.active {
 .blog-related-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: clamp(26px, 3vw, 36px);
-  font-weight: 800;
+  font-weight: 600;
   color: #111111;
   margin-bottom: 6px;
 }
@@ -12968,7 +13082,7 @@ button.product-filter-btn.active {
 .blog-related-meta {
   font-size: 12px;
   color: #b4581b;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
@@ -12977,7 +13091,7 @@ button.product-filter-btn.active {
 .blog-related-card-title {
   font-family: var(--font-heading, 'Anybody', sans-serif);
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111111;
   line-height: 1.35;
   margin-bottom: 10px;
@@ -12996,21 +13110,27 @@ button.product-filter-btn.active {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .blog-sidebar-wrap {
     position: static;
   }
+
   .blog-article-card {
     padding: 30px 24px;
   }
+
   .blog-hero-media-wrap {
     height: 320px;
   }
+
   .blog-inset-grid {
     grid-template-columns: 1fr;
   }
+
   .blog-related-grid {
     grid-template-columns: 1fr;
   }
+
   .blog-pagination-nav {
     grid-template-columns: 1fr;
   }
